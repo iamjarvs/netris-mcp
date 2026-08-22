@@ -45,7 +45,7 @@ async def create_bgp_session(
     vnet: Optional[str] = None,
     bgp_password: Optional[str] = None,
     multihop: Optional[int] = None,
-    bfd: bool = False,
+    bfd: Optional[bool] = None,
 ) -> str:
     """Create a new eBGP peer session in Netris.
 
@@ -58,7 +58,8 @@ async def create_bgp_session(
         vnet: Optional VNet name to associate with this BGP session.
         bgp_password: Optional MD5 password for BGP session authentication.
         multihop: Optional TTL value for multihop BGP sessions.
-        bfd: Enable BFD (Bidirectional Forwarding Detection) for fast failure detection.
+        bfd: Set to True to enable BFD (fast failure detection), False to explicitly
+             disable it. Omit (None) to use the Netris controller default.
     """
     nc = ctx.request_context.lifespan_context
     # URL: /api/v2/ebgp/
@@ -75,7 +76,7 @@ async def create_bgp_session(
         payload["bgpPassword"] = bgp_password
     if multihop is not None:
         payload["multihop"] = multihop
-    if bfd:
+    if bfd is not None:
         payload["bfd"] = bfd
     data = await post(nc.client, api_url(nc.base_url, "ebgp"), payload)
     return f"Created BGP session with ID {data.get('id', 'unknown')}"

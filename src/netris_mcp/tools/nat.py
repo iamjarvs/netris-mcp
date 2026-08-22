@@ -125,6 +125,10 @@ async def update_nat_rule(ctx: Context, nat_id: int, enabled: bool) -> str:
     """
     nc = ctx.request_context.lifespan_context
     existing = await get(nc.client, api_url(nc.base_url, "nat", nat_id))
+    # TODO(api-access): verify which fields PUT /nat/{id} accepts — replace
+    # dict(existing) with an allowlist (name, site, type, sourcePrefix,
+    # destinationAddress, translatedAddress, protocol, port, state) if Netris
+    # rejects server-managed fields (id, createdDate, hwId, etc.) on write.
     payload = dict(existing)
     payload["state"] = "enabled" if enabled else "disabled"
     data = await put(nc.client, api_url(nc.base_url, "nat", nat_id), payload)

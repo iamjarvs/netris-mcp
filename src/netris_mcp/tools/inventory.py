@@ -113,6 +113,9 @@ async def update_softgate(ctx: Context, sg_id: int, main_ip: str | None = None, 
     """
     nc = ctx.request_context.lifespan_context
     existing = await get(nc.client, api_url(nc.base_url, "hw/softgate", sg_id))
+    # TODO(api-access): verify which fields PUT /hw/softgate/{id} accepts — replace
+    # dict(existing) with an allowlist (name, site, tenant, mainIp, mgmtIp) if Netris
+    # rejects server-managed fields (agentVersion, heartbeat, syncState, nos, etc.).
     payload = dict(existing)
     if main_ip is not None:
         payload["mainIp"] = main_ip

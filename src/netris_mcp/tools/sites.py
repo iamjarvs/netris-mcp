@@ -84,6 +84,9 @@ async def update_site(ctx: Context, site_id: int, name: str | None = None, publi
     """
     nc = ctx.request_context.lifespan_context
     existing = await get(nc.client, api_url(nc.base_url, "sites", site_id))
+    # TODO(api-access): verify which fields the Netris PUT /sites/{id} endpoint accepts.
+    # If it rejects server-managed fields (id, createdDate, status, etc.) replace
+    # dict(existing) with an explicit allowlist of writable field names.
     payload = dict(existing)
     if name is not None:
         payload["name"] = name
