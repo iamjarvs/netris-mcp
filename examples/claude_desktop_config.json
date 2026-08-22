@@ -1,0 +1,14 @@
+{
+  "mcpServers": {
+    "netris": {
+      "command": "uv",
+      "args": ["--directory", "/REPLACE/WITH/ABSOLUTE/PATH/TO/netris-mcp", "run", "netris-mcp"],
+      "env": {
+        "NETRIS_HOST": "your-netris-controller.example.com",
+        "NETRIS_USERNAME": "admin",
+        "NETRIS_PASSWORD": "your-password-here",
+        "NETRIS_SSL_VERIFY": "true"
+      }
+    }
+  }
+}
