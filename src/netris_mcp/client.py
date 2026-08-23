@@ -21,6 +21,17 @@ import httpx
 
 logger = logging.getLogger(__name__)
 
+# Payload keys whose values must never be written to logs, even at DEBUG.
+_SENSITIVE_KEYS = {"password", "bgppassword", "secret", "token"}
+
+
+def _redact(data: dict[str, Any]) -> dict[str, Any]:
+    """Return a copy of ``data`` with sensitive values masked for logging."""
+    return {
+        k: ("***" if k.lower() in _SENSITIVE_KEYS else v)
+        for k, v in data.items()
+    }
+
 
 # ---------------------------------------------------------------------------
 # URL builder
@@ -152,7 +163,7 @@ async def post(client: httpx.AsyncClient, url: str, data: dict[str, Any]) -> dic
     RuntimeError
         On non-2xx HTTP status or non-JSON response body.
     """
-    logger.debug("POST %s payload=%s", url, data)
+    logger.debug("POST %s payload=%s", url, _redact(data))
     try:
         response = await client.post(url, json=data)
     except httpx.RequestError as exc:
@@ -185,7 +196,7 @@ async def put(client: httpx.AsyncClient, url: str, data: dict[str, Any]) -> dict
     RuntimeError
         On non-2xx HTTP status or non-JSON response body.
     """
-    logger.debug("PUT %s payload=%s", url, data)
+    logger.debug("PUT %s payload=%s", url, _redact(data))
     try:
         response = await client.put(url, json=data)
     except httpx.RequestError as exc:
