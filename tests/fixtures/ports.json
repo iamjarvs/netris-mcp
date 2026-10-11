@@ -1,0 +1,1952 @@
+{
+  "data": [
+    {
+      "id": 48124,
+      "ifName": "",
+      "description": "eth1",
+      "present": 1,
+      "switchId": 1431,
+      "switchName": "gpu-hardwarefree-001",
+      "mclagSwitches": "",
+      "sgFlavor": null,
+      "srvRole": "generic",
+      "status": {
+        "label": "Unknown",
+        "value": "unknown"
+      },
+      "masterStatus": null,
+      "speed": "?",
+      "desiredSpeed": "auto",
+      "transceiver": null,
+      "mtu": 9216,
+      "lacp": "off",
+      "adminDown": "no",
+      "autoNeg": "none",
+      "duplex": "none",
+      "siteVlanRange": "1-4094",
+      "_port": "eth1",
+      "portIndex": 1,
+      "port": "eth1",
+      "slavePorts": [],
+      "extension": 0,
+      "parentPort": 0,
+      "breakout": "off",
+      "breakIndex": 0,
+      "linkTraining": "auto",
+      "fec": "auto",
+      "mclagId": null,
+      "mclagLinkId": null,
+      "switchPlatform": null,
+      "switchAddr": null,
+      "agg_slaves_label": null,
+      "in_agg_label": null,
+      "portReservationCount": 1,
+      "createdDate": 1789722762000,
+      "modifiedDate": 1789722762000,
+      "name": "eth1(eth1)@gpu-hardwarefree-001 (Admin)",
+      "shortName": "eth1@gpu-hardwarefree-001",
+      "info": {
+        "port": "eth1",
+        "ifName": null
+      },
+      "tenant": {
+        "id": 1,
+        "name": "Admin"
+      },
+      "site": {
+        "id": 19,
+        "name": "HardwareFree",
+        "vlanRange": "1-4094",
+        "vlanRangeStart": 1,
+        "vlanRangeEnd": 4094
+      },
+      "switch": {
+        "id": 1431,
+        "name": "gpu-hardwarefree-001",
+        "type": "server",
+        "platform": null,
+        "mainAddress": null,
+        "sgFlavor": null
+      },
+      "inUse": true,
+      "stateInHierarchy": {
+        "extensionsParent": 0,
+        "extended": 0,
+        "breakout": false,
+        "breakoutChild": false,
+        "lagMember": false,
+        "aggregated": false
+      },
+      "bgp": {
+        "state": null,
+        "prefix": null,
+        "time": null
+      },
+      "connectedTo": {
+        "portId": 49840,
+        "switchName": "sw-hardwarefree-plane1-leaf01",
+        "info": {
+          "port": "swp1",
+          "ifName": null
+        },
+        "status": {
+          "label": "Unknown",
+          "value": "unknown"
+        },
+        "speed": "?",
+        "displayName": "swp1(swp1)@sw-hardwarefree-plane1-leaf01"
+      }
+    },
+    {
+      "id": 48125,
+      "ifName": "",
+      "description": "eth2",
+      "present": 1,
+      "switchId": 1431,
+      "switchName": "gpu-hardwarefree-001",
+      "mclagSwitches": "",
+      "sgFlavor": null,
+      "srvRole": "generic",
+      "status": {
+        "label": "Unknown",
+        "value": "unknown"
+      },
+      "masterStatus": null,
+      "speed": "?",
+      "desiredSpeed": "auto",
+      "transceiver": null,
+      "mtu": 9216,
+      "lacp": "off",
+      "adminDown": "no",
+      "autoNeg": "none",
+      "duplex": "none",
+      "siteVlanRange": "1-4094",
+      "_port": "eth2",
+      "portIndex": 2,
+      "port": "eth2",
+      "slavePorts": [],
+      "extension": 0,
+      "parentPort": 0,
+      "breakout": "off",
+      "breakIndex": 0,
+      "linkTraining": "auto",
+      "fec": "auto",
+      "mclagId": null,
+      "mclagLinkId": null,
+      "switchPlatform": null,
+      "switchAddr": null,
+      "agg_slaves_label": null,
+      "in_agg_label": null,
+      "portReservationCount": 1,
+      "createdDate": 1789722762000,
+      "modifiedDate": 1789722762000,
+      "name": "eth2(eth2)@gpu-hardwarefree-001 (Admin)",
+      "shortName": "eth2@gpu-hardwarefree-001",
+      "info": {
+        "port": "eth2",
+        "ifName": null
+      },
+      "tenant": {
+        "id": 1,
+        "name": "Admin"
+      },
+      "site": {
+        "id": 19,
+        "name": "HardwareFree",
+        "vlanRange": "1-4094",
+        "vlanRangeStart": 1,
+        "vlanRangeEnd": 4094
+      },
+      "switch": {
+        "id": 1431,
+        "name": "gpu-hardwarefree-001",
+        "type": "server",
+        "platform": null,
+        "mainAddress": null,
+        "sgFlavor": null
+      },
+      "inUse": true,
+      "stateInHierarchy": {
+        "extensionsParent": 0,
+        "extended": 0,
+        "breakout": false,
+        "breakoutChild": false,
+        "lagMember": false,
+        "aggregated": false
+      },
+      "bgp": {
+        "state": null,
+        "prefix": null,
+        "time": null
+      },
+      "connectedTo": {
+        "portId": 49841,
+        "switchName": "sw-hardwarefree-plane1-leaf01",
+        "info": {
+          "port": "swp2",
+          "ifName": null
+        },
+        "status": {
+          "label": "Unknown",
+          "value": "unknown"
+        },
+        "speed": "?",
+        "displayName": "swp2(swp2)@sw-hardwarefree-plane1-leaf01"
+      }
+    },
+    {
+      "id": 48126,
+      "ifName": "",
+      "description": "eth3",
+      "present": 1,
+      "switchId": 1431,
+      "switchName": "gpu-hardwarefree-001",
+      "mclagSwitches": "",
+      "sgFlavor": null,
+      "srvRole": "generic",
+      "status": {
+        "label": "Unknown",
+        "value": "unknown"
+      },
+      "masterStatus": null,
+      "speed": "?",
+      "desiredSpeed": "auto",
+      "transceiver": null,
+      "mtu": 9216,
+      "lacp": "off",
+      "adminDown": "no",
+      "autoNeg": "none",
+      "duplex": "none",
+      "siteVlanRange": "1-4094",
+      "_port": "eth3",
+      "portIndex": 3,
+      "port": "eth3",
+      "slavePorts": [],
+      "extension": 0,
+      "parentPort": 0,
+      "breakout": "off",
+      "breakIndex": 0,
+      "linkTraining": "auto",
+      "fec": "auto",
+      "mclagId": null,
+      "mclagLinkId": null,
+      "switchPlatform": null,
+      "switchAddr": null,
+      "agg_slaves_label": null,
+      "in_agg_label": null,
+      "portReservationCount": 1,
+      "createdDate": 1789722762000,
+      "modifiedDate": 1789722762000,
+      "name": "eth3(eth3)@gpu-hardwarefree-001 (Admin)",
+      "shortName": "eth3@gpu-hardwarefree-001",
+      "info": {
+        "port": "eth3",
+        "ifName": null
+      },
+      "tenant": {
+        "id": 1,
+        "name": "Admin"
+      },
+      "site": {
+        "id": 19,
+        "name": "HardwareFree",
+        "vlanRange": "1-4094",
+        "vlanRangeStart": 1,
+        "vlanRangeEnd": 4094
+      },
+      "switch": {
+        "id": 1431,
+        "name": "gpu-hardwarefree-001",
+        "type": "server",
+        "platform": null,
+        "mainAddress": null,
+        "sgFlavor": null
+      },
+      "inUse": true,
+      "stateInHierarchy": {
+        "extensionsParent": 0,
+        "extended": 0,
+        "breakout": false,
+        "breakoutChild": false,
+        "lagMember": false,
+        "aggregated": false
+      },
+      "bgp": {
+        "state": null,
+        "prefix": null,
+        "time": null
+      },
+      "connectedTo": {
+        "portId": 48864,
+        "switchName": "sw-hardwarefree-plane2-leaf01",
+        "info": {
+          "port": "swp1",
+          "ifName": null
+        },
+        "status": {
+          "label": "Unknown",
+          "value": "unknown"
+        },
+        "speed": "?",
+        "displayName": "swp1(swp1)@sw-hardwarefree-plane2-leaf01"
+      }
+    },
+    {
+      "id": 48127,
+      "ifName": "",
+      "description": "eth4",
+      "present": 1,
+      "switchId": 1431,
+      "switchName": "gpu-hardwarefree-001",
+      "mclagSwitches": "",
+      "sgFlavor": null,
+      "srvRole": "generic",
+      "status": {
+        "label": "Unknown",
+        "value": "unknown"
+      },
+      "masterStatus": null,
+      "speed": "?",
+      "desiredSpeed": "auto",
+      "transceiver": null,
+      "mtu": 9216,
+      "lacp": "off",
+      "adminDown": "no",
+      "autoNeg": "none",
+      "duplex": "none",
+      "siteVlanRange": "1-4094",
+      "_port": "eth4",
+      "portIndex": 4,
+      "port": "eth4",
+      "slavePorts": [],
+      "extension": 0,
+      "parentPort": 0,
+      "breakout": "off",
+      "breakIndex": 0,
+      "linkTraining": "auto",
+      "fec": "auto",
+      "mclagId": null,
+      "mclagLinkId": null,
+      "switchPlatform": null,
+      "switchAddr": null,
+      "agg_slaves_label": null,
+      "in_agg_label": null,
+      "portReservationCount": 1,
+      "createdDate": 1789722762000,
+      "modifiedDate": 1789722762000,
+      "name": "eth4(eth4)@gpu-hardwarefree-001 (Admin)",
+      "shortName": "eth4@gpu-hardwarefree-001",
+      "info": {
+        "port": "eth4",
+        "ifName": null
+      },
+      "tenant": {
+        "id": 1,
+        "name": "Admin"
+      },
+      "site": {
+        "id": 19,
+        "name": "HardwareFree",
+        "vlanRange": "1-4094",
+        "vlanRangeStart": 1,
+        "vlanRangeEnd": 4094
+      },
+      "switch": {
+        "id": 1431,
+        "name": "gpu-hardwarefree-001",
+        "type": "server",
+        "platform": null,
+        "mainAddress": null,
+        "sgFlavor": null
+      },
+      "inUse": true,
+      "stateInHierarchy": {
+        "extensionsParent": 0,
+        "extended": 0,
+        "breakout": false,
+        "breakoutChild": false,
+        "lagMember": false,
+        "aggregated": false
+      },
+      "bgp": {
+        "state": null,
+        "prefix": null,
+        "time": null
+      },
+      "connectedTo": {
+        "portId": 48865,
+        "switchName": "sw-hardwarefree-plane2-leaf01",
+        "info": {
+          "port": "swp2",
+          "ifName": null
+        },
+        "status": {
+          "label": "Unknown",
+          "value": "unknown"
+        },
+        "speed": "?",
+        "displayName": "swp2(swp2)@sw-hardwarefree-plane2-leaf01"
+      }
+    },
+    {
+      "id": 48128,
+      "ifName": "",
+      "description": "eth5",
+      "present": 1,
+      "switchId": 1431,
+      "switchName": "gpu-hardwarefree-001",
+      "mclagSwitches": "",
+      "sgFlavor": null,
+      "srvRole": "generic",
+      "status": {
+        "label": "Unknown",
+        "value": "unknown"
+      },
+      "masterStatus": null,
+      "speed": "?",
+      "desiredSpeed": "auto",
+      "transceiver": null,
+      "mtu": 9216,
+      "lacp": "off",
+      "adminDown": "no",
+      "autoNeg": "none",
+      "duplex": "none",
+      "siteVlanRange": "1-4094",
+      "_port": "eth5",
+      "portIndex": 5,
+      "port": "eth5",
+      "slavePorts": [],
+      "extension": 0,
+      "parentPort": 0,
+      "breakout": "off",
+      "breakIndex": 0,
+      "linkTraining": "auto",
+      "fec": "auto",
+      "mclagId": null,
+      "mclagLinkId": null,
+      "switchPlatform": null,
+      "switchAddr": null,
+      "agg_slaves_label": null,
+      "in_agg_label": null,
+      "portReservationCount": 1,
+      "createdDate": 1789722762000,
+      "modifiedDate": 1789722762000,
+      "name": "eth5(eth5)@gpu-hardwarefree-001 (Admin)",
+      "shortName": "eth5@gpu-hardwarefree-001",
+      "info": {
+        "port": "eth5",
+        "ifName": null
+      },
+      "tenant": {
+        "id": 1,
+        "name": "Admin"
+      },
+      "site": {
+        "id": 19,
+        "name": "HardwareFree",
+        "vlanRange": "1-4094",
+        "vlanRangeStart": 1,
+        "vlanRangeEnd": 4094
+      },
+      "switch": {
+        "id": 1431,
+        "name": "gpu-hardwarefree-001",
+        "type": "server",
+        "platform": null,
+        "mainAddress": null,
+        "sgFlavor": null
+      },
+      "inUse": true,
+      "stateInHierarchy": {
+        "extensionsParent": 0,
+        "extended": 0,
+        "breakout": false,
+        "breakoutChild": false,
+        "lagMember": false,
+        "aggregated": false
+      },
+      "bgp": {
+        "state": null,
+        "prefix": null,
+        "time": null
+      },
+      "connectedTo": {
+        "portId": 49488,
+        "switchName": "sw-hardwarefree-plane3-leaf01",
+        "info": {
+          "port": "swp1",
+          "ifName": null
+        },
+        "status": {
+          "label": "Unknown",
+          "value": "unknown"
+        },
+        "speed": "?",
+        "displayName": "swp1(swp1)@sw-hardwarefree-plane3-leaf01"
+      }
+    },
+    {
+      "id": 48129,
+      "ifName": "",
+      "description": "eth6",
+      "present": 1,
+      "switchId": 1431,
+      "switchName": "gpu-hardwarefree-001",
+      "mclagSwitches": "",
+      "sgFlavor": null,
+      "srvRole": "generic",
+      "status": {
+        "label": "Unknown",
+        "value": "unknown"
+      },
+      "masterStatus": null,
+      "speed": "?",
+      "desiredSpeed": "auto",
+      "transceiver": null,
+      "mtu": 9216,
+      "lacp": "off",
+      "adminDown": "no",
+      "autoNeg": "none",
+      "duplex": "none",
+      "siteVlanRange": "1-4094",
+      "_port": "eth6",
+      "portIndex": 6,
+      "port": "eth6",
+      "slavePorts": [],
+      "extension": 0,
+      "parentPort": 0,
+      "breakout": "off",
+      "breakIndex": 0,
+      "linkTraining": "auto",
+      "fec": "auto",
+      "mclagId": null,
+      "mclagLinkId": null,
+      "switchPlatform": null,
+      "switchAddr": null,
+      "agg_slaves_label": null,
+      "in_agg_label": null,
+      "portReservationCount": 1,
+      "createdDate": 1789722762000,
+      "modifiedDate": 1789722762000,
+      "name": "eth6(eth6)@gpu-hardwarefree-001 (Admin)",
+      "shortName": "eth6@gpu-hardwarefree-001",
+      "info": {
+        "port": "eth6",
+        "ifName": null
+      },
+      "tenant": {
+        "id": 1,
+        "name": "Admin"
+      },
+      "site": {
+        "id": 19,
+        "name": "HardwareFree",
+        "vlanRange": "1-4094",
+        "vlanRangeStart": 1,
+        "vlanRangeEnd": 4094
+      },
+      "switch": {
+        "id": 1431,
+        "name": "gpu-hardwarefree-001",
+        "type": "server",
+        "platform": null,
+        "mainAddress": null,
+        "sgFlavor": null
+      },
+      "inUse": true,
+      "stateInHierarchy": {
+        "extensionsParent": 0,
+        "extended": 0,
+        "breakout": false,
+        "breakoutChild": false,
+        "lagMember": false,
+        "aggregated": false
+      },
+      "bgp": {
+        "state": null,
+        "prefix": null,
+        "time": null
+      },
+      "connectedTo": {
+        "portId": 49489,
+        "switchName": "sw-hardwarefree-plane3-leaf01",
+        "info": {
+          "port": "swp2",
+          "ifName": null
+        },
+        "status": {
+          "label": "Unknown",
+          "value": "unknown"
+        },
+        "speed": "?",
+        "displayName": "swp2(swp2)@sw-hardwarefree-plane3-leaf01"
+      }
+    },
+    {
+      "id": 48130,
+      "ifName": "",
+      "description": "eth7",
+      "present": 1,
+      "switchId": 1431,
+      "switchName": "gpu-hardwarefree-001",
+      "mclagSwitches": "",
+      "sgFlavor": null,
+      "srvRole": "generic",
+      "status": {
+        "label": "Unknown",
+        "value": "unknown"
+      },
+      "masterStatus": null,
+      "speed": "?",
+      "desiredSpeed": "auto",
+      "transceiver": null,
+      "mtu": 9216,
+      "lacp": "off",
+      "adminDown": "no",
+      "autoNeg": "none",
+      "duplex": "none",
+      "siteVlanRange": "1-4094",
+      "_port": "eth7",
+      "portIndex": 7,
+      "port": "eth7",
+      "slavePorts": [],
+      "extension": 0,
+      "parentPort": 0,
+      "breakout": "off",
+      "breakIndex": 0,
+      "linkTraining": "auto",
+      "fec": "auto",
+      "mclagId": null,
+      "mclagLinkId": null,
+      "switchPlatform": null,
+      "switchAddr": null,
+      "agg_slaves_label": null,
+      "in_agg_label": null,
+      "portReservationCount": 1,
+      "createdDate": 1789722762000,
+      "modifiedDate": 1789722762000,
+      "name": "eth7(eth7)@gpu-hardwarefree-001 (Admin)",
+      "shortName": "eth7@gpu-hardwarefree-001",
+      "info": {
+        "port": "eth7",
+        "ifName": null
+      },
+      "tenant": {
+        "id": 1,
+        "name": "Admin"
+      },
+      "site": {
+        "id": 19,
+        "name": "HardwareFree",
+        "vlanRange": "1-4094",
+        "vlanRangeStart": 1,
+        "vlanRangeEnd": 4094
+      },
+      "switch": {
+        "id": 1431,
+        "name": "gpu-hardwarefree-001",
+        "type": "server",
+        "platform": null,
+        "mainAddress": null,
+        "sgFlavor": null
+      },
+      "inUse": true,
+      "stateInHierarchy": {
+        "extensionsParent": 0,
+        "extended": 0,
+        "breakout": false,
+        "breakoutChild": false,
+        "lagMember": false,
+        "aggregated": false
+      },
+      "bgp": {
+        "state": null,
+        "prefix": null,
+        "time": null
+      },
+      "connectedTo": {
+        "portId": 49520,
+        "switchName": "sw-hardwarefree-plane4-leaf01",
+        "info": {
+          "port": "swp1",
+          "ifName": null
+        },
+        "status": {
+          "label": "Unknown",
+          "value": "unknown"
+        },
+        "speed": "?",
+        "displayName": "swp1(swp1)@sw-hardwarefree-plane4-leaf01"
+      }
+    },
+    {
+      "id": 48131,
+      "ifName": "",
+      "description": "eth8",
+      "present": 1,
+      "switchId": 1431,
+      "switchName": "gpu-hardwarefree-001",
+      "mclagSwitches": "",
+      "sgFlavor": null,
+      "srvRole": "generic",
+      "status": {
+        "label": "Unknown",
+        "value": "unknown"
+      },
+      "masterStatus": null,
+      "speed": "?",
+      "desiredSpeed": "auto",
+      "transceiver": null,
+      "mtu": 9216,
+      "lacp": "off",
+      "adminDown": "no",
+      "autoNeg": "none",
+      "duplex": "none",
+      "siteVlanRange": "1-4094",
+      "_port": "eth8",
+      "portIndex": 8,
+      "port": "eth8",
+      "slavePorts": [],
+      "extension": 0,
+      "parentPort": 0,
+      "breakout": "off",
+      "breakIndex": 0,
+      "linkTraining": "auto",
+      "fec": "auto",
+      "mclagId": null,
+      "mclagLinkId": null,
+      "switchPlatform": null,
+      "switchAddr": null,
+      "agg_slaves_label": null,
+      "in_agg_label": null,
+      "portReservationCount": 1,
+      "createdDate": 1789722762000,
+      "modifiedDate": 1789722762000,
+      "name": "eth8(eth8)@gpu-hardwarefree-001 (Admin)",
+      "shortName": "eth8@gpu-hardwarefree-001",
+      "info": {
+        "port": "eth8",
+        "ifName": null
+      },
+      "tenant": {
+        "id": 1,
+        "name": "Admin"
+      },
+      "site": {
+        "id": 19,
+        "name": "HardwareFree",
+        "vlanRange": "1-4094",
+        "vlanRangeStart": 1,
+        "vlanRangeEnd": 4094
+      },
+      "switch": {
+        "id": 1431,
+        "name": "gpu-hardwarefree-001",
+        "type": "server",
+        "platform": null,
+        "mainAddress": null,
+        "sgFlavor": null
+      },
+      "inUse": true,
+      "stateInHierarchy": {
+        "extensionsParent": 0,
+        "extended": 0,
+        "breakout": false,
+        "breakoutChild": false,
+        "lagMember": false,
+        "aggregated": false
+      },
+      "bgp": {
+        "state": null,
+        "prefix": null,
+        "time": null
+      },
+      "connectedTo": {
+        "portId": 49521,
+        "switchName": "sw-hardwarefree-plane4-leaf01",
+        "info": {
+          "port": "swp2",
+          "ifName": null
+        },
+        "status": {
+          "label": "Unknown",
+          "value": "unknown"
+        },
+        "speed": "?",
+        "displayName": "swp2(swp2)@sw-hardwarefree-plane4-leaf01"
+      }
+    },
+    {
+      "id": 48132,
+      "ifName": "",
+      "description": "eth9",
+      "present": 1,
+      "switchId": 1431,
+      "switchName": "gpu-hardwarefree-001",
+      "mclagSwitches": "",
+      "sgFlavor": null,
+      "srvRole": "generic",
+      "status": {
+        "label": "Unknown",
+        "value": "unknown"
+      },
+      "masterStatus": null,
+      "speed": "?",
+      "desiredSpeed": "auto",
+      "transceiver": null,
+      "mtu": 9216,
+      "lacp": "off",
+      "adminDown": "no",
+      "autoNeg": "none",
+      "duplex": "none",
+      "siteVlanRange": "1-4094",
+      "_port": "eth9",
+      "portIndex": 9,
+      "port": "eth9",
+      "slavePorts": [],
+      "extension": 0,
+      "parentPort": 0,
+      "breakout": "off",
+      "breakIndex": 0,
+      "linkTraining": "auto",
+      "fec": "auto",
+      "mclagId": null,
+      "mclagLinkId": null,
+      "switchPlatform": null,
+      "switchAddr": null,
+      "agg_slaves_label": null,
+      "in_agg_label": null,
+      "portReservationCount": 1,
+      "createdDate": 1789722762000,
+      "modifiedDate": 1789722762000,
+      "name": "eth9(eth9)@gpu-hardwarefree-001 (Admin)",
+      "shortName": "eth9@gpu-hardwarefree-001",
+      "info": {
+        "port": "eth9",
+        "ifName": null
+      },
+      "tenant": {
+        "id": 1,
+        "name": "Admin"
+      },
+      "site": {
+        "id": 19,
+        "name": "HardwareFree",
+        "vlanRange": "1-4094",
+        "vlanRangeStart": 1,
+        "vlanRangeEnd": 4094
+      },
+      "switch": {
+        "id": 1431,
+        "name": "gpu-hardwarefree-001",
+        "type": "server",
+        "platform": null,
+        "mainAddress": null,
+        "sgFlavor": null
+      },
+      "inUse": true,
+      "stateInHierarchy": {
+        "extensionsParent": 0,
+        "extended": 0,
+        "breakout": false,
+        "breakoutChild": false,
+        "lagMember": false,
+        "aggregated": false
+      },
+      "bgp": {
+        "state": null,
+        "prefix": null,
+        "time": null
+      },
+      "connectedTo": {
+        "portId": 48560,
+        "switchName": "sw-hardwarefree-frontend-leaf01",
+        "info": {
+          "port": "swp1",
+          "ifName": null
+        },
+        "status": {
+          "label": "Unknown",
+          "value": "unknown"
+        },
+        "speed": "?",
+        "displayName": "swp1(swp1)@sw-hardwarefree-frontend-leaf01"
+      }
+    },
+    {
+      "id": 48133,
+      "ifName": "",
+      "description": "eth10",
+      "present": 1,
+      "switchId": 1431,
+      "switchName": "gpu-hardwarefree-001",
+      "mclagSwitches": "",
+      "sgFlavor": null,
+      "srvRole": "generic",
+      "status": {
+        "label": "Unknown",
+        "value": "unknown"
+      },
+      "masterStatus": null,
+      "speed": "?",
+      "desiredSpeed": "auto",
+      "transceiver": null,
+      "mtu": 9216,
+      "lacp": "off",
+      "adminDown": "no",
+      "autoNeg": "none",
+      "duplex": "none",
+      "siteVlanRange": "1-4094",
+      "_port": "eth10",
+      "portIndex": 10,
+      "port": "eth10",
+      "slavePorts": [],
+      "extension": 0,
+      "parentPort": 0,
+      "breakout": "off",
+      "breakIndex": 0,
+      "linkTraining": "auto",
+      "fec": "auto",
+      "mclagId": null,
+      "mclagLinkId": null,
+      "switchPlatform": null,
+      "switchAddr": null,
+      "agg_slaves_label": null,
+      "in_agg_label": null,
+      "portReservationCount": 1,
+      "createdDate": 1789722762000,
+      "modifiedDate": 1789722762000,
+      "name": "eth10(eth10)@gpu-hardwarefree-001 (Admin)",
+      "shortName": "eth10@gpu-hardwarefree-001",
+      "info": {
+        "port": "eth10",
+        "ifName": null
+      },
+      "tenant": {
+        "id": 1,
+        "name": "Admin"
+      },
+      "site": {
+        "id": 19,
+        "name": "HardwareFree",
+        "vlanRange": "1-4094",
+        "vlanRangeStart": 1,
+        "vlanRangeEnd": 4094
+      },
+      "switch": {
+        "id": 1431,
+        "name": "gpu-hardwarefree-001",
+        "type": "server",
+        "platform": null,
+        "mainAddress": null,
+        "sgFlavor": null
+      },
+      "inUse": true,
+      "stateInHierarchy": {
+        "extensionsParent": 0,
+        "extended": 0,
+        "breakout": false,
+        "breakoutChild": false,
+        "lagMember": false,
+        "aggregated": false
+      },
+      "bgp": {
+        "state": null,
+        "prefix": null,
+        "time": null
+      },
+      "connectedTo": {
+        "portId": 48688,
+        "switchName": "sw-hardwarefree-frontend-leaf02",
+        "info": {
+          "port": "swp1",
+          "ifName": null
+        },
+        "status": {
+          "label": "Unknown",
+          "value": "unknown"
+        },
+        "speed": "?",
+        "displayName": "swp1(swp1)@sw-hardwarefree-frontend-leaf02"
+      }
+    },
+    {
+      "id": 48134,
+      "ifName": "",
+      "description": "eth11",
+      "present": 1,
+      "switchId": 1431,
+      "switchName": "gpu-hardwarefree-001",
+      "mclagSwitches": "",
+      "sgFlavor": null,
+      "srvRole": "generic",
+      "status": {
+        "label": "Unknown",
+        "value": "unknown"
+      },
+      "masterStatus": null,
+      "speed": "?",
+      "desiredSpeed": "auto",
+      "transceiver": null,
+      "mtu": 9216,
+      "lacp": "off",
+      "adminDown": "no",
+      "autoNeg": "none",
+      "duplex": "none",
+      "siteVlanRange": "1-4094",
+      "_port": "eth11",
+      "portIndex": 11,
+      "port": "eth11",
+      "slavePorts": [],
+      "extension": 0,
+      "parentPort": 0,
+      "breakout": "off",
+      "breakIndex": 0,
+      "linkTraining": "auto",
+      "fec": "auto",
+      "mclagId": null,
+      "mclagLinkId": null,
+      "switchPlatform": null,
+      "switchAddr": null,
+      "agg_slaves_label": null,
+      "in_agg_label": null,
+      "portReservationCount": 1,
+      "createdDate": 1789722762000,
+      "modifiedDate": 1789722762000,
+      "name": "eth11(eth11)@gpu-hardwarefree-001 (Admin)",
+      "shortName": "eth11@gpu-hardwarefree-001",
+      "info": {
+        "port": "eth11",
+        "ifName": null
+      },
+      "tenant": {
+        "id": 1,
+        "name": "Admin"
+      },
+      "site": {
+        "id": 19,
+        "name": "HardwareFree",
+        "vlanRange": "1-4094",
+        "vlanRangeStart": 1,
+        "vlanRangeEnd": 4094
+      },
+      "switch": {
+        "id": 1431,
+        "name": "gpu-hardwarefree-001",
+        "type": "server",
+        "platform": null,
+        "mainAddress": null,
+        "sgFlavor": null
+      },
+      "inUse": true,
+      "stateInHierarchy": {
+        "extensionsParent": 0,
+        "extended": 0,
+        "breakout": false,
+        "breakoutChild": false,
+        "lagMember": false,
+        "aggregated": false
+      },
+      "bgp": {
+        "state": null,
+        "prefix": null,
+        "time": null
+      },
+      "connectedTo": {
+        "portId": 48819,
+        "switchName": "sw-hardwarefree-oob-mgmt01",
+        "info": {
+          "port": "swp4",
+          "ifName": null
+        },
+        "status": {
+          "label": "Unknown",
+          "value": "unknown"
+        },
+        "speed": "?",
+        "displayName": "swp4(swp4)@sw-hardwarefree-oob-mgmt01"
+      }
+    },
+    {
+      "id": 47651,
+      "ifName": "",
+      "description": "eth1",
+      "present": 1,
+      "switchId": 1388,
+      "switchName": "gpu-hardwarefree-002",
+      "mclagSwitches": "",
+      "sgFlavor": null,
+      "srvRole": "generic",
+      "status": {
+        "label": "Unknown",
+        "value": "unknown"
+      },
+      "masterStatus": null,
+      "speed": "?",
+      "desiredSpeed": "auto",
+      "transceiver": null,
+      "mtu": 9216,
+      "lacp": "off",
+      "adminDown": "no",
+      "autoNeg": "none",
+      "duplex": "none",
+      "siteVlanRange": "1-4094",
+      "_port": "eth1",
+      "portIndex": 1,
+      "port": "eth1",
+      "slavePorts": [],
+      "extension": 0,
+      "parentPort": 0,
+      "breakout": "off",
+      "breakIndex": 0,
+      "linkTraining": "auto",
+      "fec": "auto",
+      "mclagId": null,
+      "mclagLinkId": null,
+      "switchPlatform": null,
+      "switchAddr": null,
+      "agg_slaves_label": null,
+      "in_agg_label": null,
+      "portReservationCount": 1,
+      "createdDate": 1789722762000,
+      "modifiedDate": 1789722762000,
+      "name": "eth1(eth1)@gpu-hardwarefree-002 (Admin)",
+      "shortName": "eth1@gpu-hardwarefree-002",
+      "info": {
+        "port": "eth1",
+        "ifName": null
+      },
+      "tenant": {
+        "id": 1,
+        "name": "Admin"
+      },
+      "site": {
+        "id": 19,
+        "name": "HardwareFree",
+        "vlanRange": "1-4094",
+        "vlanRangeStart": 1,
+        "vlanRangeEnd": 4094
+      },
+      "switch": {
+        "id": 1388,
+        "name": "gpu-hardwarefree-002",
+        "type": "server",
+        "platform": null,
+        "mainAddress": null,
+        "sgFlavor": null
+      },
+      "inUse": true,
+      "stateInHierarchy": {
+        "extensionsParent": 0,
+        "extended": 0,
+        "breakout": false,
+        "breakoutChild": false,
+        "lagMember": false,
+        "aggregated": false
+      },
+      "bgp": {
+        "state": null,
+        "prefix": null,
+        "time": null
+      },
+      "connectedTo": {
+        "portId": 49312,
+        "switchName": "sw-hardwarefree-plane1-leaf02",
+        "info": {
+          "port": "swp1",
+          "ifName": null
+        },
+        "status": {
+          "label": "Unknown",
+          "value": "unknown"
+        },
+        "speed": "?",
+        "displayName": "swp1(swp1)@sw-hardwarefree-plane1-leaf02"
+      }
+    },
+    {
+      "id": 47652,
+      "ifName": "",
+      "description": "eth2",
+      "present": 1,
+      "switchId": 1388,
+      "switchName": "gpu-hardwarefree-002",
+      "mclagSwitches": "",
+      "sgFlavor": null,
+      "srvRole": "generic",
+      "status": {
+        "label": "Unknown",
+        "value": "unknown"
+      },
+      "masterStatus": null,
+      "speed": "?",
+      "desiredSpeed": "auto",
+      "transceiver": null,
+      "mtu": 9216,
+      "lacp": "off",
+      "adminDown": "no",
+      "autoNeg": "none",
+      "duplex": "none",
+      "siteVlanRange": "1-4094",
+      "_port": "eth2",
+      "portIndex": 2,
+      "port": "eth2",
+      "slavePorts": [],
+      "extension": 0,
+      "parentPort": 0,
+      "breakout": "off",
+      "breakIndex": 0,
+      "linkTraining": "auto",
+      "fec": "auto",
+      "mclagId": null,
+      "mclagLinkId": null,
+      "switchPlatform": null,
+      "switchAddr": null,
+      "agg_slaves_label": null,
+      "in_agg_label": null,
+      "portReservationCount": 1,
+      "createdDate": 1789722762000,
+      "modifiedDate": 1789722762000,
+      "name": "eth2(eth2)@gpu-hardwarefree-002 (Admin)",
+      "shortName": "eth2@gpu-hardwarefree-002",
+      "info": {
+        "port": "eth2",
+        "ifName": null
+      },
+      "tenant": {
+        "id": 1,
+        "name": "Admin"
+      },
+      "site": {
+        "id": 19,
+        "name": "HardwareFree",
+        "vlanRange": "1-4094",
+        "vlanRangeStart": 1,
+        "vlanRangeEnd": 4094
+      },
+      "switch": {
+        "id": 1388,
+        "name": "gpu-hardwarefree-002",
+        "type": "server",
+        "platform": null,
+        "mainAddress": null,
+        "sgFlavor": null
+      },
+      "inUse": true,
+      "stateInHierarchy": {
+        "extensionsParent": 0,
+        "extended": 0,
+        "breakout": false,
+        "breakoutChild": false,
+        "lagMember": false,
+        "aggregated": false
+      },
+      "bgp": {
+        "state": null,
+        "prefix": null,
+        "time": null
+      },
+      "connectedTo": {
+        "portId": 49313,
+        "switchName": "sw-hardwarefree-plane1-leaf02",
+        "info": {
+          "port": "swp2",
+          "ifName": null
+        },
+        "status": {
+          "label": "Unknown",
+          "value": "unknown"
+        },
+        "speed": "?",
+        "displayName": "swp2(swp2)@sw-hardwarefree-plane1-leaf02"
+      }
+    },
+    {
+      "id": 47653,
+      "ifName": "",
+      "description": "eth3",
+      "present": 1,
+      "switchId": 1388,
+      "switchName": "gpu-hardwarefree-002",
+      "mclagSwitches": "",
+      "sgFlavor": null,
+      "srvRole": "generic",
+      "status": {
+        "label": "Unknown",
+        "value": "unknown"
+      },
+      "masterStatus": null,
+      "speed": "?",
+      "desiredSpeed": "auto",
+      "transceiver": null,
+      "mtu": 9216,
+      "lacp": "off",
+      "adminDown": "no",
+      "autoNeg": "none",
+      "duplex": "none",
+      "siteVlanRange": "1-4094",
+      "_port": "eth3",
+      "portIndex": 3,
+      "port": "eth3",
+      "slavePorts": [],
+      "extension": 0,
+      "parentPort": 0,
+      "breakout": "off",
+      "breakIndex": 0,
+      "linkTraining": "auto",
+      "fec": "auto",
+      "mclagId": null,
+      "mclagLinkId": null,
+      "switchPlatform": null,
+      "switchAddr": null,
+      "agg_slaves_label": null,
+      "in_agg_label": null,
+      "portReservationCount": 1,
+      "createdDate": 1789722762000,
+      "modifiedDate": 1789722762000,
+      "name": "eth3(eth3)@gpu-hardwarefree-002 (Admin)",
+      "shortName": "eth3@gpu-hardwarefree-002",
+      "info": {
+        "port": "eth3",
+        "ifName": null
+      },
+      "tenant": {
+        "id": 1,
+        "name": "Admin"
+      },
+      "site": {
+        "id": 19,
+        "name": "HardwareFree",
+        "vlanRange": "1-4094",
+        "vlanRangeStart": 1,
+        "vlanRangeEnd": 4094
+      },
+      "switch": {
+        "id": 1388,
+        "name": "gpu-hardwarefree-002",
+        "type": "server",
+        "platform": null,
+        "mainAddress": null,
+        "sgFlavor": null
+      },
+      "inUse": true,
+      "stateInHierarchy": {
+        "extensionsParent": 0,
+        "extended": 0,
+        "breakout": false,
+        "breakoutChild": false,
+        "lagMember": false,
+        "aggregated": false
+      },
+      "bgp": {
+        "state": null,
+        "prefix": null,
+        "time": null
+      },
+      "connectedTo": {
+        "portId": 48656,
+        "switchName": "sw-hardwarefree-plane2-leaf02",
+        "info": {
+          "port": "swp1",
+          "ifName": null
+        },
+        "status": {
+          "label": "Unknown",
+          "value": "unknown"
+        },
+        "speed": "?",
+        "displayName": "swp1(swp1)@sw-hardwarefree-plane2-leaf02"
+      }
+    },
+    {
+      "id": 47654,
+      "ifName": "",
+      "description": "eth4",
+      "present": 1,
+      "switchId": 1388,
+      "switchName": "gpu-hardwarefree-002",
+      "mclagSwitches": "",
+      "sgFlavor": null,
+      "srvRole": "generic",
+      "status": {
+        "label": "Unknown",
+        "value": "unknown"
+      },
+      "masterStatus": null,
+      "speed": "?",
+      "desiredSpeed": "auto",
+      "transceiver": null,
+      "mtu": 9216,
+      "lacp": "off",
+      "adminDown": "no",
+      "autoNeg": "none",
+      "duplex": "none",
+      "siteVlanRange": "1-4094",
+      "_port": "eth4",
+      "portIndex": 4,
+      "port": "eth4",
+      "slavePorts": [],
+      "extension": 0,
+      "parentPort": 0,
+      "breakout": "off",
+      "breakIndex": 0,
+      "linkTraining": "auto",
+      "fec": "auto",
+      "mclagId": null,
+      "mclagLinkId": null,
+      "switchPlatform": null,
+      "switchAddr": null,
+      "agg_slaves_label": null,
+      "in_agg_label": null,
+      "portReservationCount": 1,
+      "createdDate": 1789722762000,
+      "modifiedDate": 1789722762000,
+      "name": "eth4(eth4)@gpu-hardwarefree-002 (Admin)",
+      "shortName": "eth4@gpu-hardwarefree-002",
+      "info": {
+        "port": "eth4",
+        "ifName": null
+      },
+      "tenant": {
+        "id": 1,
+        "name": "Admin"
+      },
+      "site": {
+        "id": 19,
+        "name": "HardwareFree",
+        "vlanRange": "1-4094",
+        "vlanRangeStart": 1,
+        "vlanRangeEnd": 4094
+      },
+      "switch": {
+        "id": 1388,
+        "name": "gpu-hardwarefree-002",
+        "type": "server",
+        "platform": null,
+        "mainAddress": null,
+        "sgFlavor": null
+      },
+      "inUse": true,
+      "stateInHierarchy": {
+        "extensionsParent": 0,
+        "extended": 0,
+        "breakout": false,
+        "breakoutChild": false,
+        "lagMember": false,
+        "aggregated": false
+      },
+      "bgp": {
+        "state": null,
+        "prefix": null,
+        "time": null
+      },
+      "connectedTo": {
+        "portId": 48657,
+        "switchName": "sw-hardwarefree-plane2-leaf02",
+        "info": {
+          "port": "swp2",
+          "ifName": null
+        },
+        "status": {
+          "label": "Unknown",
+          "value": "unknown"
+        },
+        "speed": "?",
+        "displayName": "swp2(swp2)@sw-hardwarefree-plane2-leaf02"
+      }
+    },
+    {
+      "id": 47655,
+      "ifName": "",
+      "description": "eth5",
+      "present": 1,
+      "switchId": 1388,
+      "switchName": "gpu-hardwarefree-002",
+      "mclagSwitches": "",
+      "sgFlavor": null,
+      "srvRole": "generic",
+      "status": {
+        "label": "Unknown",
+        "value": "unknown"
+      },
+      "masterStatus": null,
+      "speed": "?",
+      "desiredSpeed": "auto",
+      "transceiver": null,
+      "mtu": 9216,
+      "lacp": "off",
+      "adminDown": "no",
+      "autoNeg": "none",
+      "duplex": "none",
+      "siteVlanRange": "1-4094",
+      "_port": "eth5",
+      "portIndex": 5,
+      "port": "eth5",
+      "slavePorts": [],
+      "extension": 0,
+      "parentPort": 0,
+      "breakout": "off",
+      "breakIndex": 0,
+      "linkTraining": "auto",
+      "fec": "auto",
+      "mclagId": null,
+      "mclagLinkId": null,
+      "switchPlatform": null,
+      "switchAddr": null,
+      "agg_slaves_label": null,
+      "in_agg_label": null,
+      "portReservationCount": 1,
+      "createdDate": 1789722762000,
+      "modifiedDate": 1789722762000,
+      "name": "eth5(eth5)@gpu-hardwarefree-002 (Admin)",
+      "shortName": "eth5@gpu-hardwarefree-002",
+      "info": {
+        "port": "eth5",
+        "ifName": null
+      },
+      "tenant": {
+        "id": 1,
+        "name": "Admin"
+      },
+      "site": {
+        "id": 19,
+        "name": "HardwareFree",
+        "vlanRange": "1-4094",
+        "vlanRangeStart": 1,
+        "vlanRangeEnd": 4094
+      },
+      "switch": {
+        "id": 1388,
+        "name": "gpu-hardwarefree-002",
+        "type": "server",
+        "platform": null,
+        "mainAddress": null,
+        "sgFlavor": null
+      },
+      "inUse": true,
+      "stateInHierarchy": {
+        "extensionsParent": 0,
+        "extended": 0,
+        "breakout": false,
+        "breakoutChild": false,
+        "lagMember": false,
+        "aggregated": false
+      },
+      "bgp": {
+        "state": null,
+        "prefix": null,
+        "time": null
+      },
+      "connectedTo": {
+        "portId": 48784,
+        "switchName": "sw-hardwarefree-plane3-leaf02",
+        "info": {
+          "port": "swp1",
+          "ifName": null
+        },
+        "status": {
+          "label": "Unknown",
+          "value": "unknown"
+        },
+        "speed": "?",
+        "displayName": "swp1(swp1)@sw-hardwarefree-plane3-leaf02"
+      }
+    },
+    {
+      "id": 47656,
+      "ifName": "",
+      "description": "eth6",
+      "present": 1,
+      "switchId": 1388,
+      "switchName": "gpu-hardwarefree-002",
+      "mclagSwitches": "",
+      "sgFlavor": null,
+      "srvRole": "generic",
+      "status": {
+        "label": "Unknown",
+        "value": "unknown"
+      },
+      "masterStatus": null,
+      "speed": "?",
+      "desiredSpeed": "auto",
+      "transceiver": null,
+      "mtu": 9216,
+      "lacp": "off",
+      "adminDown": "no",
+      "autoNeg": "none",
+      "duplex": "none",
+      "siteVlanRange": "1-4094",
+      "_port": "eth6",
+      "portIndex": 6,
+      "port": "eth6",
+      "slavePorts": [],
+      "extension": 0,
+      "parentPort": 0,
+      "breakout": "off",
+      "breakIndex": 0,
+      "linkTraining": "auto",
+      "fec": "auto",
+      "mclagId": null,
+      "mclagLinkId": null,
+      "switchPlatform": null,
+      "switchAddr": null,
+      "agg_slaves_label": null,
+      "in_agg_label": null,
+      "portReservationCount": 1,
+      "createdDate": 1789722762000,
+      "modifiedDate": 1789722762000,
+      "name": "eth6(eth6)@gpu-hardwarefree-002 (Admin)",
+      "shortName": "eth6@gpu-hardwarefree-002",
+      "info": {
+        "port": "eth6",
+        "ifName": null
+      },
+      "tenant": {
+        "id": 1,
+        "name": "Admin"
+      },
+      "site": {
+        "id": 19,
+        "name": "HardwareFree",
+        "vlanRange": "1-4094",
+        "vlanRangeStart": 1,
+        "vlanRangeEnd": 4094
+      },
+      "switch": {
+        "id": 1388,
+        "name": "gpu-hardwarefree-002",
+        "type": "server",
+        "platform": null,
+        "mainAddress": null,
+        "sgFlavor": null
+      },
+      "inUse": true,
+      "stateInHierarchy": {
+        "extensionsParent": 0,
+        "extended": 0,
+        "breakout": false,
+        "breakoutChild": false,
+        "lagMember": false,
+        "aggregated": false
+      },
+      "bgp": {
+        "state": null,
+        "prefix": null,
+        "time": null
+      },
+      "connectedTo": {
+        "portId": 48785,
+        "switchName": "sw-hardwarefree-plane3-leaf02",
+        "info": {
+          "port": "swp2",
+          "ifName": null
+        },
+        "status": {
+          "label": "Unknown",
+          "value": "unknown"
+        },
+        "speed": "?",
+        "displayName": "swp2(swp2)@sw-hardwarefree-plane3-leaf02"
+      }
+    },
+    {
+      "id": 47657,
+      "ifName": "",
+      "description": "eth7",
+      "present": 1,
+      "switchId": 1388,
+      "switchName": "gpu-hardwarefree-002",
+      "mclagSwitches": "",
+      "sgFlavor": null,
+      "srvRole": "generic",
+      "status": {
+        "label": "Unknown",
+        "value": "unknown"
+      },
+      "masterStatus": null,
+      "speed": "?",
+      "desiredSpeed": "auto",
+      "transceiver": null,
+      "mtu": 9216,
+      "lacp": "off",
+      "adminDown": "no",
+      "autoNeg": "none",
+      "duplex": "none",
+      "siteVlanRange": "1-4094",
+      "_port": "eth7",
+      "portIndex": 7,
+      "port": "eth7",
+      "slavePorts": [],
+      "extension": 0,
+      "parentPort": 0,
+      "breakout": "off",
+      "breakIndex": 0,
+      "linkTraining": "auto",
+      "fec": "auto",
+      "mclagId": null,
+      "mclagLinkId": null,
+      "switchPlatform": null,
+      "switchAddr": null,
+      "agg_slaves_label": null,
+      "in_agg_label": null,
+      "portReservationCount": 1,
+      "createdDate": 1789722762000,
+      "modifiedDate": 1789722762000,
+      "name": "eth7(eth7)@gpu-hardwarefree-002 (Admin)",
+      "shortName": "eth7@gpu-hardwarefree-002",
+      "info": {
+        "port": "eth7",
+        "ifName": null
+      },
+      "tenant": {
+        "id": 1,
+        "name": "Admin"
+      },
+      "site": {
+        "id": 19,
+        "name": "HardwareFree",
+        "vlanRange": "1-4094",
+        "vlanRangeStart": 1,
+        "vlanRangeEnd": 4094
+      },
+      "switch": {
+        "id": 1388,
+        "name": "gpu-hardwarefree-002",
+        "type": "server",
+        "platform": null,
+        "mainAddress": null,
+        "sgFlavor": null
+      },
+      "inUse": true,
+      "stateInHierarchy": {
+        "extensionsParent": 0,
+        "extended": 0,
+        "breakout": false,
+        "breakoutChild": false,
+        "lagMember": false,
+        "aggregated": false
+      },
+      "bgp": {
+        "state": null,
+        "prefix": null,
+        "time": null
+      },
+      "connectedTo": {
+        "portId": 48528,
+        "switchName": "sw-hardwarefree-plane4-leaf02",
+        "info": {
+          "port": "swp1",
+          "ifName": null
+        },
+        "status": {
+          "label": "Unknown",
+          "value": "unknown"
+        },
+        "speed": "?",
+        "displayName": "swp1(swp1)@sw-hardwarefree-plane4-leaf02"
+      }
+    },
+    {
+      "id": 47658,
+      "ifName": "",
+      "description": "eth8",
+      "present": 1,
+      "switchId": 1388,
+      "switchName": "gpu-hardwarefree-002",
+      "mclagSwitches": "",
+      "sgFlavor": null,
+      "srvRole": "generic",
+      "status": {
+        "label": "Unknown",
+        "value": "unknown"
+      },
+      "masterStatus": null,
+      "speed": "?",
+      "desiredSpeed": "auto",
+      "transceiver": null,
+      "mtu": 9216,
+      "lacp": "off",
+      "adminDown": "no",
+      "autoNeg": "none",
+      "duplex": "none",
+      "siteVlanRange": "1-4094",
+      "_port": "eth8",
+      "portIndex": 8,
+      "port": "eth8",
+      "slavePorts": [],
+      "extension": 0,
+      "parentPort": 0,
+      "breakout": "off",
+      "breakIndex": 0,
+      "linkTraining": "auto",
+      "fec": "auto",
+      "mclagId": null,
+      "mclagLinkId": null,
+      "switchPlatform": null,
+      "switchAddr": null,
+      "agg_slaves_label": null,
+      "in_agg_label": null,
+      "portReservationCount": 1,
+      "createdDate": 1789722762000,
+      "modifiedDate": 1789722762000,
+      "name": "eth8(eth8)@gpu-hardwarefree-002 (Admin)",
+      "shortName": "eth8@gpu-hardwarefree-002",
+      "info": {
+        "port": "eth8",
+        "ifName": null
+      },
+      "tenant": {
+        "id": 1,
+        "name": "Admin"
+      },
+      "site": {
+        "id": 19,
+        "name": "HardwareFree",
+        "vlanRange": "1-4094",
+        "vlanRangeStart": 1,
+        "vlanRangeEnd": 4094
+      },
+      "switch": {
+        "id": 1388,
+        "name": "gpu-hardwarefree-002",
+        "type": "server",
+        "platform": null,
+        "mainAddress": null,
+        "sgFlavor": null
+      },
+      "inUse": true,
+      "stateInHierarchy": {
+        "extensionsParent": 0,
+        "extended": 0,
+        "breakout": false,
+        "breakoutChild": false,
+        "lagMember": false,
+        "aggregated": false
+      },
+      "bgp": {
+        "state": null,
+        "prefix": null,
+        "time": null
+      },
+      "connectedTo": {
+        "portId": 48529,
+        "switchName": "sw-hardwarefree-plane4-leaf02",
+        "info": {
+          "port": "swp2",
+          "ifName": null
+        },
+        "status": {
+          "label": "Unknown",
+          "value": "unknown"
+        },
+        "speed": "?",
+        "displayName": "swp2(swp2)@sw-hardwarefree-plane4-leaf02"
+      }
+    },
+    {
+      "id": 47659,
+      "ifName": "",
+      "description": "eth9",
+      "present": 1,
+      "switchId": 1388,
+      "switchName": "gpu-hardwarefree-002",
+      "mclagSwitches": "",
+      "sgFlavor": null,
+      "srvRole": "generic",
+      "status": {
+        "label": "Unknown",
+        "value": "unknown"
+      },
+      "masterStatus": null,
+      "speed": "?",
+      "desiredSpeed": "auto",
+      "transceiver": null,
+      "mtu": 9216,
+      "lacp": "off",
+      "adminDown": "no",
+      "autoNeg": "none",
+      "duplex": "none",
+      "siteVlanRange": "1-4094",
+      "_port": "eth9",
+      "portIndex": 9,
+      "port": "eth9",
+      "slavePorts": [],
+      "extension": 0,
+      "parentPort": 0,
+      "breakout": "off",
+      "breakIndex": 0,
+      "linkTraining": "auto",
+      "fec": "auto",
+      "mclagId": null,
+      "mclagLinkId": null,
+      "switchPlatform": null,
+      "switchAddr": null,
+      "agg_slaves_label": null,
+      "in_agg_label": null,
+      "portReservationCount": 1,
+      "createdDate": 1789722762000,
+      "modifiedDate": 1789722762000,
+      "name": "eth9(eth9)@gpu-hardwarefree-002 (Admin)",
+      "shortName": "eth9@gpu-hardwarefree-002",
+      "info": {
+        "port": "eth9",
+        "ifName": null
+      },
+      "tenant": {
+        "id": 1,
+        "name": "Admin"
+      },
+      "site": {
+        "id": 19,
+        "name": "HardwareFree",
+        "vlanRange": "1-4094",
+        "vlanRangeStart": 1,
+        "vlanRangeEnd": 4094
+      },
+      "switch": {
+        "id": 1388,
+        "name": "gpu-hardwarefree-002",
+        "type": "server",
+        "platform": null,
+        "mainAddress": null,
+        "sgFlavor": null
+      },
+      "inUse": true,
+      "stateInHierarchy": {
+        "extensionsParent": 0,
+        "extended": 0,
+        "breakout": false,
+        "breakoutChild": false,
+        "lagMember": false,
+        "aggregated": false
+      },
+      "bgp": {
+        "state": null,
+        "prefix": null,
+        "time": null
+      },
+      "connectedTo": {
+        "portId": 48432,
+        "switchName": "sw-hardwarefree-frontend-leaf03",
+        "info": {
+          "port": "swp1",
+          "ifName": null
+        },
+        "status": {
+          "label": "Unknown",
+          "value": "unknown"
+        },
+        "speed": "?",
+        "displayName": "swp1(swp1)@sw-hardwarefree-frontend-leaf03"
+      }
+    }
+  ],
+  "errors": null,
+  "message": "",
+  "isSuccess": true,
+  "meta": {
+    "apiVersion": "v2",
+    "statusCode": 200,
+    "totalDocs": 7110
+  }
+}

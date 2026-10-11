@@ -1,0 +1,378 @@
+[
+  {
+    "tag": "v2",
+    "endpoint": "/api/v2/sites",
+    "status": 200,
+    "isSuccess": true,
+    "count": 2,
+    "sample_snippet": "{'data': [{'id': 8, 'name': 'Datacenter-A', 'publicAsn': 655001, 'rohAsn': 0, 'vmAsn': 0, 'rohProfile': {'id': None, 'na"
+  },
+  {
+    "tag": "v1",
+    "endpoint": "/api/sites",
+    "status": 200,
+    "isSuccess": true,
+    "count": 2,
+    "sample_snippet": "{'data': [{'id': 8, 'name': 'Datacenter-A', 'asn': 655001, 'physical_instance_asn': 0, 'virtual_instance_asn': 0, 'vpn':"
+  },
+  {
+    "tag": "v2",
+    "endpoint": "/api/v2/topology/path",
+    "status": 400,
+    "isSuccess": false,
+    "count": 0,
+    "sample_snippet": ""
+  },
+  {
+    "tag": "v1",
+    "endpoint": "/api/tenants",
+    "status": 200,
+    "isSuccess": true,
+    "count": 4,
+    "sample_snippet": "{'data': [{'id': 1, 'tenant_id': 1, 'name': 'Admin', 'description': '', 'create_date': 1547545054000, 'modified_date': 1"
+  },
+  {
+    "tag": "v2",
+    "endpoint": "/api/v2/tenant",
+    "status": 404,
+    "isSuccess": false,
+    "count": 0,
+    "sample_snippet": ""
+  },
+  {
+    "tag": "v2",
+    "endpoint": "/api/v2/tenants",
+    "status": 404,
+    "isSuccess": false,
+    "count": 0,
+    "sample_snippet": ""
+  },
+  {
+    "tag": "v2",
+    "endpoint": "/api/v2/vpc",
+    "status": 200,
+    "isSuccess": true,
+    "count": 11,
+    "sample_snippet": "{'data': [{'id': 1, 'name': 'Default', 'adminTenant': {'id': 1, 'name': 'Admin'}, 'guestTenant': [{'id': 2, 'name': 'Dev"
+  },
+  {
+    "tag": "v2",
+    "endpoint": "/api/v2/vpc-peering",
+    "status": 200,
+    "isSuccess": true,
+    "count": 1,
+    "sample_snippet": "{'data': [{'id': 2, 'name': 'Test VPC Peering', 'vpcA': {'id': 85, 'name': 'ACME', 'prefixListInboundIPv4': 'permit 0.0."
+  },
+  {
+    "tag": "unprefixed",
+    "endpoint": "/vpc-peering",
+    "status": 200,
+    "isSuccess": false,
+    "count": 0,
+    "sample_snippet": "<!DOCTYPE html>\n<html lang=\"en\" class=\"theme-light\">\n\n<head>\n    <title>Netris Dashboard</title>\n\n  "
+  },
+  {
+    "tag": "v2",
+    "endpoint": "/api/v2/hw",
+    "status": 200,
+    "isSuccess": true,
+    "count": 211,
+    "sample_snippet": "{'data': [{'id': 1431, 'name': 'gpu-hardwarefree-001', 'description': 'NVIDIA HGX H100/H200/B200 (Spectrum-X) Node 001 ("
+  },
+  {
+    "tag": "v2",
+    "endpoint": "/api/v2/hw/switch",
+    "status": 200,
+    "isSuccess": true,
+    "count": 0,
+    "sample_snippet": "{'data': {}, 'errors': None, 'message': '', 'isSuccess': True, 'meta': {'apiVersion': 'v2', 'statusCode': 200}}"
+  },
+  {
+    "tag": "v2",
+    "endpoint": "/api/v2/hw/softgate",
+    "status": 200,
+    "isSuccess": true,
+    "count": 0,
+    "sample_snippet": "{'data': {}, 'errors': None, 'message': '', 'isSuccess': True, 'meta': {'apiVersion': 'v2', 'statusCode': 200}}"
+  },
+  {
+    "tag": "v2",
+    "endpoint": "/api/v2/hw/controller",
+    "status": 200,
+    "isSuccess": true,
+    "count": 0,
+    "sample_snippet": "{'data': {}, 'errors': None, 'message': '', 'isSuccess': True, 'meta': {'apiVersion': 'v2', 'statusCode': 200}}"
+  },
+  {
+    "tag": "v2",
+    "endpoint": "/api/v2/hw/profiles",
+    "status": 200,
+    "isSuccess": true,
+    "count": 8,
+    "sample_snippet": "{'data': [{'id': 11, 'name': 'East-West', 'description': 'Inventory Profile for East-West Network', 'ipv4_ssh': '0.0.0.0"
+  },
+  {
+    "tag": "v2",
+    "endpoint": "/api/v2/hw/nos",
+    "status": 200,
+    "isSuccess": true,
+    "count": 4,
+    "sample_snippet": "{'data': [{'id': 1, 'name': 'Arista EOS', 'tag': 'arista_eos'}, {'id': 2, 'name': 'Cumulus NVUE', 'tag': 'cumulus_nvue'}"
+  },
+  {
+    "tag": "v2",
+    "endpoint": "/api/v2/hw/ports",
+    "status": 200,
+    "isSuccess": true,
+    "count": 1598,
+    "sample_snippet": "{'data': [{'id': 25540, 'port': 'eth12', 'ifName': None, 'name': 'eth12(eth12)@hgx-pod00-su0-h00 (Admin)', 'label': 'eth"
+  },
+  {
+    "tag": "v1",
+    "endpoint": "/api/inventoryProfiles",
+    "status": 200,
+    "isSuccess": true,
+    "count": 8,
+    "sample_snippet": "{'data': [{'id': 11, 'name': 'East-West', 'description': 'Inventory Profile for East-West Network', 'ipv4_ssh': '0.0.0.0"
+  },
+  {
+    "tag": "v1",
+    "endpoint": "/api/dashboard/hw",
+    "status": 200,
+    "isSuccess": true,
+    "count": 50,
+    "sample_snippet": "{'data': [{'id': 517, 'name': 'leaf-pod00-su0-r0', 'healthMonitoring': {'check_name': 'health_monitoring', 'port_status'"
+  },
+  {
+    "tag": "v2",
+    "endpoint": "/api/v2/link",
+    "status": 200,
+    "isSuccess": true,
+    "count": 2244,
+    "sample_snippet": "{'data': [{'id': 1143903894, 'local': {'id': 22301, 'port': 'swp1s0', 'name': 'swp1s0@leaf-pod00-su0-r0', 'ipv4': '172.1"
+  },
+  {
+    "tag": "v2",
+    "endpoint": "/api/v2/ports",
+    "status": 200,
+    "isSuccess": true,
+    "count": 7110,
+    "sample_snippet": "{'data': [{'id': 48124, 'ifName': '', 'description': 'eth1', 'present': 1, 'switchId': 1431, 'switchName': 'gpu-hardware"
+  },
+  {
+    "tag": "v2",
+    "endpoint": "/api/v2/vnet",
+    "status": 200,
+    "isSuccess": true,
+    "count": 19,
+    "sample_snippet": "{'data': [{'id': 1112, 'name': 'vnet-hardwarefree-oob', 'state': 'active', 'provisioning': True, 'l3vpn': False, 'custom"
+  },
+  {
+    "tag": "v2",
+    "endpoint": "/api/v2/v-net",
+    "status": 404,
+    "isSuccess": false,
+    "count": 0,
+    "sample_snippet": ""
+  },
+  {
+    "tag": "v2",
+    "endpoint": "/api/v2/vnet/unmanaged",
+    "status": 500,
+    "isSuccess": false,
+    "count": 0,
+    "sample_snippet": ""
+  },
+  {
+    "tag": "v2",
+    "endpoint": "/api/v2/ipam",
+    "status": 200,
+    "isSuccess": true,
+    "count": 11,
+    "sample_snippet": "{'data': [{'id': 72, 'name': 'Public L4LB Allocation', 'description': '', 'prefix': '192.240.193.172/30', 'readonly': 'n"
+  },
+  {
+    "tag": "v2",
+    "endpoint": "/api/v2/ipam/allocation",
+    "status": 404,
+    "isSuccess": false,
+    "count": 0,
+    "sample_snippet": ""
+  },
+  {
+    "tag": "v2",
+    "endpoint": "/api/v2/ipam/subnet",
+    "status": 404,
+    "isSuccess": false,
+    "count": 0,
+    "sample_snippet": ""
+  },
+  {
+    "tag": "v2",
+    "endpoint": "/api/v2/ebgp",
+    "status": 200,
+    "isSuccess": true,
+    "count": 4,
+    "sample_snippet": "{'data': [{'id': 13, 'name': 'upstream1', 'handover_vlan': 4094, 'description': '', 'neighbor_as': 65401, 'local_ip': '1"
+  },
+  {
+    "tag": "v2",
+    "endpoint": "/api/v2/ebgp/routemaps",
+    "status": 200,
+    "isSuccess": true,
+    "count": 0,
+    "sample_snippet": "{'data': [], 'statusCode': 200, 'status': 1, 'error': 0, 'message': '', 'errors': None, 'isSuccess': True, 'meta': {'api"
+  },
+  {
+    "tag": "v1",
+    "endpoint": "/api/ebgpobjects",
+    "status": 200,
+    "isSuccess": true,
+    "count": 0,
+    "sample_snippet": "{'data': [], 'statusCode': 200, 'status': 1, 'error': 0, 'message': '', 'errors': None, 'isSuccess': True, 'meta': {'api"
+  },
+  {
+    "tag": "v1",
+    "endpoint": "/api/ebgproutemaps",
+    "status": 200,
+    "isSuccess": true,
+    "count": 0,
+    "sample_snippet": "{'data': [], 'statusCode': 200, 'status': 1, 'error': 0, 'message': '', 'errors': None, 'isSuccess': True, 'meta': {'api"
+  },
+  {
+    "tag": "v1",
+    "endpoint": "/api/acl",
+    "status": 200,
+    "isSuccess": true,
+    "count": 0,
+    "sample_snippet": "{'data': [], 'statusCode': 200, 'status': 1, 'error': 0, 'message': '', 'errors': None, 'isSuccess': True, 'meta': {'api"
+  },
+  {
+    "tag": "v2",
+    "endpoint": "/api/v2/acl",
+    "status": 404,
+    "isSuccess": false,
+    "count": 0,
+    "sample_snippet": ""
+  },
+  {
+    "tag": "v1",
+    "endpoint": "/api/routes",
+    "status": 200,
+    "isSuccess": true,
+    "count": 0,
+    "sample_snippet": "{'data': [], 'statusCode': 200, 'status': 1, 'error': 0, 'message': '', 'errors': None, 'isSuccess': True, 'meta': {'api"
+  },
+  {
+    "tag": "v2",
+    "endpoint": "/api/v2/static-route",
+    "status": 404,
+    "isSuccess": false,
+    "count": 0,
+    "sample_snippet": ""
+  },
+  {
+    "tag": "v2",
+    "endpoint": "/api/v2/nat",
+    "status": 200,
+    "isSuccess": true,
+    "count": 1,
+    "sample_snippet": "{'data': [{'id': 16, 'name': 'Test', 'state': {'label': 'Enabled', 'value': 'enabled', 'status': 'success'}, 'action': {"
+  },
+  {
+    "tag": "v2",
+    "endpoint": "/api/v2/l4lb",
+    "status": 200,
+    "isSuccess": true,
+    "count": 0,
+    "sample_snippet": "{'data': [], 'errors': None, 'message': '', 'isSuccess': True, 'meta': {'apiVersion': 'v1', 'statusCode': 200}}"
+  },
+  {
+    "tag": "v2",
+    "endpoint": "/api/v2/dashboard/widgets",
+    "status": 200,
+    "isSuccess": true,
+    "count": 6,
+    "sample_snippet": "{'data': {'agentHeartbeats': {'ok': 0, 'critical': 0}, 'hardwareHealth': {'critical': 0, 'ok': 0, 'warning': 0}, 'hardwa"
+  },
+  {
+    "tag": "v2",
+    "endpoint": "/api/v2/dashboard/agent-heartbeats",
+    "status": 200,
+    "isSuccess": true,
+    "count": 50,
+    "sample_snippet": "{'data': [{'id': 517, 'name': 'leaf-pod00-su0-r0', 'healthMonitoring': {'check_name': 'health_monitoring', 'port_status'"
+  },
+  {
+    "tag": "v2",
+    "endpoint": "/api/v2/dashboard/hardware-health",
+    "status": 200,
+    "isSuccess": true,
+    "count": 22,
+    "sample_snippet": "{'data': [{'id': 523, 'name': 'spine-3-pod00', 'site_id': 8, 'site_name': 'Datacenter-A', 'checks': [{'_id': '10.253.128"
+  },
+  {
+    "tag": "v1",
+    "endpoint": "/api/dashboard/totalcounts",
+    "status": 200,
+    "isSuccess": true,
+    "count": 10,
+    "sample_snippet": "{'data': {'switch': 0, 'softgate': 0, 'server': 0, 'interface': 0, 'link': 0, 'site': 2, 'vpc': 11, 'serverCluster': 0, "
+  },
+  {
+    "tag": "v1",
+    "endpoint": "/api/dashboard/hardwarealarms",
+    "status": 200,
+    "isSuccess": true,
+    "count": 0,
+    "sample_snippet": "{'data': [], 'errors': None, 'message': '', 'isSuccess': True, 'meta': {'apiVersion': 'v1', 'statusCode': 200, 'totalDoc"
+  },
+  {
+    "tag": "v1",
+    "endpoint": "/api/apilogs",
+    "status": 500,
+    "isSuccess": false,
+    "count": 0,
+    "sample_snippet": ""
+  },
+  {
+    "tag": "v1",
+    "endpoint": "/api/eventlogs",
+    "status": 500,
+    "isSuccess": false,
+    "count": 0,
+    "sample_snippet": ""
+  },
+  {
+    "tag": "v1",
+    "endpoint": "/api/lookingglass/peersList",
+    "status": 200,
+    "isSuccess": true,
+    "count": 4,
+    "sample_snippet": "{'data': [{'id': 13, 'vpc_id': 1, 'name': 'upstream1', 'handover_vlan': 4094, 'description': '', 'neighbor_as': 65401, '"
+  },
+  {
+    "tag": "v1",
+    "endpoint": "/api/graphboards",
+    "status": 200,
+    "isSuccess": true,
+    "count": 2,
+    "sample_snippet": "{'data': {'dashboards': [{'tenant_id': 1, 'id': 16, 'name': 'Datacenter-A Demo1', 'data': '[{\"mUUID\":\"_irlo5miwj\",\"mTime"
+  },
+  {
+    "tag": "v2",
+    "endpoint": "/api/v2/dhcp-option-set",
+    "status": 200,
+    "isSuccess": true,
+    "count": 1,
+    "sample_snippet": "{'data': [{'id': 1, 'name': 'Default', 'description': 'System generated', 'isDefault': True, 'domainSearch': 'netris.loc"
+  },
+  {
+    "tag": "v2",
+    "endpoint": "/api/v2/license",
+    "status": 200,
+    "isSuccess": true,
+    "count": 1,
+    "sample_snippet": "{'data': {'key': '----BEGIN NETRIS LICENSE KEY----\\neyJsaWNlbnNlVHlwZSI6IkVudGVycHJpc2UiLCJjbGllbnROYW1lIjoiTmV0cmlzIiwi"
+  }
+]

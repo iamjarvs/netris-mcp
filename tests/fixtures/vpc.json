@@ -1,0 +1,198 @@
+{
+  "data": [
+    {
+      "id": 1,
+      "name": "Default",
+      "adminTenant": {
+        "id": 1,
+        "name": "Admin"
+      },
+      "guestTenant": [
+        {
+          "id": 3,
+          "name": "DemoTenant-Alpha"
+        },
+        {
+          "id": 4,
+          "name": "DemoTenant-Beta"
+        },
+        {
+          "id": 2,
+          "name": "DevOps"
+        }
+      ],
+      "tags": [],
+      "vni": 4,
+      "createdDate": 1788289245000,
+      "modifiedDate": 1791384558000,
+      "isDefault": true,
+      "isSystem": true
+    },
+    {
+      "id": 31,
+      "name": "Alpha-Workload-660663",
+      "adminTenant": {
+        "id": 1,
+        "name": "Admin"
+      },
+      "guestTenant": [],
+      "tags": [],
+      "vni": 7,
+      "createdDate": 1789381069000,
+      "modifiedDate": 1789381069000,
+      "isDefault": false,
+      "isSystem": false
+    },
+    {
+      "id": 78,
+      "name": "hardwarefree-storage-vpc",
+      "adminTenant": {
+        "id": 1,
+        "name": "Admin"
+      },
+      "guestTenant": [],
+      "tags": [],
+      "vni": 18,
+      "createdDate": 1789722761000,
+      "modifiedDate": 1789722761000,
+      "isDefault": false,
+      "isSystem": false
+    },
+    {
+      "id": 79,
+      "name": "hardwarefree-inband-mgmt",
+      "adminTenant": {
+        "id": 1,
+        "name": "Admin"
+      },
+      "guestTenant": [],
+      "tags": [],
+      "vni": 19,
+      "createdDate": 1789722761000,
+      "modifiedDate": 1789722761000,
+      "isDefault": false,
+      "isSystem": false
+    },
+    {
+      "id": 80,
+      "name": "hardwarefree-oob-mgmt",
+      "adminTenant": {
+        "id": 1,
+        "name": "Admin"
+      },
+      "guestTenant": [],
+      "tags": [],
+      "vni": 20,
+      "createdDate": 1789722761000,
+      "modifiedDate": 1789722761000,
+      "isDefault": false,
+      "isSystem": false
+    },
+    {
+      "id": 85,
+      "name": "ACME",
+      "adminTenant": {
+        "id": 1,
+        "name": "Admin"
+      },
+      "guestTenant": [],
+      "tags": [],
+      "vni": 15,
+      "createdDate": 1789996866000,
+      "modifiedDate": 1789996866000,
+      "isDefault": false,
+      "isSystem": false
+    },
+    {
+      "id": 103,
+      "name": "TenantTest",
+      "adminTenant": {
+        "id": 1,
+        "name": "Admin"
+      },
+      "guestTenant": [
+        {
+          "id": 4,
+          "name": "DemoTenant-Beta"
+        },
+        {
+          "id": 3,
+          "name": "DemoTenant-Alpha"
+        }
+      ],
+      "tags": [],
+      "vni": 51,
+      "createdDate": 1790202399000,
+      "modifiedDate": 1790202418000,
+      "isDefault": false,
+      "isSystem": false
+    },
+    {
+      "id": 105,
+      "name": "EMCA",
+      "adminTenant": {
+        "id": 1,
+        "name": "Admin"
+      },
+      "guestTenant": [],
+      "tags": [],
+      "vni": 28,
+      "createdDate": 1790257065000,
+      "modifiedDate": 1790257065000,
+      "isDefault": false,
+      "isSystem": false
+    },
+    {
+      "id": 107,
+      "name": "Test",
+      "adminTenant": {
+        "id": 1,
+        "name": "Admin"
+      },
+      "guestTenant": [],
+      "tags": [],
+      "vni": 29,
+      "createdDate": 1791291309000,
+      "modifiedDate": 1791291309000,
+      "isDefault": false,
+      "isSystem": false
+    },
+    {
+      "id": 108,
+      "name": "Rafay",
+      "adminTenant": {
+        "id": 1,
+        "name": "Admin"
+      },
+      "guestTenant": [],
+      "tags": [],
+      "vni": 47,
+      "createdDate": 1791362251000,
+      "modifiedDate": 1791362251000,
+      "isDefault": false,
+      "isSystem": false
+    },
+    {
+      "id": 109,
+      "name": "Nokia",
+      "adminTenant": {
+        "id": 1,
+        "name": "Admin"
+      },
+      "guestTenant": [],
+      "tags": [],
+      "vni": 55,
+      "createdDate": 1791378727000,
+      "modifiedDate": 1791378727000,
+      "isDefault": false,
+      "isSystem": false
+    }
+  ],
+  "errors": null,
+  "message": "",
+  "isSuccess": true,
+  "meta": {
+    "apiVersion": "v2",
+    "statusCode": 200
+  }
+}

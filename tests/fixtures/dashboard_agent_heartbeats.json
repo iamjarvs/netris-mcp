@@ -1,0 +1,266 @@
+{
+  "data": [
+    {
+      "id": 517,
+      "name": "leaf-pod00-su0-r0",
+      "healthMonitoring": {
+        "check_name": "health_monitoring",
+        "port_status": "ok",
+        "last_check_time": "2026-10-11T19:41:47.141Z"
+      },
+      "site": {
+        "id": 8,
+        "name": "Datacenter-A"
+      }
+    },
+    {
+      "id": 520,
+      "name": "leaf-pod00-su0-r1",
+      "healthMonitoring": {
+        "check_name": "health_monitoring",
+        "port_status": "ok",
+        "last_check_time": "2026-10-11T19:41:47.141Z"
+      },
+      "site": {
+        "id": 8,
+        "name": "Datacenter-A"
+      }
+    },
+    {
+      "id": 514,
+      "name": "leaf-pod00-su0-r2",
+      "healthMonitoring": {
+        "check_name": "health_monitoring",
+        "port_status": "ok",
+        "last_check_time": "2026-10-11T19:41:47.141Z"
+      },
+      "site": {
+        "id": 8,
+        "name": "Datacenter-A"
+      }
+    },
+    {
+      "id": 515,
+      "name": "leaf-pod00-su0-r3",
+      "healthMonitoring": {
+        "check_name": "health_monitoring",
+        "port_status": "ok",
+        "last_check_time": "2026-10-11T19:41:47.141Z"
+      },
+      "site": {
+        "id": 8,
+        "name": "Datacenter-A"
+      }
+    },
+    {
+      "id": 513,
+      "name": "leaf-pod00-su1-r0",
+      "healthMonitoring": {
+        "check_name": "health_monitoring",
+        "port_status": "ok",
+        "last_check_time": "2026-10-11T19:41:47.141Z"
+      },
+      "site": {
+        "id": 8,
+        "name": "Datacenter-A"
+      }
+    },
+    {
+      "id": 518,
+      "name": "leaf-pod00-su1-r1",
+      "healthMonitoring": {
+        "check_name": "health_monitoring",
+        "port_status": "ok",
+        "last_check_time": "2026-10-11T19:41:47.141Z"
+      },
+      "site": {
+        "id": 8,
+        "name": "Datacenter-A"
+      }
+    },
+    {
+      "id": 516,
+      "name": "leaf-pod00-su1-r2",
+      "healthMonitoring": {
+        "check_name": "health_monitoring",
+        "port_status": "ok",
+        "last_check_time": "2026-10-11T19:41:47.141Z"
+      },
+      "site": {
+        "id": 8,
+        "name": "Datacenter-A"
+      }
+    },
+    {
+      "id": 519,
+      "name": "leaf-pod00-su1-r3",
+      "healthMonitoring": {
+        "check_name": "health_monitoring",
+        "port_status": "ok",
+        "last_check_time": "2026-10-11T19:41:47.141Z"
+      },
+      "site": {
+        "id": 8,
+        "name": "Datacenter-A"
+      }
+    },
+    {
+      "id": 525,
+      "name": "ns-leaf-0",
+      "healthMonitoring": {
+        "check_name": "health_monitoring",
+        "port_status": "ok",
+        "last_check_time": "2026-10-11T19:41:47.141Z"
+      },
+      "site": {
+        "id": 8,
+        "name": "Datacenter-A"
+      }
+    },
+    {
+      "id": 526,
+      "name": "ns-leaf-1",
+      "healthMonitoring": {
+        "check_name": "health_monitoring",
+        "port_status": "ok",
+        "last_check_time": "2026-10-11T19:41:47.141Z"
+      },
+      "site": {
+        "id": 8,
+        "name": "Datacenter-A"
+      }
+    },
+    {
+      "id": 530,
+      "name": "ns-oob-leaf-0",
+      "healthMonitoring": {
+        "check_name": "health_monitoring",
+        "port_status": "ok",
+        "last_check_time": "2026-10-11T19:41:47.141Z"
+      },
+      "site": {
+        "id": 8,
+        "name": "Datacenter-A"
+      }
+    },
+    {
+      "id": 529,
+      "name": "ns-oob-leaf-1",
+      "healthMonitoring": {
+        "check_name": "health_monitoring",
+        "port_status": "ok",
+        "last_check_time": "2026-10-11T19:41:47.141Z"
+      },
+      "site": {
+        "id": 8,
+        "name": "Datacenter-A"
+      }
+    },
+    {
+      "id": 534,
+      "name": "ns-softgate-0",
+      "healthMonitoring": {
+        "check_name": "health_monitoring",
+        "port_status": "ok",
+        "last_check_time": "2026-10-11T19:41:47.141Z"
+      },
+      "site": {
+        "id": 8,
+        "name": "Datacenter-A"
+      }
+    },
+    {
+      "id": 531,
+      "name": "ns-softgate-1",
+      "healthMonitoring": {
+        "check_name": "health_monitoring",
+        "port_status": "ok",
+        "last_check_time": "2026-10-11T19:41:47.141Z"
+      },
+      "site": {
+        "id": 8,
+        "name": "Datacenter-A"
+      }
+    },
+    {
+      "id": 532,
+      "name": "ns-softgate-2",
+      "healthMonitoring": {
+        "check_name": "health_monitoring",
+        "port_status": "ok",
+        "last_check_time": "2026-10-11T19:41:47.141Z"
+      },
+      "site": {
+        "id": 8,
+        "name": "Datacenter-A"
+      }
+    },
+    {
+      "id": 533,
+      "name": "ns-softgate-3",
+      "healthMonitoring": {
+        "check_name": "health_monitoring",
+        "port_status": "ok",
+        "last_check_time": "2026-10-11T19:41:47.141Z"
+      },
+      "site": {
+        "id": 8,
+        "name": "Datacenter-A"
+      }
+    },
+    {
+      "id": 528,
+      "name": "ns-spine-0",
+      "healthMonitoring": {
+        "check_name": "health_monitoring",
+        "port_status": "ok",
+        "last_check_time": "2026-10-11T19:41:47.141Z"
+      },
+      "site": {
+        "id": 8,
+        "name": "Datacenter-A"
+      }
+    },
+    {
+      "id": 527,
+      "name": "ns-spine-1",
+      "healthMonitoring": {
+        "check_name": "health_monitoring",
+        "port_status": "ok",
+        "last_check_time": "2026-10-11T19:41:47.141Z"
+      },
+      "site": {
+        "id": 8,
+        "name": "Datacenter-A"
+      }
+    },
+    {
+      "id": 1445,
+      "name": "sg-hardwarefree-border-gw01",
+      "healthMonitoring": null,
+      "site": {
+        "id": 19,
+        "name": "HardwareFree"
+      }
+    },
+    {
+      "id": 1446,
+      "name": "sg-hardwarefree-border-gw02",
+      "healthMonitoring": null,
+      "site": {
+        "id": 19,
+        "name": "HardwareFree"
+      }
+    }
+  ],
+  "errors": null,
+  "message": "",
+  "isSuccess": true,
+  "meta": {
+    "apiVersion": "v2",
+    "statusCode": 200,
+    "totalDocs": 76,
+    "page": 1,
+    "limit": 50
+  }
+}

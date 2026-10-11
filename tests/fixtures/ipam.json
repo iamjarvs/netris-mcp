@@ -1,0 +1,831 @@
+{
+  "data": [
+    {
+      "id": 72,
+      "name": "Public L4LB Allocation",
+      "description": "",
+      "prefix": "192.240.193.172/30",
+      "readonly": "no",
+      "ipFamily": "ipv4",
+      "type": "allocation",
+      "vpc": {
+        "id": 1,
+        "name": "Default"
+      },
+      "tenant": {
+        "id": 1,
+        "name": "Admin"
+      },
+      "subnet": {
+        "prefix": "192.240.193.172",
+        "length": 30
+      },
+      "children": [
+        {
+          "id": 88,
+          "parentID": 0,
+          "vpc": {
+            "id": 1,
+            "name": "Default",
+            "isDefault": true,
+            "isSystem": true
+          },
+          "allocationID": 72,
+          "name": "L4LB pool",
+          "description": "",
+          "ipFamily": "ipv4",
+          "purpose": "load-balancer",
+          "readonly": "no",
+          "prefix": "192.240.193.172/30",
+          "type": "subnet",
+          "sites": [
+            {
+              "id": 8,
+              "name": "Datacenter-A"
+            }
+          ],
+          "tenant": {
+            "id": 1,
+            "name": "Admin"
+          },
+          "subnet": {
+            "prefix": "192.240.193.172",
+            "length": 30
+          },
+          "defaultGateway": "",
+          "children": [],
+          "fullName": "192.240.193.172/30 (L4LB pool)",
+          "globalRouting": true,
+          "tags": [],
+          "hasHosts": false,
+          "hostsCount": 0,
+          "utilization": {
+            "percent": 0,
+            "type": "subnets"
+          }
+        }
+      ],
+      "utilization": {
+        "percent": 100,
+        "type": "subnets"
+      }
+    },
+    {
+      "id": 73,
+      "name": "Public NAT Allocation",
+      "description": "",
+      "prefix": "103.67.203.24/30",
+      "readonly": "no",
+      "ipFamily": "ipv4",
+      "type": "allocation",
+      "vpc": {
+        "id": 1,
+        "name": "Default"
+      },
+      "tenant": {
+        "id": 1,
+        "name": "Admin"
+      },
+      "subnet": {
+        "prefix": "103.67.203.24",
+        "length": 30
+      },
+      "children": [
+        {
+          "id": 91,
+          "parentID": 0,
+          "vpc": {
+            "id": 1,
+            "name": "Default",
+            "isDefault": true,
+            "isSystem": true
+          },
+          "allocationID": 73,
+          "name": "NAT pool",
+          "description": "",
+          "ipFamily": "ipv4",
+          "purpose": "nat",
+          "readonly": "no",
+          "prefix": "103.67.203.24/30",
+          "type": "subnet",
+          "sites": [
+            {
+              "id": 8,
+              "name": "Datacenter-A"
+            }
+          ],
+          "tenant": {
+            "id": 1,
+            "name": "Admin"
+          },
+          "subnet": {
+            "prefix": "103.67.203.24",
+            "length": 30
+          },
+          "defaultGateway": "",
+          "children": [],
+          "fullName": "103.67.203.24/30 (NAT pool)",
+          "globalRouting": true,
+          "tags": [],
+          "hostsExist": true,
+          "hasHosts": true,
+          "hostsCount": 1,
+          "utilization": {
+            "percent": 25,
+            "type": "hosts"
+          }
+        }
+      ],
+      "utilization": {
+        "percent": 100,
+        "type": "subnets"
+      }
+    },
+    {
+      "id": 74,
+      "name": "Private IP Allocation",
+      "description": "",
+      "prefix": "10.0.0.0/8",
+      "readonly": "no",
+      "ipFamily": "ipv4",
+      "type": "allocation",
+      "vpc": {
+        "id": 1,
+        "name": "Default"
+      },
+      "tenant": {
+        "id": 1,
+        "name": "Admin"
+      },
+      "subnet": {
+        "prefix": "10.0.0.0",
+        "length": 8
+      },
+      "children": [
+        {
+          "id": 93,
+          "parentID": 0,
+          "vpc": {
+            "id": 1,
+            "name": "Default",
+            "isDefault": true,
+            "isSystem": true
+          },
+          "allocationID": 74,
+          "name": "Loopback IP subnet for North-South Fabric",
+          "description": "",
+          "ipFamily": "ipv4",
+          "purpose": "loopback",
+          "readonly": "no",
+          "prefix": "10.2.0.0/16",
+          "type": "subnet",
+          "sites": [
+            {
+              "id": 8,
+              "name": "Datacenter-A"
+            }
+          ],
+          "tenant": {
+            "id": 1,
+            "name": "Admin"
+          },
+          "subnet": {
+            "prefix": "10.2.0.0",
+            "length": 16
+          },
+          "defaultGateway": "",
+          "children": [],
+          "fullName": "10.2.0.0/16 (Loopback IP subnet for North-South Fabric)",
+          "globalRouting": true,
+          "tags": [],
+          "hostsExist": true,
+          "hasHosts": true,
+          "hostsCount": 10,
+          "utilization": {
+            "percent": 0,
+            "type": "hosts"
+          }
+        },
+        {
+          "id": 90,
+          "parentID": 0,
+          "vpc": {
+            "id": 1,
+            "name": "Default",
+            "isDefault": true,
+            "isSystem": true
+          },
+          "allocationID": 74,
+          "name": "OOB Management Subnet for North-South Fabric",
+          "description": "",
+          "ipFamily": "ipv4",
+          "purpose": "management",
+          "readonly": "no",
+          "prefix": "10.3.0.0/16",
+          "type": "subnet",
+          "sites": [
+            {
+              "id": 8,
+              "name": "Datacenter-A"
+            }
+          ],
+          "tenant": {
+            "id": 1,
+            "name": "Admin"
+          },
+          "subnet": {
+            "prefix": "10.3.0.0",
+            "length": 16
+          },
+          "defaultGateway": "10.3.255.254",
+          "children": [],
+          "fullName": "10.3.0.0/16 (OOB Management Subnet for North-South Fabric)",
+          "globalRouting": true,
+          "tags": [],
+          "hostsExist": true,
+          "hasHosts": true,
+          "hostsCount": 13,
+          "utilization": {
+            "percent": 0,
+            "type": "hosts"
+          }
+        },
+        {
+          "id": 89,
+          "parentID": 0,
+          "vpc": {
+            "id": 1,
+            "name": "Default",
+            "isDefault": true,
+            "isSystem": true
+          },
+          "allocationID": 74,
+          "name": "OOB Management",
+          "description": "",
+          "ipFamily": "ipv4",
+          "purpose": "management",
+          "readonly": "no",
+          "prefix": "10.253.0.0/18",
+          "type": "subnet",
+          "sites": [
+            {
+              "id": 8,
+              "name": "Datacenter-A"
+            }
+          ],
+          "tenant": {
+            "id": 1,
+            "name": "Admin"
+          },
+          "subnet": {
+            "prefix": "10.253.0.0",
+            "length": 18
+          },
+          "defaultGateway": "10.253.63.254",
+          "children": [],
+          "fullName": "10.253.0.0/18 (OOB Management)",
+          "globalRouting": true,
+          "tags": [],
+          "hostsExist": true,
+          "hasHosts": true,
+          "hostsCount": 15,
+          "utilization": {
+            "percent": 0,
+            "type": "hosts"
+          }
+        },
+        {
+          "id": 92,
+          "parentID": 0,
+          "vpc": {
+            "id": 1,
+            "name": "Default",
+            "isDefault": true,
+            "isSystem": true
+          },
+          "allocationID": 74,
+          "name": "switch-loopbacks",
+          "description": "",
+          "ipFamily": "ipv4",
+          "purpose": "loopback",
+          "readonly": "no",
+          "prefix": "10.253.128.0/24",
+          "type": "subnet",
+          "sites": [
+            {
+              "id": 8,
+              "name": "Datacenter-A"
+            }
+          ],
+          "tenant": {
+            "id": 1,
+            "name": "Admin"
+          },
+          "subnet": {
+            "prefix": "10.253.128.0",
+            "length": 24
+          },
+          "defaultGateway": "",
+          "children": [],
+          "fullName": "10.253.128.0/24 (switch-loopbacks)",
+          "globalRouting": true,
+          "tags": [],
+          "hostsExist": true,
+          "hasHosts": true,
+          "hostsCount": 12,
+          "utilization": {
+            "percent": 5,
+            "type": "hosts"
+          }
+        }
+      ],
+      "utilization": {
+        "percent": 1,
+        "type": "subnets"
+      }
+    },
+    {
+      "id": 115,
+      "name": "11.0.0.0/16",
+      "description": "",
+      "prefix": "11.0.0.0/16",
+      "readonly": "no",
+      "ipFamily": "ipv4",
+      "type": "allocation",
+      "vpc": {
+        "id": 1,
+        "name": "Default"
+      },
+      "tenant": {
+        "id": 1,
+        "name": "Admin"
+      },
+      "subnet": {
+        "prefix": "11.0.0.0",
+        "length": 16
+      },
+      "children": [],
+      "utilization": {
+        "percent": 0,
+        "type": "subnets"
+      }
+    },
+    {
+      "id": 168,
+      "name": "alloc-ew-loopbacks",
+      "description": "",
+      "prefix": "172.16.0.0/24",
+      "readonly": "no",
+      "ipFamily": "ipv4",
+      "type": "allocation",
+      "vpc": {
+        "id": 1,
+        "name": "Default"
+      },
+      "tenant": {
+        "id": 1,
+        "name": "Admin"
+      },
+      "subnet": {
+        "prefix": "172.16.0.0",
+        "length": 24
+      },
+      "children": [
+        {
+          "id": 186,
+          "parentID": 0,
+          "vpc": {
+            "id": 1,
+            "name": "Default",
+            "isDefault": true,
+            "isSystem": true
+          },
+          "allocationID": 168,
+          "name": "sub-ew-loopbacks",
+          "description": "",
+          "ipFamily": "ipv4",
+          "purpose": "loopback",
+          "readonly": "no",
+          "prefix": "172.16.0.0/24",
+          "type": "subnet",
+          "sites": [
+            {
+              "id": 19,
+              "name": "HardwareFree"
+            }
+          ],
+          "tenant": {
+            "id": 1,
+            "name": "Admin"
+          },
+          "subnet": {
+            "prefix": "172.16.0.0",
+            "length": 24
+          },
+          "defaultGateway": "",
+          "children": [],
+          "fullName": "172.16.0.0/24 (sub-ew-loopbacks)",
+          "globalRouting": true,
+          "tags": [],
+          "hostsExist": true,
+          "hasHosts": true,
+          "hostsCount": 40,
+          "utilization": {
+            "percent": 16,
+            "type": "hosts"
+          }
+        }
+      ],
+      "utilization": {
+        "percent": 100,
+        "type": "subnets"
+      }
+    },
+    {
+      "id": 169,
+      "name": "alloc-ns-loopbacks",
+      "description": "",
+      "prefix": "172.16.1.0/24",
+      "readonly": "no",
+      "ipFamily": "ipv4",
+      "type": "allocation",
+      "vpc": {
+        "id": 1,
+        "name": "Default"
+      },
+      "tenant": {
+        "id": 1,
+        "name": "Admin"
+      },
+      "subnet": {
+        "prefix": "172.16.1.0",
+        "length": 24
+      },
+      "children": [
+        {
+          "id": 184,
+          "parentID": 0,
+          "vpc": {
+            "id": 1,
+            "name": "Default",
+            "isDefault": true,
+            "isSystem": true
+          },
+          "allocationID": 169,
+          "name": "sub-ns-loopbacks",
+          "description": "",
+          "ipFamily": "ipv4",
+          "purpose": "loopback",
+          "readonly": "no",
+          "prefix": "172.16.1.0/24",
+          "type": "subnet",
+          "sites": [
+            {
+              "id": 19,
+              "name": "HardwareFree"
+            }
+          ],
+          "tenant": {
+            "id": 1,
+            "name": "Admin"
+          },
+          "subnet": {
+            "prefix": "172.16.1.0",
+            "length": 24
+          },
+          "defaultGateway": "",
+          "children": [],
+          "fullName": "172.16.1.0/24 (sub-ns-loopbacks)",
+          "globalRouting": true,
+          "tags": [],
+          "hostsExist": true,
+          "hasHosts": true,
+          "hostsCount": 14,
+          "utilization": {
+            "percent": 5,
+            "type": "hosts"
+          }
+        }
+      ],
+      "utilization": {
+        "percent": 100,
+        "type": "subnets"
+      }
+    },
+    {
+      "id": 170,
+      "name": "alloc-storage",
+      "description": "",
+      "prefix": "172.16.3.0/24",
+      "readonly": "no",
+      "ipFamily": "ipv4",
+      "type": "allocation",
+      "vpc": {
+        "id": 1,
+        "name": "Default"
+      },
+      "tenant": {
+        "id": 1,
+        "name": "Admin"
+      },
+      "subnet": {
+        "prefix": "172.16.3.0",
+        "length": 24
+      },
+      "children": [
+        {
+          "id": 187,
+          "parentID": 0,
+          "vpc": {
+            "id": 1,
+            "name": "Default",
+            "isDefault": true,
+            "isSystem": true
+          },
+          "allocationID": 170,
+          "name": "sub-storage",
+          "description": "",
+          "ipFamily": "ipv4",
+          "purpose": "common",
+          "readonly": "no",
+          "prefix": "172.16.3.0/24",
+          "type": "subnet",
+          "sites": [
+            {
+              "id": 19,
+              "name": "HardwareFree"
+            }
+          ],
+          "tenant": {
+            "id": 1,
+            "name": "Admin"
+          },
+          "subnet": {
+            "prefix": "172.16.3.0",
+            "length": 24
+          },
+          "defaultGateway": "",
+          "children": [],
+          "fullName": "172.16.3.0/24 (sub-storage)",
+          "globalRouting": true,
+          "tags": [],
+          "hasHosts": false,
+          "hostsCount": 0,
+          "utilization": {
+            "percent": 0,
+            "type": "subnets"
+          }
+        }
+      ],
+      "utilization": {
+        "percent": 100,
+        "type": "subnets"
+      }
+    },
+    {
+      "id": 171,
+      "name": "alloc-ew-p2p",
+      "description": "",
+      "prefix": "172.17.0.0/16",
+      "readonly": "no",
+      "ipFamily": "ipv4",
+      "type": "allocation",
+      "vpc": {
+        "id": 1,
+        "name": "Default"
+      },
+      "tenant": {
+        "id": 1,
+        "name": "Admin"
+      },
+      "subnet": {
+        "prefix": "172.17.0.0",
+        "length": 16
+      },
+      "children": [
+        {
+          "id": 189,
+          "parentID": 0,
+          "vpc": {
+            "id": 1,
+            "name": "Default",
+            "isDefault": true,
+            "isSystem": true
+          },
+          "allocationID": 171,
+          "name": "sub-ew-p2p",
+          "description": "",
+          "ipFamily": "ipv4",
+          "purpose": "common",
+          "readonly": "no",
+          "prefix": "172.17.0.0/16",
+          "type": "subnet",
+          "sites": [
+            {
+              "id": 19,
+              "name": "HardwareFree"
+            }
+          ],
+          "tenant": {
+            "id": 1,
+            "name": "Admin"
+          },
+          "subnet": {
+            "prefix": "172.17.0.0",
+            "length": 16
+          },
+          "defaultGateway": "",
+          "children": [],
+          "fullName": "172.17.0.0/16 (sub-ew-p2p)",
+          "globalRouting": true,
+          "tags": [],
+          "hasHosts": false,
+          "hostsCount": 0,
+          "utilization": {
+            "percent": 0,
+            "type": "subnets"
+          }
+        }
+      ],
+      "utilization": {
+        "percent": 100,
+        "type": "subnets"
+      }
+    },
+    {
+      "id": 172,
+      "name": "alloc-ns-mgmt",
+      "description": "",
+      "prefix": "172.16.2.0/24",
+      "readonly": "no",
+      "ipFamily": "ipv4",
+      "type": "allocation",
+      "vpc": {
+        "id": 1,
+        "name": "Default"
+      },
+      "tenant": {
+        "id": 1,
+        "name": "Admin"
+      },
+      "subnet": {
+        "prefix": "172.16.2.0",
+        "length": 24
+      },
+      "children": [
+        {
+          "id": 185,
+          "parentID": 0,
+          "vpc": {
+            "id": 1,
+            "name": "Default",
+            "isDefault": true,
+            "isSystem": true
+          },
+          "allocationID": 172,
+          "name": "sub-ns-mgmt",
+          "description": "",
+          "ipFamily": "ipv4",
+          "purpose": "management",
+          "readonly": "no",
+          "prefix": "172.16.2.0/24",
+          "type": "subnet",
+          "sites": [
+            {
+              "id": 19,
+              "name": "HardwareFree"
+            }
+          ],
+          "tenant": {
+            "id": 1,
+            "name": "Admin"
+          },
+          "subnet": {
+            "prefix": "172.16.2.0",
+            "length": 24
+          },
+          "defaultGateway": "",
+          "children": [],
+          "fullName": "172.16.2.0/24 (sub-ns-mgmt)",
+          "globalRouting": true,
+          "tags": [],
+          "hostsExist": true,
+          "hasHosts": true,
+          "hostsCount": 56,
+          "utilization": {
+            "percent": 22,
+            "type": "hosts"
+          }
+        }
+      ],
+      "utilization": {
+        "percent": 100,
+        "type": "subnets"
+      }
+    },
+    {
+      "id": 173,
+      "name": "alloc-oob",
+      "description": "",
+      "prefix": "172.16.4.0/24",
+      "readonly": "no",
+      "ipFamily": "ipv4",
+      "type": "allocation",
+      "vpc": {
+        "id": 1,
+        "name": "Default"
+      },
+      "tenant": {
+        "id": 1,
+        "name": "Admin"
+      },
+      "subnet": {
+        "prefix": "172.16.4.0",
+        "length": 24
+      },
+      "children": [
+        {
+          "id": 188,
+          "parentID": 0,
+          "vpc": {
+            "id": 1,
+            "name": "Default",
+            "isDefault": true,
+            "isSystem": true
+          },
+          "allocationID": 173,
+          "name": "sub-oob",
+          "description": "",
+          "ipFamily": "ipv4",
+          "purpose": "management",
+          "readonly": "no",
+          "prefix": "172.16.4.0/24",
+          "type": "subnet",
+          "sites": [
+            {
+              "id": 19,
+              "name": "HardwareFree"
+            }
+          ],
+          "tenant": {
+            "id": 1,
+            "name": "Admin"
+          },
+          "subnet": {
+            "prefix": "172.16.4.0",
+            "length": 24
+          },
+          "defaultGateway": "",
+          "children": [],
+          "fullName": "172.16.4.0/24 (sub-oob)",
+          "globalRouting": true,
+          "tags": [],
+          "hostsExist": true,
+          "hasHosts": true,
+          "hostsCount": 2,
+          "utilization": {
+            "percent": 1,
+            "type": "hosts"
+          }
+        }
+      ],
+      "utilization": {
+        "percent": 100,
+        "type": "subnets"
+      }
+    },
+    {
+      "id": 180,
+      "name": "100.150.0.0/16",
+      "description": "",
+      "prefix": "100.150.0.0/16",
+      "readonly": "no",
+      "ipFamily": "ipv4",
+      "type": "allocation",
+      "vpc": {
+        "id": 1,
+        "name": "Default"
+      },
+      "tenant": {
+        "id": 1,
+        "name": "Admin"
+      },
+      "subnet": {
+        "prefix": "100.150.0.0",
+        "length": 16
+      },
+      "children": [],
+      "utilization": {
+        "percent": 0,
+        "type": "subnets"
+      }
+    }
+  ],
+  "errors": null,
+  "message": "",
+  "isSuccess": true,
+  "meta": {
+    "apiVersion": "v2",
+    "statusCode": 200
+  }
+}

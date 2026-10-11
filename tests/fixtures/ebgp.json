@@ -1,0 +1,671 @@
+{
+  "data": [
+    {
+      "id": 13,
+      "name": "upstream1",
+      "handover_vlan": 4094,
+      "description": "",
+      "neighbor_as": 65401,
+      "local_ip": "10.10.0.1",
+      "remote_ip": "10.10.0.2",
+      "prefix_length": 30,
+      "switch_port_id": null,
+      "bgp_password": "***",
+      "prefix_limit": 0,
+      "prepend_inbound": 0,
+      "prepend_outbound": 0,
+      "prefix_list_inbound": "",
+      "prefix_list_outbound": "",
+      "local_preference": 100,
+      "weight": 0,
+      "status": "enabled",
+      "nexthop_self": "disabled",
+      "default_originate": "disabled",
+      "offloader_interface": null,
+      "ip_version": "ipv4",
+      "rcircuit_id": null,
+      "terminate_on_switch": "no",
+      "multihop": 0,
+      "route_id": null,
+      "site_id": 8,
+      "neighbor_address": "",
+      "update_source": "",
+      "community": "",
+      "internal": null,
+      "allowas_in": 0,
+      "term_switch_id": 534,
+      "created_date": 1789376437000,
+      "modified_date": 1789376437000,
+      "inbound_route_map": null,
+      "outbound_route_map": null,
+      "bfd": "disabled",
+      "timers": {
+        "hello": 3,
+        "hold": 10,
+        "connect": 10
+      },
+      "vlan": 10,
+      "vxlan": 2,
+      "untagged": true,
+      "internalPurpose": null,
+      "site_name": "Datacenter-A",
+      "localAsn": "public-as",
+      "removePrivateAs": "enabled",
+      "siteSwitchFabric": "netris",
+      "inboundRouteMapName": null,
+      "outboundRouteMapName": null,
+      "bgp_state": "Established",
+      "bgp_prefixes": "1",
+      "bgp_uptime": "03w4d01h",
+      "term_sw_name": "ns-softgate-0",
+      "term_sw_type": "offloader",
+      "sgFlavor": "sg-hs",
+      "circuitName": null,
+      "originate": "disabled",
+      "port": {
+        "id": 24037,
+        "name": "swp51s0",
+        "ifName": "swp51s0",
+        "status": {
+          "label": "Link Up",
+          "value": "success"
+        },
+        "tenant": {
+          "id": 1,
+          "name": "Admin"
+        },
+        "switchName": "ns-leaf-0",
+        "switchPlatform": " VX (Cumulus Linux 5.15.1)",
+        "portName": "swp51s0@ns-leaf-0 (Admin)"
+      },
+      "tags": [],
+      "asns": {
+        "publicAsn": 655001,
+        "switchAsn": 4200300001
+      },
+      "vpc": {
+        "id": 1,
+        "name": "Default",
+        "isDefault": "yes",
+        "isSystem": "yes"
+      },
+      "site": {
+        "id": 8,
+        "name": "Datacenter-A",
+        "switchFabric": "netris"
+      },
+      "termPort": {
+        "id": 25173,
+        "vlan": 4094,
+        "ifName": "ens5"
+      },
+      "hardware": {
+        "id": 534,
+        "name": "ns-softgate-0",
+        "type": "softgate",
+        "links": [
+          {
+            "local": {
+              "id": 25173,
+              "name": "eth1",
+              "ifName": "ens5"
+            },
+            "remote": {
+              "id": 24013,
+              "name": "swp45s0",
+              "ifName": "swp45s0"
+            }
+          },
+          {
+            "local": {
+              "id": 25174,
+              "name": "eth2",
+              "ifName": "ens6"
+            },
+            "remote": {
+              "id": 24333,
+              "name": "swp45s0",
+              "ifName": "swp45s0"
+            }
+          }
+        ]
+      },
+      "vnet": {
+        "id": "none",
+        "name": "None"
+      },
+      "neighborAS": 65401,
+      "ipFamily": "ipv4",
+      "localIP": "10.10.0.1",
+      "remoteIP": "10.10.0.2",
+      "prefixLength": 30,
+      "state": "enabled",
+      "neighborAddress": "",
+      "updateSource": "Unspecified",
+      "bgpPassword": "***",
+      "allowAsIn": 0,
+      "defaultOriginate": "disabled",
+      "prefixInboundMax": 0,
+      "inboundRouteMap": null,
+      "outboundRouteMap": null,
+      "localPreference": 100,
+      "prependInbound": 0,
+      "prependOutbound": 0,
+      "prefixListOutbound": "",
+      "prefixListInbound": "",
+      "bgpCommunity": "",
+      "bgpState": "Established",
+      "bgpPrefixes": "1",
+      "bgpUptime": "03w4d01h",
+      "termSwName": "ns-softgate-0",
+      "termSwType": "softgate",
+      "offloaderInterface": null,
+      "routeId": null,
+      "terminatedOnSwitch": false,
+      "createdDate": 1789376437000,
+      "modifiedDate": 1789376437000
+    },
+    {
+      "id": 14,
+      "name": "upstream4",
+      "handover_vlan": 4093,
+      "description": "",
+      "neighbor_as": 65401,
+      "local_ip": "10.10.0.13",
+      "remote_ip": "10.10.0.14",
+      "prefix_length": 30,
+      "switch_port_id": null,
+      "bgp_password": "***",
+      "prefix_limit": 0,
+      "prepend_inbound": 0,
+      "prepend_outbound": 0,
+      "prefix_list_inbound": "",
+      "prefix_list_outbound": "",
+      "local_preference": 100,
+      "weight": 0,
+      "status": "enabled",
+      "nexthop_self": "disabled",
+      "default_originate": "disabled",
+      "offloader_interface": null,
+      "ip_version": "ipv4",
+      "rcircuit_id": null,
+      "terminate_on_switch": "no",
+      "multihop": 0,
+      "route_id": null,
+      "site_id": 8,
+      "neighbor_address": "",
+      "update_source": "",
+      "community": "",
+      "internal": null,
+      "allowas_in": 0,
+      "term_switch_id": 533,
+      "created_date": 1789376437000,
+      "modified_date": 1789376437000,
+      "inbound_route_map": null,
+      "outbound_route_map": null,
+      "bfd": "disabled",
+      "timers": {
+        "hello": 3,
+        "hold": 10,
+        "connect": 10
+      },
+      "vlan": 13,
+      "vxlan": 3,
+      "untagged": true,
+      "internalPurpose": null,
+      "site_name": "Datacenter-A",
+      "localAsn": "public-as",
+      "removePrivateAs": "enabled",
+      "siteSwitchFabric": "netris",
+      "inboundRouteMapName": null,
+      "outboundRouteMapName": null,
+      "bgp_state": "Established",
+      "bgp_prefixes": "1",
+      "bgp_uptime": "03w4d01h",
+      "term_sw_name": "ns-softgate-3",
+      "term_sw_type": "offloader",
+      "sgFlavor": "sg-hs",
+      "circuitName": null,
+      "originate": "disabled",
+      "port": {
+        "id": 24040,
+        "name": "swp51s3",
+        "ifName": "swp51s3",
+        "status": {
+          "label": "Link Up",
+          "value": "success"
+        },
+        "tenant": {
+          "id": 1,
+          "name": "Admin"
+        },
+        "switchName": "ns-leaf-0",
+        "switchPlatform": " VX (Cumulus Linux 5.15.1)",
+        "portName": "swp51s3@ns-leaf-0 (Admin)"
+      },
+      "tags": [],
+      "asns": {
+        "publicAsn": 655001,
+        "switchAsn": 4200300001
+      },
+      "vpc": {
+        "id": 1,
+        "name": "Default",
+        "isDefault": "yes",
+        "isSystem": "yes"
+      },
+      "site": {
+        "id": 8,
+        "name": "Datacenter-A",
+        "switchFabric": "netris"
+      },
+      "termPort": {
+        "id": 25169,
+        "vlan": 4093,
+        "ifName": "ens5"
+      },
+      "hardware": {
+        "id": 533,
+        "name": "ns-softgate-3",
+        "type": "softgate",
+        "links": [
+          {
+            "local": {
+              "id": 25169,
+              "name": "eth1",
+              "ifName": "ens5"
+            },
+            "remote": {
+              "id": 24016,
+              "name": "swp45s3",
+              "ifName": "swp45s3"
+            }
+          },
+          {
+            "local": {
+              "id": 25170,
+              "name": "eth2",
+              "ifName": "ens6"
+            },
+            "remote": {
+              "id": 24336,
+              "name": "swp45s3",
+              "ifName": "swp45s3"
+            }
+          }
+        ]
+      },
+      "vnet": {
+        "id": "none",
+        "name": "None"
+      },
+      "neighborAS": 65401,
+      "ipFamily": "ipv4",
+      "localIP": "10.10.0.13",
+      "remoteIP": "10.10.0.14",
+      "prefixLength": 30,
+      "state": "enabled",
+      "neighborAddress": "",
+      "updateSource": "Unspecified",
+      "bgpPassword": "***",
+      "allowAsIn": 0,
+      "defaultOriginate": "disabled",
+      "prefixInboundMax": 0,
+      "inboundRouteMap": null,
+      "outboundRouteMap": null,
+      "localPreference": 100,
+      "prependInbound": 0,
+      "prependOutbound": 0,
+      "prefixListOutbound": "",
+      "prefixListInbound": "",
+      "bgpCommunity": "",
+      "bgpState": "Established",
+      "bgpPrefixes": "1",
+      "bgpUptime": "03w4d01h",
+      "termSwName": "ns-softgate-3",
+      "termSwType": "softgate",
+      "offloaderInterface": null,
+      "routeId": null,
+      "terminatedOnSwitch": false,
+      "createdDate": 1789376437000,
+      "modifiedDate": 1789376437000
+    },
+    {
+      "id": 15,
+      "name": "upstream2",
+      "handover_vlan": 4092,
+      "description": "",
+      "neighbor_as": 65401,
+      "local_ip": "10.10.0.5",
+      "remote_ip": "10.10.0.6",
+      "prefix_length": 30,
+      "switch_port_id": null,
+      "bgp_password": "***",
+      "prefix_limit": 0,
+      "prepend_inbound": 0,
+      "prepend_outbound": 0,
+      "prefix_list_inbound": "",
+      "prefix_list_outbound": "",
+      "local_preference": 100,
+      "weight": 0,
+      "status": "enabled",
+      "nexthop_self": "disabled",
+      "default_originate": "disabled",
+      "offloader_interface": null,
+      "ip_version": "ipv4",
+      "rcircuit_id": null,
+      "terminate_on_switch": "no",
+      "multihop": 0,
+      "route_id": null,
+      "site_id": 8,
+      "neighbor_address": "",
+      "update_source": "",
+      "community": "",
+      "internal": null,
+      "allowas_in": 0,
+      "term_switch_id": 531,
+      "created_date": 1789376437000,
+      "modified_date": 1789376437000,
+      "inbound_route_map": null,
+      "outbound_route_map": null,
+      "bfd": "disabled",
+      "timers": {
+        "hello": 3,
+        "hold": 10,
+        "connect": 10
+      },
+      "vlan": 11,
+      "vxlan": 5,
+      "untagged": true,
+      "internalPurpose": null,
+      "site_name": "Datacenter-A",
+      "localAsn": "public-as",
+      "removePrivateAs": "enabled",
+      "siteSwitchFabric": "netris",
+      "inboundRouteMapName": null,
+      "outboundRouteMapName": null,
+      "bgp_state": "Established",
+      "bgp_prefixes": "1",
+      "bgp_uptime": "03w4d01h",
+      "term_sw_name": "ns-softgate-1",
+      "term_sw_type": "offloader",
+      "sgFlavor": "sg-hs",
+      "circuitName": null,
+      "originate": "disabled",
+      "port": {
+        "id": 24038,
+        "name": "swp51s1",
+        "ifName": "swp51s1",
+        "status": {
+          "label": "Link Up",
+          "value": "success"
+        },
+        "tenant": {
+          "id": 1,
+          "name": "Admin"
+        },
+        "switchName": "ns-leaf-0",
+        "switchPlatform": " VX (Cumulus Linux 5.15.1)",
+        "portName": "swp51s1@ns-leaf-0 (Admin)"
+      },
+      "tags": [],
+      "asns": {
+        "publicAsn": 655001,
+        "switchAsn": 4200300001
+      },
+      "vpc": {
+        "id": 1,
+        "name": "Default",
+        "isDefault": "yes",
+        "isSystem": "yes"
+      },
+      "site": {
+        "id": 8,
+        "name": "Datacenter-A",
+        "switchFabric": "netris"
+      },
+      "termPort": {
+        "id": 25161,
+        "vlan": 4092,
+        "ifName": "ens5"
+      },
+      "hardware": {
+        "id": 531,
+        "name": "ns-softgate-1",
+        "type": "softgate",
+        "links": [
+          {
+            "local": {
+              "id": 25161,
+              "name": "eth1",
+              "ifName": "ens5"
+            },
+            "remote": {
+              "id": 24014,
+              "name": "swp45s1",
+              "ifName": "swp45s1"
+            }
+          },
+          {
+            "local": {
+              "id": 25162,
+              "name": "eth2",
+              "ifName": "ens6"
+            },
+            "remote": {
+              "id": 24334,
+              "name": "swp45s1",
+              "ifName": "swp45s1"
+            }
+          }
+        ]
+      },
+      "vnet": {
+        "id": "none",
+        "name": "None"
+      },
+      "neighborAS": 65401,
+      "ipFamily": "ipv4",
+      "localIP": "10.10.0.5",
+      "remoteIP": "10.10.0.6",
+      "prefixLength": 30,
+      "state": "enabled",
+      "neighborAddress": "",
+      "updateSource": "Unspecified",
+      "bgpPassword": "***",
+      "allowAsIn": 0,
+      "defaultOriginate": "disabled",
+      "prefixInboundMax": 0,
+      "inboundRouteMap": null,
+      "outboundRouteMap": null,
+      "localPreference": 100,
+      "prependInbound": 0,
+      "prependOutbound": 0,
+      "prefixListOutbound": "",
+      "prefixListInbound": "",
+      "bgpCommunity": "",
+      "bgpState": "Established",
+      "bgpPrefixes": "1",
+      "bgpUptime": "03w4d01h",
+      "termSwName": "ns-softgate-1",
+      "termSwType": "softgate",
+      "offloaderInterface": null,
+      "routeId": null,
+      "terminatedOnSwitch": false,
+      "createdDate": 1789376437000,
+      "modifiedDate": 1789376437000
+    },
+    {
+      "id": 16,
+      "name": "upstream3",
+      "handover_vlan": 4091,
+      "description": "",
+      "neighbor_as": 65401,
+      "local_ip": "10.10.0.9",
+      "remote_ip": "10.10.0.10",
+      "prefix_length": 30,
+      "switch_port_id": null,
+      "bgp_password": "***",
+      "prefix_limit": 0,
+      "prepend_inbound": 0,
+      "prepend_outbound": 0,
+      "prefix_list_inbound": "",
+      "prefix_list_outbound": "",
+      "local_preference": 100,
+      "weight": 0,
+      "status": "enabled",
+      "nexthop_self": "disabled",
+      "default_originate": "disabled",
+      "offloader_interface": null,
+      "ip_version": "ipv4",
+      "rcircuit_id": null,
+      "terminate_on_switch": "no",
+      "multihop": 0,
+      "route_id": null,
+      "site_id": 8,
+      "neighbor_address": "",
+      "update_source": "",
+      "community": "",
+      "internal": null,
+      "allowas_in": 0,
+      "term_switch_id": 532,
+      "created_date": 1789376437000,
+      "modified_date": 1789376437000,
+      "inbound_route_map": null,
+      "outbound_route_map": null,
+      "bfd": "disabled",
+      "timers": {
+        "hello": 3,
+        "hold": 10,
+        "connect": 10
+      },
+      "vlan": 12,
+      "vxlan": 6,
+      "untagged": true,
+      "internalPurpose": null,
+      "site_name": "Datacenter-A",
+      "localAsn": "public-as",
+      "removePrivateAs": "enabled",
+      "siteSwitchFabric": "netris",
+      "inboundRouteMapName": null,
+      "outboundRouteMapName": null,
+      "bgp_state": "Established",
+      "bgp_prefixes": "1",
+      "bgp_uptime": "03w4d01h",
+      "term_sw_name": "ns-softgate-2",
+      "term_sw_type": "offloader",
+      "sgFlavor": "sg-hs",
+      "circuitName": null,
+      "originate": "disabled",
+      "port": {
+        "id": 24039,
+        "name": "swp51s2",
+        "ifName": "swp51s2",
+        "status": {
+          "label": "Link Up",
+          "value": "success"
+        },
+        "tenant": {
+          "id": 1,
+          "name": "Admin"
+        },
+        "switchName": "ns-leaf-0",
+        "switchPlatform": " VX (Cumulus Linux 5.15.1)",
+        "portName": "swp51s2@ns-leaf-0 (Admin)"
+      },
+      "tags": [],
+      "asns": {
+        "publicAsn": 655001,
+        "switchAsn": 4200300001
+      },
+      "vpc": {
+        "id": 1,
+        "name": "Default",
+        "isDefault": "yes",
+        "isSystem": "yes"
+      },
+      "site": {
+        "id": 8,
+        "name": "Datacenter-A",
+        "switchFabric": "netris"
+      },
+      "termPort": {
+        "id": 25165,
+        "vlan": 4091,
+        "ifName": "ens5"
+      },
+      "hardware": {
+        "id": 532,
+        "name": "ns-softgate-2",
+        "type": "softgate",
+        "links": [
+          {
+            "local": {
+              "id": 25165,
+              "name": "eth1",
+              "ifName": "ens5"
+            },
+            "remote": {
+              "id": 24015,
+              "name": "swp45s2",
+              "ifName": "swp45s2"
+            }
+          },
+          {
+            "local": {
+              "id": 25166,
+              "name": "eth2",
+              "ifName": "ens6"
+            },
+            "remote": {
+              "id": 24335,
+              "name": "swp45s2",
+              "ifName": "swp45s2"
+            }
+          }
+        ]
+      },
+      "vnet": {
+        "id": "none",
+        "name": "None"
+      },
+      "neighborAS": 65401,
+      "ipFamily": "ipv4",
+      "localIP": "10.10.0.9",
+      "remoteIP": "10.10.0.10",
+      "prefixLength": 30,
+      "state": "enabled",
+      "neighborAddress": "",
+      "updateSource": "Unspecified",
+      "bgpPassword": "***",
+      "allowAsIn": 0,
+      "defaultOriginate": "disabled",
+      "prefixInboundMax": 0,
+      "inboundRouteMap": null,
+      "outboundRouteMap": null,
+      "localPreference": 100,
+      "prependInbound": 0,
+      "prependOutbound": 0,
+      "prefixListOutbound": "",
+      "prefixListInbound": "",
+      "bgpCommunity": "",
+      "bgpState": "Established",
+      "bgpPrefixes": "1",
+      "bgpUptime": "03w4d01h",
+      "termSwName": "ns-softgate-2",
+      "termSwType": "softgate",
+      "offloaderInterface": null,
+      "routeId": null,
+      "terminatedOnSwitch": false,
+      "createdDate": 1789376437000,
+      "modifiedDate": 1789376437000
+    }
+  ],
+  "errors": null,
+  "message": "",
+  "isSuccess": true,
+  "meta": {
+    "apiVersion": "v2",
+    "statusCode": 200
+  }
+}

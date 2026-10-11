@@ -1,0 +1,29 @@
+{
+  "data": [
+    {
+      "id": 2,
+      "name": "Test VPC Peering",
+      "vpcA": {
+        "id": 85,
+        "name": "ACME",
+        "prefixListInboundIPv4": "permit 0.0.0.0/0 le 32",
+        "prefixListInboundIPv6": ""
+      },
+      "vpcB": {
+        "id": 105,
+        "name": "EMCA",
+        "prefixListInboundIPv4": "permit 0.0.0.0/0 le 32",
+        "prefixListInboundIPv6": ""
+      },
+      "createdDate": "2026-09-29T06:33:01.000Z",
+      "modifiedDate": "2026-09-29T06:35:13.000Z"
+    }
+  ],
+  "errors": null,
+  "message": "",
+  "isSuccess": true,
+  "meta": {
+    "apiVersion": "v2",
+    "statusCode": 200
+  }
+}

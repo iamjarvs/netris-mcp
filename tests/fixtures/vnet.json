@@ -1,0 +1,1643 @@
+{
+  "data": [
+    {
+      "id": 1112,
+      "name": "vnet-hardwarefree-oob",
+      "state": "active",
+      "provisioning": true,
+      "l3vpn": false,
+      "customAnycastMac": "",
+      "vlanAware": false,
+      "nativeVlan": 0,
+      "vlans": "",
+      "vxlanID": 31,
+      "hwAddressLastOctet": 4,
+      "internal": 0,
+      "tenantID": 1,
+      "tenantName": "Admin",
+      "guestTenants": [],
+      "sites": [
+        {
+          "id": 19,
+          "name": "HardwareFree",
+          "switchFabric": "netris"
+        }
+      ],
+      "dhcpRelay": {
+        "enabled": false
+      },
+      "dhcpv6Relay": {
+        "enabled": false
+      },
+      "ipv6ND": {
+        "routerAdvertisement": {
+          "mode": "default",
+          "routerLifetime": {
+            "seconds": null
+          },
+          "advertisementInterval": {
+            "seconds": null
+          },
+          "managedConfig": false,
+          "otherConfig": false
+        },
+        "prefixAdvertisement": {
+          "enabled": false,
+          "preferredLifetime": {
+            "seconds": null
+          },
+          "validLifetime": {
+            "seconds": null
+          },
+          "autoconfig": false
+        },
+        "rdnss": {
+          "enabled": false,
+          "dnsServers": [],
+          "lifetime": {
+            "seconds": null,
+            "infinite": false
+          }
+        }
+      },
+      "ipFamily": "dual",
+      "createdDate": 1789722763000,
+      "modifiedDate": 1789722763000,
+      "portsCount": 0,
+      "vpc": {
+        "id": 1,
+        "name": "Default",
+        "isDefault": true,
+        "isSystem": true
+      },
+      "gateways": [],
+      "vlan": 10,
+      "tenant": {
+        "id": 1,
+        "name": "Admin"
+      },
+      "tags": [],
+      "portTags": [],
+      "status": {
+        "label": "Provisioning",
+        "value": "warning"
+      }
+    },
+    {
+      "id": 1113,
+      "name": "vnet-hardwarefree-inband-mgmt",
+      "state": "active",
+      "provisioning": true,
+      "l3vpn": false,
+      "customAnycastMac": "",
+      "vlanAware": false,
+      "nativeVlan": 0,
+      "vlans": "",
+      "vxlanID": 34,
+      "hwAddressLastOctet": 5,
+      "internal": 0,
+      "tenantID": 1,
+      "tenantName": "Admin",
+      "guestTenants": [],
+      "sites": [
+        {
+          "id": 19,
+          "name": "HardwareFree",
+          "switchFabric": "netris"
+        }
+      ],
+      "dhcpRelay": {
+        "enabled": false
+      },
+      "dhcpv6Relay": {
+        "enabled": false
+      },
+      "ipv6ND": {
+        "routerAdvertisement": {
+          "mode": "default",
+          "routerLifetime": {
+            "seconds": null
+          },
+          "advertisementInterval": {
+            "seconds": null
+          },
+          "managedConfig": false,
+          "otherConfig": false
+        },
+        "prefixAdvertisement": {
+          "enabled": false,
+          "preferredLifetime": {
+            "seconds": null
+          },
+          "validLifetime": {
+            "seconds": null
+          },
+          "autoconfig": false
+        },
+        "rdnss": {
+          "enabled": false,
+          "dnsServers": [],
+          "lifetime": {
+            "seconds": null,
+            "infinite": false
+          }
+        }
+      },
+      "ipFamily": "dual",
+      "createdDate": 1789722763000,
+      "modifiedDate": 1789722763000,
+      "portsCount": 0,
+      "vpc": {
+        "id": 1,
+        "name": "Default",
+        "isDefault": true,
+        "isSystem": true
+      },
+      "gateways": [],
+      "vlan": 100,
+      "tenant": {
+        "id": 1,
+        "name": "Admin"
+      },
+      "tags": [],
+      "portTags": [],
+      "status": {
+        "label": "Provisioning",
+        "value": "warning"
+      }
+    },
+    {
+      "id": 1114,
+      "name": "vnet-hardwarefree-storage",
+      "state": "active",
+      "provisioning": true,
+      "l3vpn": false,
+      "customAnycastMac": "",
+      "vlanAware": false,
+      "nativeVlan": 0,
+      "vlans": "",
+      "vxlanID": 42,
+      "hwAddressLastOctet": 6,
+      "internal": 0,
+      "tenantID": 1,
+      "tenantName": "Admin",
+      "guestTenants": [],
+      "sites": [
+        {
+          "id": 19,
+          "name": "HardwareFree",
+          "switchFabric": "netris"
+        }
+      ],
+      "dhcpRelay": {
+        "enabled": false
+      },
+      "dhcpv6Relay": {
+        "enabled": false
+      },
+      "ipv6ND": {
+        "routerAdvertisement": {
+          "mode": "default",
+          "routerLifetime": {
+            "seconds": null
+          },
+          "advertisementInterval": {
+            "seconds": null
+          },
+          "managedConfig": false,
+          "otherConfig": false
+        },
+        "prefixAdvertisement": {
+          "enabled": false,
+          "preferredLifetime": {
+            "seconds": null
+          },
+          "validLifetime": {
+            "seconds": null
+          },
+          "autoconfig": false
+        },
+        "rdnss": {
+          "enabled": false,
+          "dnsServers": [],
+          "lifetime": {
+            "seconds": null,
+            "infinite": false
+          }
+        }
+      },
+      "ipFamily": "dual",
+      "createdDate": 1789722763000,
+      "modifiedDate": 1789722763000,
+      "portsCount": 0,
+      "vpc": {
+        "id": 1,
+        "name": "Default",
+        "isDefault": true,
+        "isSystem": true
+      },
+      "gateways": [],
+      "vlan": 200,
+      "tenant": {
+        "id": 1,
+        "name": "Admin"
+      },
+      "tags": [],
+      "portTags": [],
+      "status": {
+        "label": "Provisioning",
+        "value": "warning"
+      }
+    },
+    {
+      "id": 1040,
+      "name": "Alpha-Workload-660663-East-West",
+      "state": "active",
+      "provisioning": false,
+      "l3vpn": true,
+      "customAnycastMac": "",
+      "vlanAware": false,
+      "nativeVlan": 0,
+      "vlans": "",
+      "vxlanID": 8,
+      "hwAddressLastOctet": 1,
+      "internal": 0,
+      "tenantID": 1,
+      "tenantName": "Admin",
+      "guestTenants": [],
+      "sites": [
+        {
+          "id": 8,
+          "name": "Datacenter-A",
+          "switchFabric": "netris"
+        }
+      ],
+      "dhcpRelay": {
+        "enabled": false
+      },
+      "dhcpv6Relay": {
+        "enabled": false
+      },
+      "ipv6ND": {
+        "routerAdvertisement": {
+          "mode": "default",
+          "routerLifetime": {
+            "seconds": null
+          },
+          "advertisementInterval": {
+            "seconds": null
+          },
+          "managedConfig": false,
+          "otherConfig": false
+        },
+        "prefixAdvertisement": {
+          "enabled": false,
+          "preferredLifetime": {
+            "seconds": null
+          },
+          "validLifetime": {
+            "seconds": null
+          },
+          "autoconfig": false
+        },
+        "rdnss": {
+          "enabled": false,
+          "dnsServers": [],
+          "lifetime": {
+            "seconds": null,
+            "infinite": false
+          }
+        }
+      },
+      "ipFamily": "dual",
+      "createdDate": 1789381069000,
+      "modifiedDate": 1789381134000,
+      "portsCount": 0,
+      "vpc": {
+        "id": 31,
+        "name": "Alpha-Workload-660663",
+        "isDefault": false,
+        "isSystem": false
+      },
+      "gateways": [],
+      "vlan": 0,
+      "tenant": {
+        "id": 1,
+        "name": "Admin"
+      },
+      "tags": [],
+      "portTags": [],
+      "status": {
+        "label": "Active",
+        "value": "success"
+      }
+    },
+    {
+      "id": 1041,
+      "name": "Alpha-Workload-660663-North-South",
+      "state": "active",
+      "provisioning": false,
+      "l3vpn": false,
+      "customAnycastMac": "",
+      "vlanAware": false,
+      "nativeVlan": 0,
+      "vlans": "",
+      "vxlanID": 11,
+      "hwAddressLastOctet": 2,
+      "internal": 0,
+      "tenantID": 1,
+      "tenantName": "Admin",
+      "guestTenants": [],
+      "sites": [
+        {
+          "id": 8,
+          "name": "Datacenter-A",
+          "switchFabric": "netris"
+        }
+      ],
+      "dhcpRelay": {
+        "enabled": false
+      },
+      "dhcpv6Relay": {
+        "enabled": false
+      },
+      "ipv6ND": {
+        "routerAdvertisement": {
+          "mode": "default",
+          "routerLifetime": {
+            "seconds": null
+          },
+          "advertisementInterval": {
+            "seconds": null
+          },
+          "managedConfig": false,
+          "otherConfig": false
+        },
+        "prefixAdvertisement": {
+          "enabled": false,
+          "preferredLifetime": {
+            "seconds": null
+          },
+          "validLifetime": {
+            "seconds": null
+          },
+          "autoconfig": false
+        },
+        "rdnss": {
+          "enabled": false,
+          "dnsServers": [],
+          "lifetime": {
+            "seconds": null,
+            "infinite": false
+          }
+        }
+      },
+      "ipFamily": "dual",
+      "createdDate": 1789381069000,
+      "modifiedDate": 1789381135000,
+      "portsCount": 0,
+      "vpc": {
+        "id": 31,
+        "name": "Alpha-Workload-660663",
+        "isDefault": false,
+        "isSystem": false
+      },
+      "gateways": [
+        {
+          "prefix": "192.168.7.254/21",
+          "ipFamily": "ipv4"
+        }
+      ],
+      "vlan": 2,
+      "tenant": {
+        "id": 1,
+        "name": "Admin"
+      },
+      "tags": [],
+      "portTags": [],
+      "status": {
+        "label": "Active",
+        "value": "success"
+      }
+    },
+    {
+      "id": 1042,
+      "name": "Alpha-Workload-660663-OOB-Management",
+      "state": "active",
+      "provisioning": false,
+      "l3vpn": false,
+      "customAnycastMac": "",
+      "vlanAware": false,
+      "nativeVlan": 0,
+      "vlans": "",
+      "vxlanID": 14,
+      "hwAddressLastOctet": 3,
+      "internal": 0,
+      "tenantID": 1,
+      "tenantName": "Admin",
+      "guestTenants": [],
+      "sites": [
+        {
+          "id": 8,
+          "name": "Datacenter-A",
+          "switchFabric": "netris"
+        }
+      ],
+      "dhcpRelay": {
+        "enabled": false
+      },
+      "dhcpv6Relay": {
+        "enabled": false
+      },
+      "ipv6ND": {
+        "routerAdvertisement": {
+          "mode": "default",
+          "routerLifetime": {
+            "seconds": null
+          },
+          "advertisementInterval": {
+            "seconds": null
+          },
+          "managedConfig": false,
+          "otherConfig": false
+        },
+        "prefixAdvertisement": {
+          "enabled": false,
+          "preferredLifetime": {
+            "seconds": null
+          },
+          "validLifetime": {
+            "seconds": null
+          },
+          "autoconfig": false
+        },
+        "rdnss": {
+          "enabled": false,
+          "dnsServers": [],
+          "lifetime": {
+            "seconds": null,
+            "infinite": false
+          }
+        }
+      },
+      "ipFamily": "dual",
+      "createdDate": 1789381069000,
+      "modifiedDate": 1789381129000,
+      "portsCount": 0,
+      "vpc": {
+        "id": 31,
+        "name": "Alpha-Workload-660663",
+        "isDefault": false,
+        "isSystem": false
+      },
+      "gateways": [
+        {
+          "prefix": "192.168.15.254/21",
+          "ipFamily": "ipv4"
+        }
+      ],
+      "vlan": 3,
+      "tenant": {
+        "id": 1,
+        "name": "Admin"
+      },
+      "tags": [],
+      "portTags": [],
+      "status": {
+        "label": "Active",
+        "value": "success"
+      }
+    },
+    {
+      "id": 1132,
+      "name": "ACME-East-West",
+      "state": "active",
+      "provisioning": false,
+      "l3vpn": true,
+      "customAnycastMac": "",
+      "vlanAware": false,
+      "nativeVlan": 0,
+      "vlans": "",
+      "vxlanID": 16,
+      "hwAddressLastOctet": 7,
+      "internal": 0,
+      "tenantID": 1,
+      "tenantName": "Admin",
+      "guestTenants": [],
+      "sites": [
+        {
+          "id": 8,
+          "name": "Datacenter-A",
+          "switchFabric": "netris"
+        }
+      ],
+      "dhcpRelay": {
+        "enabled": false
+      },
+      "dhcpv6Relay": {
+        "enabled": false
+      },
+      "ipv6ND": {
+        "routerAdvertisement": {
+          "mode": "default",
+          "routerLifetime": {
+            "seconds": null
+          },
+          "advertisementInterval": {
+            "seconds": null
+          },
+          "managedConfig": false,
+          "otherConfig": false
+        },
+        "prefixAdvertisement": {
+          "enabled": false,
+          "preferredLifetime": {
+            "seconds": null
+          },
+          "validLifetime": {
+            "seconds": null
+          },
+          "autoconfig": false
+        },
+        "rdnss": {
+          "enabled": false,
+          "dnsServers": [],
+          "lifetime": {
+            "seconds": null,
+            "infinite": false
+          }
+        }
+      },
+      "ipFamily": "dual",
+      "createdDate": 1789996866000,
+      "modifiedDate": 1791279355000,
+      "portsCount": 0,
+      "vpc": {
+        "id": 85,
+        "name": "ACME",
+        "isDefault": false,
+        "isSystem": false
+      },
+      "gateways": [],
+      "vlan": 0,
+      "tenant": {
+        "id": 1,
+        "name": "Admin"
+      },
+      "tags": [],
+      "portTags": [],
+      "status": {
+        "label": "Active",
+        "value": "success"
+      }
+    },
+    {
+      "id": 1133,
+      "name": "ACME-North-South",
+      "state": "active",
+      "provisioning": false,
+      "l3vpn": false,
+      "customAnycastMac": "",
+      "vlanAware": false,
+      "nativeVlan": 0,
+      "vlans": "",
+      "vxlanID": 24,
+      "hwAddressLastOctet": 8,
+      "internal": 0,
+      "tenantID": 1,
+      "tenantName": "Admin",
+      "guestTenants": [],
+      "sites": [
+        {
+          "id": 8,
+          "name": "Datacenter-A",
+          "switchFabric": "netris"
+        }
+      ],
+      "dhcpRelay": {
+        "enabled": false
+      },
+      "dhcpv6Relay": {
+        "enabled": false
+      },
+      "ipv6ND": {
+        "routerAdvertisement": {
+          "mode": "default",
+          "routerLifetime": {
+            "seconds": null
+          },
+          "advertisementInterval": {
+            "seconds": null
+          },
+          "managedConfig": false,
+          "otherConfig": false
+        },
+        "prefixAdvertisement": {
+          "enabled": false,
+          "preferredLifetime": {
+            "seconds": null
+          },
+          "validLifetime": {
+            "seconds": null
+          },
+          "autoconfig": false
+        },
+        "rdnss": {
+          "enabled": false,
+          "dnsServers": [],
+          "lifetime": {
+            "seconds": null,
+            "infinite": false
+          }
+        }
+      },
+      "ipFamily": "dual",
+      "createdDate": 1789996866000,
+      "modifiedDate": 1791279363000,
+      "portsCount": 0,
+      "vpc": {
+        "id": 85,
+        "name": "ACME",
+        "isDefault": false,
+        "isSystem": false
+      },
+      "gateways": [
+        {
+          "prefix": "192.168.7.254/21",
+          "ipFamily": "ipv4"
+        }
+      ],
+      "vlan": 4,
+      "tenant": {
+        "id": 1,
+        "name": "Admin"
+      },
+      "tags": [],
+      "portTags": [],
+      "status": {
+        "label": "Active",
+        "value": "success"
+      }
+    },
+    {
+      "id": 1134,
+      "name": "ACME-OOB-Management",
+      "state": "active",
+      "provisioning": false,
+      "l3vpn": false,
+      "customAnycastMac": "",
+      "vlanAware": false,
+      "nativeVlan": 0,
+      "vlans": "",
+      "vxlanID": 27,
+      "hwAddressLastOctet": 9,
+      "internal": 0,
+      "tenantID": 1,
+      "tenantName": "Admin",
+      "guestTenants": [],
+      "sites": [
+        {
+          "id": 8,
+          "name": "Datacenter-A",
+          "switchFabric": "netris"
+        }
+      ],
+      "dhcpRelay": {
+        "enabled": false
+      },
+      "dhcpv6Relay": {
+        "enabled": false
+      },
+      "ipv6ND": {
+        "routerAdvertisement": {
+          "mode": "default",
+          "routerLifetime": {
+            "seconds": null
+          },
+          "advertisementInterval": {
+            "seconds": null
+          },
+          "managedConfig": false,
+          "otherConfig": false
+        },
+        "prefixAdvertisement": {
+          "enabled": false,
+          "preferredLifetime": {
+            "seconds": null
+          },
+          "validLifetime": {
+            "seconds": null
+          },
+          "autoconfig": false
+        },
+        "rdnss": {
+          "enabled": false,
+          "dnsServers": [],
+          "lifetime": {
+            "seconds": null,
+            "infinite": false
+          }
+        }
+      },
+      "ipFamily": "dual",
+      "createdDate": 1789996866000,
+      "modifiedDate": 1791279352000,
+      "portsCount": 0,
+      "vpc": {
+        "id": 85,
+        "name": "ACME",
+        "isDefault": false,
+        "isSystem": false
+      },
+      "gateways": [
+        {
+          "prefix": "192.168.15.254/21",
+          "ipFamily": "ipv4"
+        }
+      ],
+      "vlan": 5,
+      "tenant": {
+        "id": 1,
+        "name": "Admin"
+      },
+      "tags": [],
+      "portTags": [],
+      "status": {
+        "label": "Active",
+        "value": "success"
+      }
+    },
+    {
+      "id": 1200,
+      "name": "Demo-VNET",
+      "state": "active",
+      "provisioning": false,
+      "l3vpn": false,
+      "customAnycastMac": "",
+      "vlanAware": false,
+      "nativeVlan": 0,
+      "vlans": "",
+      "vxlanID": 45,
+      "hwAddressLastOctet": 13,
+      "internal": 0,
+      "tenantID": 1,
+      "tenantName": "Admin",
+      "guestTenants": [],
+      "sites": [
+        {
+          "id": 8,
+          "name": "Datacenter-A",
+          "switchFabric": "netris"
+        }
+      ],
+      "dhcpRelay": {
+        "enabled": false
+      },
+      "dhcpv6Relay": {
+        "enabled": false
+      },
+      "ipv6ND": {
+        "routerAdvertisement": {
+          "mode": "default",
+          "routerLifetime": {
+            "seconds": null
+          },
+          "advertisementInterval": {
+            "seconds": null
+          },
+          "managedConfig": false,
+          "otherConfig": false
+        },
+        "prefixAdvertisement": {
+          "enabled": false,
+          "preferredLifetime": {
+            "seconds": null
+          },
+          "validLifetime": {
+            "seconds": null
+          },
+          "autoconfig": false
+        },
+        "rdnss": {
+          "enabled": false,
+          "dnsServers": [],
+          "lifetime": {
+            "seconds": null,
+            "infinite": false
+          }
+        }
+      },
+      "ipFamily": "dual",
+      "createdDate": 1790452980000,
+      "modifiedDate": 1790453109000,
+      "portsCount": 0,
+      "vpc": {
+        "id": 105,
+        "name": "EMCA",
+        "isDefault": false,
+        "isSystem": false
+      },
+      "gateways": [],
+      "vlan": 8,
+      "tenant": {
+        "id": 1,
+        "name": "Admin"
+      },
+      "tags": [],
+      "portTags": [
+        {
+          "name": "ac",
+          "accessMode": false
+        }
+      ],
+      "status": {
+        "label": "Active",
+        "value": "success"
+      }
+    },
+    {
+      "id": 1204,
+      "name": "Test-East-West",
+      "state": "active",
+      "provisioning": false,
+      "l3vpn": true,
+      "customAnycastMac": "",
+      "vlanAware": false,
+      "nativeVlan": 0,
+      "vlans": "",
+      "vxlanID": 30,
+      "hwAddressLastOctet": 10,
+      "internal": 0,
+      "tenantID": 1,
+      "tenantName": "Admin",
+      "guestTenants": [],
+      "sites": [
+        {
+          "id": 8,
+          "name": "Datacenter-A",
+          "switchFabric": "netris"
+        }
+      ],
+      "dhcpRelay": {
+        "enabled": false
+      },
+      "dhcpv6Relay": {
+        "enabled": false
+      },
+      "ipv6ND": {
+        "routerAdvertisement": {
+          "mode": "default",
+          "routerLifetime": {
+            "seconds": null
+          },
+          "advertisementInterval": {
+            "seconds": null
+          },
+          "managedConfig": false,
+          "otherConfig": false
+        },
+        "prefixAdvertisement": {
+          "enabled": false,
+          "preferredLifetime": {
+            "seconds": null
+          },
+          "validLifetime": {
+            "seconds": null
+          },
+          "autoconfig": false
+        },
+        "rdnss": {
+          "enabled": false,
+          "dnsServers": [],
+          "lifetime": {
+            "seconds": null,
+            "infinite": false
+          }
+        }
+      },
+      "ipFamily": "dual",
+      "createdDate": 1791291309000,
+      "modifiedDate": 1791291370000,
+      "portsCount": 0,
+      "vpc": {
+        "id": 107,
+        "name": "Test",
+        "isDefault": false,
+        "isSystem": false
+      },
+      "gateways": [],
+      "vlan": 0,
+      "tenant": {
+        "id": 1,
+        "name": "Admin"
+      },
+      "tags": [],
+      "portTags": [],
+      "status": {
+        "label": "Active",
+        "value": "success"
+      }
+    },
+    {
+      "id": 1205,
+      "name": "Test-North-South",
+      "state": "active",
+      "provisioning": false,
+      "l3vpn": false,
+      "customAnycastMac": "",
+      "vlanAware": false,
+      "nativeVlan": 0,
+      "vlans": "",
+      "vxlanID": 37,
+      "hwAddressLastOctet": 11,
+      "internal": 0,
+      "tenantID": 1,
+      "tenantName": "Admin",
+      "guestTenants": [],
+      "sites": [
+        {
+          "id": 8,
+          "name": "Datacenter-A",
+          "switchFabric": "netris"
+        }
+      ],
+      "dhcpRelay": {
+        "enabled": false
+      },
+      "dhcpv6Relay": {
+        "enabled": false
+      },
+      "ipv6ND": {
+        "routerAdvertisement": {
+          "mode": "default",
+          "routerLifetime": {
+            "seconds": null
+          },
+          "advertisementInterval": {
+            "seconds": null
+          },
+          "managedConfig": false,
+          "otherConfig": false
+        },
+        "prefixAdvertisement": {
+          "enabled": false,
+          "preferredLifetime": {
+            "seconds": null
+          },
+          "validLifetime": {
+            "seconds": null
+          },
+          "autoconfig": false
+        },
+        "rdnss": {
+          "enabled": false,
+          "dnsServers": [],
+          "lifetime": {
+            "seconds": null,
+            "infinite": false
+          }
+        }
+      },
+      "ipFamily": "dual",
+      "createdDate": 1791291309000,
+      "modifiedDate": 1791291420000,
+      "portsCount": 0,
+      "vpc": {
+        "id": 107,
+        "name": "Test",
+        "isDefault": false,
+        "isSystem": false
+      },
+      "gateways": [
+        {
+          "prefix": "192.168.7.254/21",
+          "ipFamily": "ipv4"
+        }
+      ],
+      "vlan": 6,
+      "tenant": {
+        "id": 1,
+        "name": "Admin"
+      },
+      "tags": [],
+      "portTags": [],
+      "status": {
+        "label": "Active",
+        "value": "success"
+      }
+    },
+    {
+      "id": 1206,
+      "name": "Test-OOB-Management",
+      "state": "active",
+      "provisioning": false,
+      "l3vpn": false,
+      "customAnycastMac": "",
+      "vlanAware": false,
+      "nativeVlan": 0,
+      "vlans": "",
+      "vxlanID": 46,
+      "hwAddressLastOctet": 12,
+      "internal": 0,
+      "tenantID": 1,
+      "tenantName": "Admin",
+      "guestTenants": [],
+      "sites": [
+        {
+          "id": 8,
+          "name": "Datacenter-A",
+          "switchFabric": "netris"
+        }
+      ],
+      "dhcpRelay": {
+        "enabled": false
+      },
+      "dhcpv6Relay": {
+        "enabled": false
+      },
+      "ipv6ND": {
+        "routerAdvertisement": {
+          "mode": "default",
+          "routerLifetime": {
+            "seconds": null
+          },
+          "advertisementInterval": {
+            "seconds": null
+          },
+          "managedConfig": false,
+          "otherConfig": false
+        },
+        "prefixAdvertisement": {
+          "enabled": false,
+          "preferredLifetime": {
+            "seconds": null
+          },
+          "validLifetime": {
+            "seconds": null
+          },
+          "autoconfig": false
+        },
+        "rdnss": {
+          "enabled": false,
+          "dnsServers": [],
+          "lifetime": {
+            "seconds": null,
+            "infinite": false
+          }
+        }
+      },
+      "ipFamily": "dual",
+      "createdDate": 1791291310000,
+      "modifiedDate": 1791291426000,
+      "portsCount": 0,
+      "vpc": {
+        "id": 107,
+        "name": "Test",
+        "isDefault": false,
+        "isSystem": false
+      },
+      "gateways": [
+        {
+          "prefix": "192.168.15.254/21",
+          "ipFamily": "ipv4"
+        }
+      ],
+      "vlan": 7,
+      "tenant": {
+        "id": 1,
+        "name": "Admin"
+      },
+      "tags": [],
+      "portTags": [],
+      "status": {
+        "label": "Active",
+        "value": "success"
+      }
+    },
+    {
+      "id": 1207,
+      "name": "Rafay-East-West",
+      "state": "active",
+      "provisioning": false,
+      "l3vpn": true,
+      "customAnycastMac": "",
+      "vlanAware": false,
+      "nativeVlan": 0,
+      "vlans": "",
+      "vxlanID": 48,
+      "hwAddressLastOctet": 14,
+      "internal": 0,
+      "tenantID": 1,
+      "tenantName": "Admin",
+      "guestTenants": [],
+      "sites": [
+        {
+          "id": 8,
+          "name": "Datacenter-A",
+          "switchFabric": "netris"
+        }
+      ],
+      "dhcpRelay": {
+        "enabled": false
+      },
+      "dhcpv6Relay": {
+        "enabled": false
+      },
+      "ipv6ND": {
+        "routerAdvertisement": {
+          "mode": "default",
+          "routerLifetime": {
+            "seconds": null
+          },
+          "advertisementInterval": {
+            "seconds": null
+          },
+          "managedConfig": false,
+          "otherConfig": false
+        },
+        "prefixAdvertisement": {
+          "enabled": false,
+          "preferredLifetime": {
+            "seconds": null
+          },
+          "validLifetime": {
+            "seconds": null
+          },
+          "autoconfig": false
+        },
+        "rdnss": {
+          "enabled": false,
+          "dnsServers": [],
+          "lifetime": {
+            "seconds": null,
+            "infinite": false
+          }
+        }
+      },
+      "ipFamily": "dual",
+      "createdDate": 1791362251000,
+      "modifiedDate": 1791362290000,
+      "portsCount": 0,
+      "vpc": {
+        "id": 108,
+        "name": "Rafay",
+        "isDefault": false,
+        "isSystem": false
+      },
+      "gateways": [],
+      "vlan": 0,
+      "tenant": {
+        "id": 1,
+        "name": "Admin"
+      },
+      "tags": [],
+      "portTags": [],
+      "status": {
+        "label": "Active",
+        "value": "success"
+      }
+    },
+    {
+      "id": 1208,
+      "name": "Rafay-North-South",
+      "state": "active",
+      "provisioning": false,
+      "l3vpn": false,
+      "customAnycastMac": "",
+      "vlanAware": false,
+      "nativeVlan": 0,
+      "vlans": "",
+      "vxlanID": 52,
+      "hwAddressLastOctet": 15,
+      "internal": 0,
+      "tenantID": 1,
+      "tenantName": "Admin",
+      "guestTenants": [],
+      "sites": [
+        {
+          "id": 8,
+          "name": "Datacenter-A",
+          "switchFabric": "netris"
+        }
+      ],
+      "dhcpRelay": {
+        "enabled": false
+      },
+      "dhcpv6Relay": {
+        "enabled": false
+      },
+      "ipv6ND": {
+        "routerAdvertisement": {
+          "mode": "default",
+          "routerLifetime": {
+            "seconds": null
+          },
+          "advertisementInterval": {
+            "seconds": null
+          },
+          "managedConfig": false,
+          "otherConfig": false
+        },
+        "prefixAdvertisement": {
+          "enabled": false,
+          "preferredLifetime": {
+            "seconds": null
+          },
+          "validLifetime": {
+            "seconds": null
+          },
+          "autoconfig": false
+        },
+        "rdnss": {
+          "enabled": false,
+          "dnsServers": [],
+          "lifetime": {
+            "seconds": null,
+            "infinite": false
+          }
+        }
+      },
+      "ipFamily": "dual",
+      "createdDate": 1791362251000,
+      "modifiedDate": 1791362337000,
+      "portsCount": 0,
+      "vpc": {
+        "id": 108,
+        "name": "Rafay",
+        "isDefault": false,
+        "isSystem": false
+      },
+      "gateways": [
+        {
+          "prefix": "192.168.7.254/21",
+          "ipFamily": "ipv4"
+        }
+      ],
+      "vlan": 9,
+      "tenant": {
+        "id": 1,
+        "name": "Admin"
+      },
+      "tags": [],
+      "portTags": [],
+      "status": {
+        "label": "Active",
+        "value": "success"
+      }
+    },
+    {
+      "id": 1209,
+      "name": "Rafay-OOB-Management",
+      "state": "active",
+      "provisioning": false,
+      "l3vpn": false,
+      "customAnycastMac": "",
+      "vlanAware": false,
+      "nativeVlan": 0,
+      "vlans": "",
+      "vxlanID": 54,
+      "hwAddressLastOctet": 16,
+      "internal": 0,
+      "tenantID": 1,
+      "tenantName": "Admin",
+      "guestTenants": [],
+      "sites": [
+        {
+          "id": 8,
+          "name": "Datacenter-A",
+          "switchFabric": "netris"
+        }
+      ],
+      "dhcpRelay": {
+        "enabled": false
+      },
+      "dhcpv6Relay": {
+        "enabled": false
+      },
+      "ipv6ND": {
+        "routerAdvertisement": {
+          "mode": "default",
+          "routerLifetime": {
+            "seconds": null
+          },
+          "advertisementInterval": {
+            "seconds": null
+          },
+          "managedConfig": false,
+          "otherConfig": false
+        },
+        "prefixAdvertisement": {
+          "enabled": false,
+          "preferredLifetime": {
+            "seconds": null
+          },
+          "validLifetime": {
+            "seconds": null
+          },
+          "autoconfig": false
+        },
+        "rdnss": {
+          "enabled": false,
+          "dnsServers": [],
+          "lifetime": {
+            "seconds": null,
+            "infinite": false
+          }
+        }
+      },
+      "ipFamily": "dual",
+      "createdDate": 1791362251000,
+      "modifiedDate": 1791362337000,
+      "portsCount": 0,
+      "vpc": {
+        "id": 108,
+        "name": "Rafay",
+        "isDefault": false,
+        "isSystem": false
+      },
+      "gateways": [
+        {
+          "prefix": "192.168.15.254/21",
+          "ipFamily": "ipv4"
+        }
+      ],
+      "vlan": 10,
+      "tenant": {
+        "id": 1,
+        "name": "Admin"
+      },
+      "tags": [],
+      "portTags": [],
+      "status": {
+        "label": "Active",
+        "value": "success"
+      }
+    },
+    {
+      "id": 1210,
+      "name": "Nokia-East-West",
+      "state": "active",
+      "provisioning": false,
+      "l3vpn": true,
+      "customAnycastMac": "",
+      "vlanAware": false,
+      "nativeVlan": 0,
+      "vlans": "",
+      "vxlanID": 56,
+      "hwAddressLastOctet": 17,
+      "internal": 0,
+      "tenantID": 1,
+      "tenantName": "Admin",
+      "guestTenants": [],
+      "sites": [
+        {
+          "id": 8,
+          "name": "Datacenter-A",
+          "switchFabric": "netris"
+        }
+      ],
+      "dhcpRelay": {
+        "enabled": false
+      },
+      "dhcpv6Relay": {
+        "enabled": false
+      },
+      "ipv6ND": {
+        "routerAdvertisement": {
+          "mode": "default",
+          "routerLifetime": {
+            "seconds": null
+          },
+          "advertisementInterval": {
+            "seconds": null
+          },
+          "managedConfig": false,
+          "otherConfig": false
+        },
+        "prefixAdvertisement": {
+          "enabled": false,
+          "preferredLifetime": {
+            "seconds": null
+          },
+          "validLifetime": {
+            "seconds": null
+          },
+          "autoconfig": false
+        },
+        "rdnss": {
+          "enabled": false,
+          "dnsServers": [],
+          "lifetime": {
+            "seconds": null,
+            "infinite": false
+          }
+        }
+      },
+      "ipFamily": "dual",
+      "createdDate": 1791378727000,
+      "modifiedDate": 1791378777000,
+      "portsCount": 0,
+      "vpc": {
+        "id": 109,
+        "name": "Nokia",
+        "isDefault": false,
+        "isSystem": false
+      },
+      "gateways": [],
+      "vlan": 0,
+      "tenant": {
+        "id": 1,
+        "name": "Admin"
+      },
+      "tags": [],
+      "portTags": [],
+      "status": {
+        "label": "Active",
+        "value": "success"
+      }
+    },
+    {
+      "id": 1211,
+      "name": "Nokia-North-South",
+      "state": "active",
+      "provisioning": false,
+      "l3vpn": false,
+      "customAnycastMac": "",
+      "vlanAware": false,
+      "nativeVlan": 0,
+      "vlans": "",
+      "vxlanID": 59,
+      "hwAddressLastOctet": 18,
+      "internal": 0,
+      "tenantID": 1,
+      "tenantName": "Admin",
+      "guestTenants": [],
+      "sites": [
+        {
+          "id": 8,
+          "name": "Datacenter-A",
+          "switchFabric": "netris"
+        }
+      ],
+      "dhcpRelay": {
+        "enabled": false
+      },
+      "dhcpv6Relay": {
+        "enabled": false
+      },
+      "ipv6ND": {
+        "routerAdvertisement": {
+          "mode": "default",
+          "routerLifetime": {
+            "seconds": null
+          },
+          "advertisementInterval": {
+            "seconds": null
+          },
+          "managedConfig": false,
+          "otherConfig": false
+        },
+        "prefixAdvertisement": {
+          "enabled": false,
+          "preferredLifetime": {
+            "seconds": null
+          },
+          "validLifetime": {
+            "seconds": null
+          },
+          "autoconfig": false
+        },
+        "rdnss": {
+          "enabled": false,
+          "dnsServers": [],
+          "lifetime": {
+            "seconds": null,
+            "infinite": false
+          }
+        }
+      },
+      "ipFamily": "dual",
+      "createdDate": 1791378727000,
+      "modifiedDate": 1791378779000,
+      "portsCount": 0,
+      "vpc": {
+        "id": 109,
+        "name": "Nokia",
+        "isDefault": false,
+        "isSystem": false
+      },
+      "gateways": [
+        {
+          "prefix": "192.168.7.254/21",
+          "ipFamily": "ipv4"
+        }
+      ],
+      "vlan": 11,
+      "tenant": {
+        "id": 1,
+        "name": "Admin"
+      },
+      "tags": [],
+      "portTags": [],
+      "status": {
+        "label": "Active",
+        "value": "success"
+      }
+    },
+    {
+      "id": 1212,
+      "name": "Nokia-OOB-Management",
+      "state": "active",
+      "provisioning": false,
+      "l3vpn": false,
+      "customAnycastMac": "",
+      "vlanAware": false,
+      "nativeVlan": 0,
+      "vlans": "",
+      "vxlanID": 62,
+      "hwAddressLastOctet": 19,
+      "internal": 0,
+      "tenantID": 1,
+      "tenantName": "Admin",
+      "guestTenants": [],
+      "sites": [
+        {
+          "id": 8,
+          "name": "Datacenter-A",
+          "switchFabric": "netris"
+        }
+      ],
+      "dhcpRelay": {
+        "enabled": false
+      },
+      "dhcpv6Relay": {
+        "enabled": false
+      },
+      "ipv6ND": {
+        "routerAdvertisement": {
+          "mode": "default",
+          "routerLifetime": {
+            "seconds": null
+          },
+          "advertisementInterval": {
+            "seconds": null
+          },
+          "managedConfig": false,
+          "otherConfig": false
+        },
+        "prefixAdvertisement": {
+          "enabled": false,
+          "preferredLifetime": {
+            "seconds": null
+          },
+          "validLifetime": {
+            "seconds": null
+          },
+          "autoconfig": false
+        },
+        "rdnss": {
+          "enabled": false,
+          "dnsServers": [],
+          "lifetime": {
+            "seconds": null,
+            "infinite": false
+          }
+        }
+      },
+      "ipFamily": "dual",
+      "createdDate": 1791378727000,
+      "modifiedDate": 1791378772000,
+      "portsCount": 0,
+      "vpc": {
+        "id": 109,
+        "name": "Nokia",
+        "isDefault": false,
+        "isSystem": false
+      },
+      "gateways": [
+        {
+          "prefix": "192.168.15.254/21",
+          "ipFamily": "ipv4"
+        }
+      ],
+      "vlan": 12,
+      "tenant": {
+        "id": 1,
+        "name": "Admin"
+      },
+      "tags": [],
+      "portTags": [],
+      "status": {
+        "label": "Active",
+        "value": "success"
+      }
+    }
+  ],
+  "errors": null,
+  "message": "",
+  "isSuccess": true,
+  "meta": {
+    "apiVersion": "v2",
+    "statusCode": 200
+  }
+}

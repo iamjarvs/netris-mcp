@@ -1,0 +1,953 @@
+{
+  "data": [
+    {
+      "id": 1143903894,
+      "local": {
+        "id": 22301,
+        "port": "swp1s0",
+        "name": "swp1s0@leaf-pod00-su0-r0",
+        "ipv4": "172.16.0.1/31",
+        "ipv6": "",
+        "speed": "1G",
+        "status": {
+          "label": "Link Up",
+          "value": "success"
+        },
+        "hardware": {
+          "id": 517,
+          "name": "leaf-pod00-su0-r0",
+          "type": "switch"
+        }
+      },
+      "remote": {
+        "id": 25529,
+        "port": "eth1",
+        "name": "eth1@hgx-pod00-su0-h00",
+        "ipv4": "172.16.0.0/31",
+        "ipv6": "",
+        "speed": "",
+        "status": {
+          "label": "Unknown",
+          "value": "unknown"
+        },
+        "hardware": {
+          "id": 557,
+          "name": "hgx-pod00-su0-h00",
+          "type": "server"
+        }
+      },
+      "utilization": {
+        "label": "5%",
+        "value": 5
+      },
+      "mclagPeerLink": null,
+      "linkType": {
+        "value": "",
+        "label": ""
+      },
+      "underlay": "disabled"
+    },
+    {
+      "id": 1144143063,
+      "local": {
+        "id": 22302,
+        "port": "swp1s1",
+        "name": "swp1s1@leaf-pod00-su0-r0",
+        "ipv4": "172.24.0.1/31",
+        "ipv6": "",
+        "speed": "1G",
+        "status": {
+          "label": "Link Up",
+          "value": "success"
+        },
+        "hardware": {
+          "id": 517,
+          "name": "leaf-pod00-su0-r0",
+          "type": "switch"
+        }
+      },
+      "remote": {
+        "id": 25533,
+        "port": "eth5",
+        "name": "eth5@hgx-pod00-su0-h00",
+        "ipv4": "172.24.0.0/31",
+        "ipv6": "",
+        "speed": "",
+        "status": {
+          "label": "Unknown",
+          "value": "unknown"
+        },
+        "hardware": {
+          "id": 557,
+          "name": "hgx-pod00-su0-h00",
+          "type": "server"
+        }
+      },
+      "utilization": {
+        "label": "0%",
+        "value": 0
+      },
+      "mclagPeerLink": null,
+      "linkType": {
+        "value": "",
+        "label": ""
+      },
+      "underlay": "disabled"
+    },
+    {
+      "id": 1169395037,
+      "local": {
+        "id": 22303,
+        "port": "swp2s0",
+        "name": "swp2s0@leaf-pod00-su0-r0",
+        "ipv4": "172.16.0.3/31",
+        "ipv6": "",
+        "speed": "1G",
+        "status": {
+          "label": "Link Up",
+          "value": "success"
+        },
+        "hardware": {
+          "id": 517,
+          "name": "leaf-pod00-su0-r0",
+          "type": "switch"
+        }
+      },
+      "remote": {
+        "id": 26057,
+        "port": "eth1",
+        "name": "eth1@hgx-pod00-su0-h01",
+        "ipv4": "172.16.0.2/31",
+        "ipv6": "",
+        "speed": "",
+        "status": {
+          "label": "Unknown",
+          "value": "unknown"
+        },
+        "hardware": {
+          "id": 590,
+          "name": "hgx-pod00-su0-h01",
+          "type": "server"
+        }
+      },
+      "utilization": {
+        "label": "5%",
+        "value": 5
+      },
+      "mclagPeerLink": null,
+      "linkType": {
+        "value": "",
+        "label": ""
+      },
+      "underlay": "disabled"
+    },
+    {
+      "id": 1169636856,
+      "local": {
+        "id": 22304,
+        "port": "swp2s1",
+        "name": "swp2s1@leaf-pod00-su0-r0",
+        "ipv4": "172.24.0.3/31",
+        "ipv6": "",
+        "speed": "1G",
+        "status": {
+          "label": "Link Up",
+          "value": "success"
+        },
+        "hardware": {
+          "id": 517,
+          "name": "leaf-pod00-su0-r0",
+          "type": "switch"
+        }
+      },
+      "remote": {
+        "id": 26061,
+        "port": "eth5",
+        "name": "eth5@hgx-pod00-su0-h01",
+        "ipv4": "172.24.0.2/31",
+        "ipv6": "",
+        "speed": "",
+        "status": {
+          "label": "Unknown",
+          "value": "unknown"
+        },
+        "hardware": {
+          "id": 590,
+          "name": "hgx-pod00-su0-h01",
+          "type": "server"
+        }
+      },
+      "utilization": {
+        "label": "0%",
+        "value": 0
+      },
+      "mclagPeerLink": null,
+      "linkType": {
+        "value": "",
+        "label": ""
+      },
+      "underlay": "disabled"
+    },
+    {
+      "id": 1147925264,
+      "local": {
+        "id": 22305,
+        "port": "swp3s0",
+        "name": "swp3s0@leaf-pod00-su0-r0",
+        "ipv4": "172.16.0.5/31",
+        "ipv6": "",
+        "speed": "1G",
+        "status": {
+          "label": "Link Up",
+          "value": "success"
+        },
+        "hardware": {
+          "id": 517,
+          "name": "leaf-pod00-su0-r0",
+          "type": "switch"
+        }
+      },
+      "remote": {
+        "id": 25609,
+        "port": "eth1",
+        "name": "eth1@hgx-pod00-su0-h02",
+        "ipv4": "172.16.0.4/31",
+        "ipv6": "",
+        "speed": "",
+        "status": {
+          "label": "Unknown",
+          "value": "unknown"
+        },
+        "hardware": {
+          "id": 562,
+          "name": "hgx-pod00-su0-h02",
+          "type": "server"
+        }
+      },
+      "utilization": {
+        "label": "5%",
+        "value": 5
+      },
+      "mclagPeerLink": null,
+      "linkType": {
+        "value": "",
+        "label": ""
+      },
+      "underlay": "disabled"
+    },
+    {
+      "id": 1148164853,
+      "local": {
+        "id": 22306,
+        "port": "swp3s1",
+        "name": "swp3s1@leaf-pod00-su0-r0",
+        "ipv4": "172.24.0.5/31",
+        "ipv6": "",
+        "speed": "1G",
+        "status": {
+          "label": "Link Up",
+          "value": "success"
+        },
+        "hardware": {
+          "id": 517,
+          "name": "leaf-pod00-su0-r0",
+          "type": "switch"
+        }
+      },
+      "remote": {
+        "id": 25613,
+        "port": "eth5",
+        "name": "eth5@hgx-pod00-su0-h02",
+        "ipv4": "172.24.0.4/31",
+        "ipv6": "",
+        "speed": "",
+        "status": {
+          "label": "Unknown",
+          "value": "unknown"
+        },
+        "hardware": {
+          "id": 562,
+          "name": "hgx-pod00-su0-h02",
+          "type": "server"
+        }
+      },
+      "utilization": {
+        "label": "0%",
+        "value": 0
+      },
+      "mclagPeerLink": null,
+      "linkType": {
+        "value": "",
+        "label": ""
+      },
+      "underlay": "disabled"
+    },
+    {
+      "id": 1161862807,
+      "local": {
+        "id": 22307,
+        "port": "swp4s0",
+        "name": "swp4s0@leaf-pod00-su0-r0",
+        "ipv4": "172.16.0.7/31",
+        "ipv6": "",
+        "speed": "1G",
+        "status": {
+          "label": "Link Up",
+          "value": "success"
+        },
+        "hardware": {
+          "id": 517,
+          "name": "leaf-pod00-su0-r0",
+          "type": "switch"
+        }
+      },
+      "remote": {
+        "id": 25897,
+        "port": "eth1",
+        "name": "eth1@hgx-pod00-su0-h03",
+        "ipv4": "172.16.0.6/31",
+        "ipv6": "",
+        "speed": "",
+        "status": {
+          "label": "Unknown",
+          "value": "unknown"
+        },
+        "hardware": {
+          "id": 580,
+          "name": "hgx-pod00-su0-h03",
+          "type": "server"
+        }
+      },
+      "utilization": {
+        "label": "5%",
+        "value": 5
+      },
+      "mclagPeerLink": null,
+      "linkType": {
+        "value": "",
+        "label": ""
+      },
+      "underlay": "disabled"
+    },
+    {
+      "id": 1162103846,
+      "local": {
+        "id": 22308,
+        "port": "swp4s1",
+        "name": "swp4s1@leaf-pod00-su0-r0",
+        "ipv4": "172.24.0.7/31",
+        "ipv6": "",
+        "speed": "1G",
+        "status": {
+          "label": "Link Up",
+          "value": "success"
+        },
+        "hardware": {
+          "id": 517,
+          "name": "leaf-pod00-su0-r0",
+          "type": "switch"
+        }
+      },
+      "remote": {
+        "id": 25901,
+        "port": "eth5",
+        "name": "eth5@hgx-pod00-su0-h03",
+        "ipv4": "172.24.0.6/31",
+        "ipv6": "",
+        "speed": "",
+        "status": {
+          "label": "Unknown",
+          "value": "unknown"
+        },
+        "hardware": {
+          "id": 580,
+          "name": "hgx-pod00-su0-h03",
+          "type": "server"
+        }
+      },
+      "utilization": {
+        "label": "0%",
+        "value": 0
+      },
+      "mclagPeerLink": null,
+      "linkType": {
+        "value": "",
+        "label": ""
+      },
+      "underlay": "disabled"
+    },
+    {
+      "id": 1158875986,
+      "local": {
+        "id": 22309,
+        "port": "swp5s0",
+        "name": "swp5s0@leaf-pod00-su0-r0",
+        "ipv4": "172.16.0.9/31",
+        "ipv6": "",
+        "speed": "1G",
+        "status": {
+          "label": "Link Up",
+          "value": "success"
+        },
+        "hardware": {
+          "id": 517,
+          "name": "leaf-pod00-su0-r0",
+          "type": "switch"
+        }
+      },
+      "remote": {
+        "id": 25833,
+        "port": "eth1",
+        "name": "eth1@hgx-pod00-su0-h04",
+        "ipv4": "172.16.0.8/31",
+        "ipv6": "",
+        "speed": "",
+        "status": {
+          "label": "Unknown",
+          "value": "unknown"
+        },
+        "hardware": {
+          "id": 576,
+          "name": "hgx-pod00-su0-h04",
+          "type": "server"
+        }
+      },
+      "utilization": {
+        "label": "5%",
+        "value": 5
+      },
+      "mclagPeerLink": null,
+      "linkType": {
+        "value": "",
+        "label": ""
+      },
+      "underlay": "disabled"
+    },
+    {
+      "id": 1159116715,
+      "local": {
+        "id": 22310,
+        "port": "swp5s1",
+        "name": "swp5s1@leaf-pod00-su0-r0",
+        "ipv4": "172.24.0.9/31",
+        "ipv6": "",
+        "speed": "1G",
+        "status": {
+          "label": "Link Up",
+          "value": "success"
+        },
+        "hardware": {
+          "id": 517,
+          "name": "leaf-pod00-su0-r0",
+          "type": "switch"
+        }
+      },
+      "remote": {
+        "id": 25837,
+        "port": "eth5",
+        "name": "eth5@hgx-pod00-su0-h04",
+        "ipv4": "172.24.0.8/31",
+        "ipv6": "",
+        "speed": "",
+        "status": {
+          "label": "Unknown",
+          "value": "unknown"
+        },
+        "hardware": {
+          "id": 576,
+          "name": "hgx-pod00-su0-h04",
+          "type": "server"
+        }
+      },
+      "utilization": {
+        "label": "0%",
+        "value": 0
+      },
+      "mclagPeerLink": null,
+      "linkType": {
+        "value": "",
+        "label": ""
+      },
+      "underlay": "disabled"
+    },
+    {
+      "id": 1157432129,
+      "local": {
+        "id": 22311,
+        "port": "swp6s0",
+        "name": "swp6s0@leaf-pod00-su0-r0",
+        "ipv4": "172.16.0.11/31",
+        "ipv6": "",
+        "speed": "1G",
+        "status": {
+          "label": "Link Up",
+          "value": "success"
+        },
+        "hardware": {
+          "id": 517,
+          "name": "leaf-pod00-su0-r0",
+          "type": "switch"
+        }
+      },
+      "remote": {
+        "id": 25801,
+        "port": "eth1",
+        "name": "eth1@hgx-pod00-su0-h05",
+        "ipv4": "172.16.0.10/31",
+        "ipv6": "",
+        "speed": "",
+        "status": {
+          "label": "Unknown",
+          "value": "unknown"
+        },
+        "hardware": {
+          "id": 574,
+          "name": "hgx-pod00-su0-h05",
+          "type": "server"
+        }
+      },
+      "utilization": {
+        "label": "5%",
+        "value": 5
+      },
+      "mclagPeerLink": null,
+      "linkType": {
+        "value": "",
+        "label": ""
+      },
+      "underlay": "disabled"
+    },
+    {
+      "id": 1157672708,
+      "local": {
+        "id": 22312,
+        "port": "swp6s1",
+        "name": "swp6s1@leaf-pod00-su0-r0",
+        "ipv4": "172.24.0.11/31",
+        "ipv6": "",
+        "speed": "1G",
+        "status": {
+          "label": "Link Up",
+          "value": "success"
+        },
+        "hardware": {
+          "id": 517,
+          "name": "leaf-pod00-su0-r0",
+          "type": "switch"
+        }
+      },
+      "remote": {
+        "id": 25805,
+        "port": "eth5",
+        "name": "eth5@hgx-pod00-su0-h05",
+        "ipv4": "172.24.0.10/31",
+        "ipv6": "",
+        "speed": "",
+        "status": {
+          "label": "Unknown",
+          "value": "unknown"
+        },
+        "hardware": {
+          "id": 574,
+          "name": "hgx-pod00-su0-h05",
+          "type": "server"
+        }
+      },
+      "utilization": {
+        "label": "0%",
+        "value": 0
+      },
+      "mclagPeerLink": null,
+      "linkType": {
+        "value": "",
+        "label": ""
+      },
+      "underlay": "disabled"
+    },
+    {
+      "id": 1142947452,
+      "local": {
+        "id": 22313,
+        "port": "swp7s0",
+        "name": "swp7s0@leaf-pod00-su0-r0",
+        "ipv4": "172.16.0.13/31",
+        "ipv6": "",
+        "speed": "1G",
+        "status": {
+          "label": "Link Up",
+          "value": "success"
+        },
+        "hardware": {
+          "id": 517,
+          "name": "leaf-pod00-su0-r0",
+          "type": "switch"
+        }
+      },
+      "remote": {
+        "id": 25497,
+        "port": "eth1",
+        "name": "eth1@hgx-pod00-su0-h06",
+        "ipv4": "172.16.0.12/31",
+        "ipv6": "",
+        "speed": "",
+        "status": {
+          "label": "Unknown",
+          "value": "unknown"
+        },
+        "hardware": {
+          "id": 555,
+          "name": "hgx-pod00-su0-h06",
+          "type": "server"
+        }
+      },
+      "utilization": {
+        "label": "0%",
+        "value": 0
+      },
+      "mclagPeerLink": null,
+      "linkType": {
+        "value": "",
+        "label": ""
+      },
+      "underlay": "disabled"
+    },
+    {
+      "id": 1143186521,
+      "local": {
+        "id": 22314,
+        "port": "swp7s1",
+        "name": "swp7s1@leaf-pod00-su0-r0",
+        "ipv4": "172.24.0.13/31",
+        "ipv6": "",
+        "speed": "1G",
+        "status": {
+          "label": "Link Up",
+          "value": "success"
+        },
+        "hardware": {
+          "id": 517,
+          "name": "leaf-pod00-su0-r0",
+          "type": "switch"
+        }
+      },
+      "remote": {
+        "id": 25501,
+        "port": "eth5",
+        "name": "eth5@hgx-pod00-su0-h06",
+        "ipv4": "172.24.0.12/31",
+        "ipv6": "",
+        "speed": "",
+        "status": {
+          "label": "Unknown",
+          "value": "unknown"
+        },
+        "hardware": {
+          "id": 555,
+          "name": "hgx-pod00-su0-h06",
+          "type": "server"
+        }
+      },
+      "utilization": {
+        "label": "0%",
+        "value": 0
+      },
+      "mclagPeerLink": null,
+      "linkType": {
+        "value": "",
+        "label": ""
+      },
+      "underlay": "disabled"
+    },
+    {
+      "id": 1161477187,
+      "local": {
+        "id": 22315,
+        "port": "swp8s0",
+        "name": "swp8s0@leaf-pod00-su0-r0",
+        "ipv4": "172.16.0.15/31",
+        "ipv6": "",
+        "speed": "1G",
+        "status": {
+          "label": "Link Up",
+          "value": "success"
+        },
+        "hardware": {
+          "id": 517,
+          "name": "leaf-pod00-su0-r0",
+          "type": "switch"
+        }
+      },
+      "remote": {
+        "id": 25881,
+        "port": "eth1",
+        "name": "eth1@hgx-pod00-su0-h07",
+        "ipv4": "172.16.0.14/31",
+        "ipv6": "",
+        "speed": "",
+        "status": {
+          "label": "Unknown",
+          "value": "unknown"
+        },
+        "hardware": {
+          "id": 579,
+          "name": "hgx-pod00-su0-h07",
+          "type": "server"
+        }
+      },
+      "utilization": {
+        "label": "0%",
+        "value": 0
+      },
+      "mclagPeerLink": null,
+      "linkType": {
+        "value": "",
+        "label": ""
+      },
+      "underlay": "disabled"
+    },
+    {
+      "id": 1161718186,
+      "local": {
+        "id": 22316,
+        "port": "swp8s1",
+        "name": "swp8s1@leaf-pod00-su0-r0",
+        "ipv4": "172.24.0.15/31",
+        "ipv6": "",
+        "speed": "1G",
+        "status": {
+          "label": "Link Up",
+          "value": "success"
+        },
+        "hardware": {
+          "id": 517,
+          "name": "leaf-pod00-su0-r0",
+          "type": "switch"
+        }
+      },
+      "remote": {
+        "id": 25885,
+        "port": "eth5",
+        "name": "eth5@hgx-pod00-su0-h07",
+        "ipv4": "172.24.0.14/31",
+        "ipv6": "",
+        "speed": "",
+        "status": {
+          "label": "Unknown",
+          "value": "unknown"
+        },
+        "hardware": {
+          "id": 579,
+          "name": "hgx-pod00-su0-h07",
+          "type": "server"
+        }
+      },
+      "utilization": {
+        "label": "0%",
+        "value": 0
+      },
+      "mclagPeerLink": null,
+      "linkType": {
+        "value": "",
+        "label": ""
+      },
+      "underlay": "disabled"
+    },
+    {
+      "id": 1143903878,
+      "local": {
+        "id": 22317,
+        "port": "swp9s0",
+        "name": "swp9s0@leaf-pod00-su0-r0",
+        "ipv4": "172.16.0.17/31",
+        "ipv6": "",
+        "speed": "1G",
+        "status": {
+          "label": "Link Up",
+          "value": "success"
+        },
+        "hardware": {
+          "id": 517,
+          "name": "leaf-pod00-su0-r0",
+          "type": "switch"
+        }
+      },
+      "remote": {
+        "id": 25513,
+        "port": "eth1",
+        "name": "eth1@hgx-pod00-su0-h08",
+        "ipv4": "172.16.0.16/31",
+        "ipv6": "",
+        "speed": "",
+        "status": {
+          "label": "Unknown",
+          "value": "unknown"
+        },
+        "hardware": {
+          "id": 556,
+          "name": "hgx-pod00-su0-h08",
+          "type": "server"
+        }
+      },
+      "utilization": {
+        "label": "0%",
+        "value": 0
+      },
+      "mclagPeerLink": null,
+      "linkType": {
+        "value": "",
+        "label": ""
+      },
+      "underlay": "disabled"
+    },
+    {
+      "id": 1144143047,
+      "local": {
+        "id": 22318,
+        "port": "swp9s1",
+        "name": "swp9s1@leaf-pod00-su0-r0",
+        "ipv4": "172.24.0.17/31",
+        "ipv6": "",
+        "speed": "1G",
+        "status": {
+          "label": "Link Up",
+          "value": "success"
+        },
+        "hardware": {
+          "id": 517,
+          "name": "leaf-pod00-su0-r0",
+          "type": "switch"
+        }
+      },
+      "remote": {
+        "id": 25517,
+        "port": "eth5",
+        "name": "eth5@hgx-pod00-su0-h08",
+        "ipv4": "172.24.0.16/31",
+        "ipv6": "",
+        "speed": "",
+        "status": {
+          "label": "Unknown",
+          "value": "unknown"
+        },
+        "hardware": {
+          "id": 556,
+          "name": "hgx-pod00-su0-h08",
+          "type": "server"
+        }
+      },
+      "utilization": {
+        "label": "0%",
+        "value": 0
+      },
+      "mclagPeerLink": null,
+      "linkType": {
+        "value": "",
+        "label": ""
+      },
+      "underlay": "disabled"
+    },
+    {
+      "id": 1157047245,
+      "local": {
+        "id": 22319,
+        "port": "swp10s0",
+        "name": "swp10s0@leaf-pod00-su0-r0",
+        "ipv4": "172.16.0.19/31",
+        "ipv6": "",
+        "speed": "1G",
+        "status": {
+          "label": "Link Up",
+          "value": "success"
+        },
+        "hardware": {
+          "id": 517,
+          "name": "leaf-pod00-su0-r0",
+          "type": "switch"
+        }
+      },
+      "remote": {
+        "id": 25785,
+        "port": "eth1",
+        "name": "eth1@hgx-pod00-su0-h09",
+        "ipv4": "172.16.0.18/31",
+        "ipv6": "",
+        "speed": "",
+        "status": {
+          "label": "Unknown",
+          "value": "unknown"
+        },
+        "hardware": {
+          "id": 573,
+          "name": "hgx-pod00-su0-h09",
+          "type": "server"
+        }
+      },
+      "utilization": {
+        "label": "0%",
+        "value": 0
+      },
+      "mclagPeerLink": null,
+      "linkType": {
+        "value": "",
+        "label": ""
+      },
+      "underlay": "disabled"
+    },
+    {
+      "id": 1157287784,
+      "local": {
+        "id": 22320,
+        "port": "swp10s1",
+        "name": "swp10s1@leaf-pod00-su0-r0",
+        "ipv4": "172.24.0.19/31",
+        "ipv6": "",
+        "speed": "1G",
+        "status": {
+          "label": "Link Up",
+          "value": "success"
+        },
+        "hardware": {
+          "id": 517,
+          "name": "leaf-pod00-su0-r0",
+          "type": "switch"
+        }
+      },
+      "remote": {
+        "id": 25789,
+        "port": "eth5",
+        "name": "eth5@hgx-pod00-su0-h09",
+        "ipv4": "172.24.0.18/31",
+        "ipv6": "",
+        "speed": "",
+        "status": {
+          "label": "Unknown",
+          "value": "unknown"
+        },
+        "hardware": {
+          "id": 573,
+          "name": "hgx-pod00-su0-h09",
+          "type": "server"
+        }
+      },
+      "utilization": {
+        "label": "0%",
+        "value": 0
+      },
+      "mclagPeerLink": null,
+      "linkType": {
+        "value": "",
+        "label": ""
+      },
+      "underlay": "disabled"
+    }
+  ],
+  "errors": null,
+  "message": "",
+  "isSuccess": true,
+  "meta": {
+    "apiVersion": "v2",
+    "statusCode": 200,
+    "totalDocs": 2244,
+    "limit": 2244
+  }
+}

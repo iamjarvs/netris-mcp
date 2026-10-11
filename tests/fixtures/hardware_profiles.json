@@ -1,0 +1,379 @@
+{
+  "data": [
+    {
+      "id": 11,
+      "name": "East-West",
+      "description": "Inventory Profile for East-West Network",
+      "ipv4_ssh": "0.0.0.0/0",
+      "ipv6_ssh": "::/0",
+      "timezone": "{\"label\":\"America/Los_Angeles\",\"offset\":\"\",\"tzCode\":\"America/Los_Angeles\"}",
+      "ntp_servers": "0.us.pool.ntp.org",
+      "dns_servers": "1.0.0.1,8.8.4.4",
+      "customRules": [],
+      "fabricProps": {
+        "optimiseBgpOverlay": false,
+        "optimiseBgpOverlayHypervisor": false,
+        "unnumberedBgpUnderlay": true,
+        "automaticLinkAggregation": false,
+        "mclag": false,
+        "fabricType": "ew",
+        "serverBasedESI": false
+      },
+      "gpuClusterProps": {
+        "roce": true,
+        "roceAdaptiveRouting": true,
+        "congestionControl": true,
+        "asicMonitoring": true,
+        "hwmp": false,
+        "aggregateL3VpnPrefix": false,
+        "refArch": "none"
+      },
+      "ztpProps": {
+        "nosImage": ""
+      },
+      "snmpv2Props": {
+        "enabled": false,
+        "community": "",
+        "ipv4_list": [],
+        "contact": "",
+        "location": ""
+      },
+      "netqProps": {
+        "enabled": false,
+        "serverAddrs": [],
+        "serverPort": 31980
+      },
+      "created_date": 1789376423000,
+      "modified_date": 1790240635000
+    },
+    {
+      "id": 12,
+      "name": "North-South",
+      "description": "Inventory Profile for North-South Network",
+      "ipv4_ssh": "0.0.0.0/0",
+      "ipv6_ssh": "::/0",
+      "timezone": "{\"label\":\"America/Los_Angeles\",\"offset\":\"\",\"tzCode\":\"America/Los_Angeles\"}",
+      "ntp_servers": "0.us.pool.ntp.org",
+      "dns_servers": "1.1.1.1,8.8.8.8",
+      "customRules": [],
+      "fabricProps": {
+        "optimiseBgpOverlay": true,
+        "optimiseBgpOverlayHypervisor": false,
+        "unnumberedBgpUnderlay": true,
+        "automaticLinkAggregation": false,
+        "mclag": false,
+        "fabricType": "ns",
+        "serverBasedESI": false
+      },
+      "gpuClusterProps": {
+        "roce": false,
+        "roceAdaptiveRouting": false,
+        "congestionControl": false,
+        "asicMonitoring": false,
+        "hwmp": false,
+        "aggregateL3VpnPrefix": false,
+        "refArch": "none"
+      },
+      "ztpProps": {
+        "nosImage": ""
+      },
+      "snmpv2Props": {
+        "enabled": false,
+        "community": "",
+        "ipv4_list": [],
+        "contact": "",
+        "location": ""
+      },
+      "netqProps": {
+        "enabled": false,
+        "serverAddrs": [],
+        "serverPort": 31980
+      },
+      "created_date": 1789376423000,
+      "modified_date": 1790013170000
+    },
+    {
+      "id": 61,
+      "name": "hardwarefree-oob-profile",
+      "description": "Out-of-band management profile",
+      "ipv4_ssh": "0.0.0.0/0",
+      "ipv6_ssh": "",
+      "timezone": "{\"label\":\"Europe/London\",\"offset\":\"\",\"tzCode\":\"Europe/London\"}",
+      "ntp_servers": "1.pool.ntp.org,2.pool.ntp.org",
+      "dns_servers": "1.1.1.1,8.8.8.8",
+      "customRules": [],
+      "fabricProps": {
+        "optimiseBgpOverlay": false,
+        "optimiseBgpOverlayHypervisor": false,
+        "unnumberedBgpUnderlay": false,
+        "automaticLinkAggregation": false,
+        "mclag": false,
+        "fabricType": "oob",
+        "serverBasedESI": false
+      },
+      "gpuClusterProps": {
+        "roce": false,
+        "roceAdaptiveRouting": false,
+        "congestionControl": false,
+        "asicMonitoring": false,
+        "hwmp": false,
+        "aggregateL3VpnPrefix": false,
+        "refArch": "none"
+      },
+      "ztpProps": {
+        "nosImage": ""
+      },
+      "snmpv2Props": {
+        "enabled": false,
+        "community": "",
+        "ipv4_list": [],
+        "contact": "",
+        "location": ""
+      },
+      "netqProps": {
+        "enabled": false,
+        "serverAddrs": [],
+        "serverPort": 31980
+      },
+      "created_date": 1789722761000,
+      "modified_date": 1789722761000
+    },
+    {
+      "id": 62,
+      "name": "hardwarefree-ew-pl1",
+      "description": "East-West Spectrum-X Profile for Plane 1",
+      "ipv4_ssh": "0.0.0.0/0",
+      "ipv6_ssh": "",
+      "timezone": "{\"label\":\"Europe/London\",\"offset\":\"\",\"tzCode\":\"Europe/London\"}",
+      "ntp_servers": "1.pool.ntp.org,2.pool.ntp.org",
+      "dns_servers": "1.1.1.1,8.8.8.8",
+      "customRules": [],
+      "fabricProps": {
+        "optimiseBgpOverlay": true,
+        "optimiseBgpOverlayHypervisor": false,
+        "unnumberedBgpUnderlay": true,
+        "automaticLinkAggregation": false,
+        "mclag": false,
+        "fabricType": "ew-plane1",
+        "serverBasedESI": false
+      },
+      "gpuClusterProps": {
+        "roce": true,
+        "roceAdaptiveRouting": true,
+        "congestionControl": true,
+        "asicMonitoring": false,
+        "hwmp": false,
+        "aggregateL3VpnPrefix": false,
+        "refArch": "b300_spx_2_tier_dual_plane"
+      },
+      "ztpProps": {
+        "nosImage": ""
+      },
+      "snmpv2Props": {
+        "enabled": false,
+        "community": "",
+        "ipv4_list": [],
+        "contact": "",
+        "location": ""
+      },
+      "netqProps": {
+        "enabled": false,
+        "serverAddrs": [],
+        "serverPort": 31980
+      },
+      "created_date": 1789722761000,
+      "modified_date": 1789722761000
+    },
+    {
+      "id": 63,
+      "name": "hardwarefree-ew-pl3",
+      "description": "East-West Spectrum-X Profile for Plane 3",
+      "ipv4_ssh": "0.0.0.0/0",
+      "ipv6_ssh": "",
+      "timezone": "{\"label\":\"Europe/London\",\"offset\":\"\",\"tzCode\":\"Europe/London\"}",
+      "ntp_servers": "1.pool.ntp.org,2.pool.ntp.org",
+      "dns_servers": "1.1.1.1,8.8.8.8",
+      "customRules": [],
+      "fabricProps": {
+        "optimiseBgpOverlay": true,
+        "optimiseBgpOverlayHypervisor": false,
+        "unnumberedBgpUnderlay": true,
+        "automaticLinkAggregation": false,
+        "mclag": false,
+        "fabricType": "ew-plane3",
+        "serverBasedESI": false
+      },
+      "gpuClusterProps": {
+        "roce": true,
+        "roceAdaptiveRouting": true,
+        "congestionControl": true,
+        "asicMonitoring": false,
+        "hwmp": false,
+        "aggregateL3VpnPrefix": false,
+        "refArch": "b300_spx_2_tier_dual_plane"
+      },
+      "ztpProps": {
+        "nosImage": ""
+      },
+      "snmpv2Props": {
+        "enabled": false,
+        "community": "",
+        "ipv4_list": [],
+        "contact": "",
+        "location": ""
+      },
+      "netqProps": {
+        "enabled": false,
+        "serverAddrs": [],
+        "serverPort": 31980
+      },
+      "created_date": 1789722761000,
+      "modified_date": 1789722761000
+    },
+    {
+      "id": 64,
+      "name": "hardwarefree-ns-profile",
+      "description": "North-South Front-End Inventory Profile",
+      "ipv4_ssh": "0.0.0.0/0",
+      "ipv6_ssh": "",
+      "timezone": "{\"label\":\"Europe/London\",\"offset\":\"\",\"tzCode\":\"Europe/London\"}",
+      "ntp_servers": "1.pool.ntp.org,2.pool.ntp.org",
+      "dns_servers": "1.1.1.1,8.8.8.8",
+      "customRules": [],
+      "fabricProps": {
+        "optimiseBgpOverlay": false,
+        "optimiseBgpOverlayHypervisor": false,
+        "unnumberedBgpUnderlay": false,
+        "automaticLinkAggregation": true,
+        "mclag": false,
+        "fabricType": "ns",
+        "serverBasedESI": false
+      },
+      "gpuClusterProps": {
+        "roce": false,
+        "roceAdaptiveRouting": false,
+        "congestionControl": false,
+        "asicMonitoring": false,
+        "hwmp": false,
+        "aggregateL3VpnPrefix": false,
+        "refArch": "none"
+      },
+      "ztpProps": {
+        "nosImage": ""
+      },
+      "snmpv2Props": {
+        "enabled": false,
+        "community": "",
+        "ipv4_list": [],
+        "contact": "",
+        "location": ""
+      },
+      "netqProps": {
+        "enabled": false,
+        "serverAddrs": [],
+        "serverPort": 31980
+      },
+      "created_date": 1789722761000,
+      "modified_date": 1789722761000
+    },
+    {
+      "id": 65,
+      "name": "hardwarefree-ew-pl2",
+      "description": "East-West Spectrum-X Profile for Plane 2",
+      "ipv4_ssh": "0.0.0.0/0",
+      "ipv6_ssh": "",
+      "timezone": "{\"label\":\"Europe/London\",\"offset\":\"\",\"tzCode\":\"Europe/London\"}",
+      "ntp_servers": "1.pool.ntp.org,2.pool.ntp.org",
+      "dns_servers": "1.1.1.1,8.8.8.8",
+      "customRules": [],
+      "fabricProps": {
+        "optimiseBgpOverlay": true,
+        "optimiseBgpOverlayHypervisor": false,
+        "unnumberedBgpUnderlay": true,
+        "automaticLinkAggregation": false,
+        "mclag": false,
+        "fabricType": "ew-plane2",
+        "serverBasedESI": false
+      },
+      "gpuClusterProps": {
+        "roce": true,
+        "roceAdaptiveRouting": true,
+        "congestionControl": true,
+        "asicMonitoring": false,
+        "hwmp": false,
+        "aggregateL3VpnPrefix": false,
+        "refArch": "b300_spx_2_tier_dual_plane"
+      },
+      "ztpProps": {
+        "nosImage": ""
+      },
+      "snmpv2Props": {
+        "enabled": false,
+        "community": "",
+        "ipv4_list": [],
+        "contact": "",
+        "location": ""
+      },
+      "netqProps": {
+        "enabled": false,
+        "serverAddrs": [],
+        "serverPort": 31980
+      },
+      "created_date": 1789722761000,
+      "modified_date": 1789722761000
+    },
+    {
+      "id": 66,
+      "name": "hardwarefree-ew-pl4",
+      "description": "East-West Spectrum-X Profile for Plane 4",
+      "ipv4_ssh": "0.0.0.0/0",
+      "ipv6_ssh": "",
+      "timezone": "{\"label\":\"Europe/London\",\"offset\":\"\",\"tzCode\":\"Europe/London\"}",
+      "ntp_servers": "1.pool.ntp.org,2.pool.ntp.org",
+      "dns_servers": "1.1.1.1,8.8.8.8",
+      "customRules": [],
+      "fabricProps": {
+        "optimiseBgpOverlay": true,
+        "optimiseBgpOverlayHypervisor": false,
+        "unnumberedBgpUnderlay": true,
+        "automaticLinkAggregation": false,
+        "mclag": false,
+        "fabricType": "ew-plane4",
+        "serverBasedESI": false
+      },
+      "gpuClusterProps": {
+        "roce": true,
+        "roceAdaptiveRouting": true,
+        "congestionControl": true,
+        "asicMonitoring": false,
+        "hwmp": false,
+        "aggregateL3VpnPrefix": false,
+        "refArch": "b300_spx_2_tier_dual_plane"
+      },
+      "ztpProps": {
+        "nosImage": ""
+      },
+      "snmpv2Props": {
+        "enabled": false,
+        "community": "",
+        "ipv4_list": [],
+        "contact": "",
+        "location": ""
+      },
+      "netqProps": {
+        "enabled": false,
+        "serverAddrs": [],
+        "serverPort": 31980
+      },
+      "created_date": 1789722761000,
+      "modified_date": 1789722761000
+    }
+  ],
+  "errors": null,
+  "message": "",
+  "isSuccess": true,
+  "meta": {
+    "apiVersion": "v2",
+    "statusCode": 200
+  }
+}

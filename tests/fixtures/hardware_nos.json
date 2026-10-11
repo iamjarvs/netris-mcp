@@ -1,0 +1,31 @@
+{
+  "data": [
+    {
+      "id": 1,
+      "name": "Arista EOS",
+      "tag": "arista_eos"
+    },
+    {
+      "id": 2,
+      "name": "Cumulus NVUE",
+      "tag": "cumulus_nvue"
+    },
+    {
+      "id": 3,
+      "name": "Dell-SONiC",
+      "tag": "dell_sonic"
+    },
+    {
+      "id": 4,
+      "name": "EC-SONiC",
+      "tag": "ec_sonic"
+    }
+  ],
+  "errors": null,
+  "message": "",
+  "isSuccess": true,
+  "meta": {
+    "apiVersion": "v2",
+    "statusCode": 200
+  }
+}
