@@ -1,0 +1,851 @@
+{
+  "data": [
+    {
+      "id": 25540,
+      "port": "eth12",
+      "ifName": null,
+      "name": "eth12(eth12)@hgx-pod00-su0-h00 (Admin)",
+      "label": "eth12(eth12)@hgx-pod00-su0-h00",
+      "shortName": "eth12@hgx-pod00-su0-h00",
+      "switchId": 557,
+      "switchName": "hgx-pod00-su0-h00",
+      "switchType": "server",
+      "siteID": 8,
+      "siteName": "Datacenter-A",
+      "tenantID": 1,
+      "tenantName": "Admin",
+      "parentPort": 0,
+      "extension": 0,
+      "breakout": "off",
+      "lagMember": null,
+      "slavePortIDs": null,
+      "portReservationCount": 0,
+      "site": {
+        "id": 8,
+        "name": "Datacenter-A"
+      },
+      "tenant": {
+        "id": 1,
+        "name": "Admin"
+      },
+      "switch": {
+        "id": 557,
+        "name": "hgx-pod00-su0-h00",
+        "type": "server"
+      },
+      "inUse": false,
+      "stateInHierarchy": {
+        "lagMember": false,
+        "extended": false,
+        "aggregated": false,
+        "breakout": false,
+        "extensionsParent": false
+      }
+    },
+    {
+      "id": 25541,
+      "port": "eth13",
+      "ifName": null,
+      "name": "eth13(eth13)@hgx-pod00-su0-h00 (Admin)",
+      "label": "eth13(eth13)@hgx-pod00-su0-h00",
+      "shortName": "eth13@hgx-pod00-su0-h00",
+      "switchId": 557,
+      "switchName": "hgx-pod00-su0-h00",
+      "switchType": "server",
+      "siteID": 8,
+      "siteName": "Datacenter-A",
+      "tenantID": 1,
+      "tenantName": "Admin",
+      "parentPort": 0,
+      "extension": 0,
+      "breakout": "off",
+      "lagMember": null,
+      "slavePortIDs": null,
+      "portReservationCount": 0,
+      "site": {
+        "id": 8,
+        "name": "Datacenter-A"
+      },
+      "tenant": {
+        "id": 1,
+        "name": "Admin"
+      },
+      "switch": {
+        "id": 557,
+        "name": "hgx-pod00-su0-h00",
+        "type": "server"
+      },
+      "inUse": false,
+      "stateInHierarchy": {
+        "lagMember": false,
+        "extended": false,
+        "aggregated": false,
+        "breakout": false,
+        "extensionsParent": false
+      }
+    },
+    {
+      "id": 25542,
+      "port": "eth14",
+      "ifName": null,
+      "name": "eth14(eth14)@hgx-pod00-su0-h00 (Admin)",
+      "label": "eth14(eth14)@hgx-pod00-su0-h00",
+      "shortName": "eth14@hgx-pod00-su0-h00",
+      "switchId": 557,
+      "switchName": "hgx-pod00-su0-h00",
+      "switchType": "server",
+      "siteID": 8,
+      "siteName": "Datacenter-A",
+      "tenantID": 1,
+      "tenantName": "Admin",
+      "parentPort": 0,
+      "extension": 0,
+      "breakout": "off",
+      "lagMember": null,
+      "slavePortIDs": null,
+      "portReservationCount": 0,
+      "site": {
+        "id": 8,
+        "name": "Datacenter-A"
+      },
+      "tenant": {
+        "id": 1,
+        "name": "Admin"
+      },
+      "switch": {
+        "id": 557,
+        "name": "hgx-pod00-su0-h00",
+        "type": "server"
+      },
+      "inUse": false,
+      "stateInHierarchy": {
+        "lagMember": false,
+        "extended": false,
+        "aggregated": false,
+        "breakout": false,
+        "extensionsParent": false
+      }
+    },
+    {
+      "id": 25543,
+      "port": "eth15",
+      "ifName": null,
+      "name": "eth15(eth15)@hgx-pod00-su0-h00 (Admin)",
+      "label": "eth15(eth15)@hgx-pod00-su0-h00",
+      "shortName": "eth15@hgx-pod00-su0-h00",
+      "switchId": 557,
+      "switchName": "hgx-pod00-su0-h00",
+      "switchType": "server",
+      "siteID": 8,
+      "siteName": "Datacenter-A",
+      "tenantID": 1,
+      "tenantName": "Admin",
+      "parentPort": 0,
+      "extension": 0,
+      "breakout": "off",
+      "lagMember": null,
+      "slavePortIDs": null,
+      "portReservationCount": 0,
+      "site": {
+        "id": 8,
+        "name": "Datacenter-A"
+      },
+      "tenant": {
+        "id": 1,
+        "name": "Admin"
+      },
+      "switch": {
+        "id": 557,
+        "name": "hgx-pod00-su0-h00",
+        "type": "server"
+      },
+      "inUse": false,
+      "stateInHierarchy": {
+        "lagMember": false,
+        "extended": false,
+        "aggregated": false,
+        "breakout": false,
+        "extensionsParent": false
+      }
+    },
+    {
+      "id": 25544,
+      "port": "eth16",
+      "ifName": null,
+      "name": "eth16(eth16)@hgx-pod00-su0-h00 (Admin)",
+      "label": "eth16(eth16)@hgx-pod00-su0-h00",
+      "shortName": "eth16@hgx-pod00-su0-h00",
+      "switchId": 557,
+      "switchName": "hgx-pod00-su0-h00",
+      "switchType": "server",
+      "siteID": 8,
+      "siteName": "Datacenter-A",
+      "tenantID": 1,
+      "tenantName": "Admin",
+      "parentPort": 0,
+      "extension": 0,
+      "breakout": "off",
+      "lagMember": null,
+      "slavePortIDs": null,
+      "portReservationCount": 0,
+      "site": {
+        "id": 8,
+        "name": "Datacenter-A"
+      },
+      "tenant": {
+        "id": 1,
+        "name": "Admin"
+      },
+      "switch": {
+        "id": 557,
+        "name": "hgx-pod00-su0-h00",
+        "type": "server"
+      },
+      "inUse": false,
+      "stateInHierarchy": {
+        "lagMember": false,
+        "extended": false,
+        "aggregated": false,
+        "breakout": false,
+        "extensionsParent": false
+      }
+    },
+    {
+      "id": 26068,
+      "port": "eth12",
+      "ifName": null,
+      "name": "eth12(eth12)@hgx-pod00-su0-h01 (Admin)",
+      "label": "eth12(eth12)@hgx-pod00-su0-h01",
+      "shortName": "eth12@hgx-pod00-su0-h01",
+      "switchId": 590,
+      "switchName": "hgx-pod00-su0-h01",
+      "switchType": "server",
+      "siteID": 8,
+      "siteName": "Datacenter-A",
+      "tenantID": 1,
+      "tenantName": "Admin",
+      "parentPort": 0,
+      "extension": 0,
+      "breakout": "off",
+      "lagMember": null,
+      "slavePortIDs": null,
+      "portReservationCount": 0,
+      "site": {
+        "id": 8,
+        "name": "Datacenter-A"
+      },
+      "tenant": {
+        "id": 1,
+        "name": "Admin"
+      },
+      "switch": {
+        "id": 590,
+        "name": "hgx-pod00-su0-h01",
+        "type": "server"
+      },
+      "inUse": false,
+      "stateInHierarchy": {
+        "lagMember": false,
+        "extended": false,
+        "aggregated": false,
+        "breakout": false,
+        "extensionsParent": false
+      }
+    },
+    {
+      "id": 26069,
+      "port": "eth13",
+      "ifName": null,
+      "name": "eth13(eth13)@hgx-pod00-su0-h01 (Admin)",
+      "label": "eth13(eth13)@hgx-pod00-su0-h01",
+      "shortName": "eth13@hgx-pod00-su0-h01",
+      "switchId": 590,
+      "switchName": "hgx-pod00-su0-h01",
+      "switchType": "server",
+      "siteID": 8,
+      "siteName": "Datacenter-A",
+      "tenantID": 1,
+      "tenantName": "Admin",
+      "parentPort": 0,
+      "extension": 0,
+      "breakout": "off",
+      "lagMember": null,
+      "slavePortIDs": null,
+      "portReservationCount": 0,
+      "site": {
+        "id": 8,
+        "name": "Datacenter-A"
+      },
+      "tenant": {
+        "id": 1,
+        "name": "Admin"
+      },
+      "switch": {
+        "id": 590,
+        "name": "hgx-pod00-su0-h01",
+        "type": "server"
+      },
+      "inUse": false,
+      "stateInHierarchy": {
+        "lagMember": false,
+        "extended": false,
+        "aggregated": false,
+        "breakout": false,
+        "extensionsParent": false
+      }
+    },
+    {
+      "id": 26070,
+      "port": "eth14",
+      "ifName": null,
+      "name": "eth14(eth14)@hgx-pod00-su0-h01 (Admin)",
+      "label": "eth14(eth14)@hgx-pod00-su0-h01",
+      "shortName": "eth14@hgx-pod00-su0-h01",
+      "switchId": 590,
+      "switchName": "hgx-pod00-su0-h01",
+      "switchType": "server",
+      "siteID": 8,
+      "siteName": "Datacenter-A",
+      "tenantID": 1,
+      "tenantName": "Admin",
+      "parentPort": 0,
+      "extension": 0,
+      "breakout": "off",
+      "lagMember": null,
+      "slavePortIDs": null,
+      "portReservationCount": 0,
+      "site": {
+        "id": 8,
+        "name": "Datacenter-A"
+      },
+      "tenant": {
+        "id": 1,
+        "name": "Admin"
+      },
+      "switch": {
+        "id": 590,
+        "name": "hgx-pod00-su0-h01",
+        "type": "server"
+      },
+      "inUse": false,
+      "stateInHierarchy": {
+        "lagMember": false,
+        "extended": false,
+        "aggregated": false,
+        "breakout": false,
+        "extensionsParent": false
+      }
+    },
+    {
+      "id": 26071,
+      "port": "eth15",
+      "ifName": null,
+      "name": "eth15(eth15)@hgx-pod00-su0-h01 (Admin)",
+      "label": "eth15(eth15)@hgx-pod00-su0-h01",
+      "shortName": "eth15@hgx-pod00-su0-h01",
+      "switchId": 590,
+      "switchName": "hgx-pod00-su0-h01",
+      "switchType": "server",
+      "siteID": 8,
+      "siteName": "Datacenter-A",
+      "tenantID": 1,
+      "tenantName": "Admin",
+      "parentPort": 0,
+      "extension": 0,
+      "breakout": "off",
+      "lagMember": null,
+      "slavePortIDs": null,
+      "portReservationCount": 0,
+      "site": {
+        "id": 8,
+        "name": "Datacenter-A"
+      },
+      "tenant": {
+        "id": 1,
+        "name": "Admin"
+      },
+      "switch": {
+        "id": 590,
+        "name": "hgx-pod00-su0-h01",
+        "type": "server"
+      },
+      "inUse": false,
+      "stateInHierarchy": {
+        "lagMember": false,
+        "extended": false,
+        "aggregated": false,
+        "breakout": false,
+        "extensionsParent": false
+      }
+    },
+    {
+      "id": 26072,
+      "port": "eth16",
+      "ifName": null,
+      "name": "eth16(eth16)@hgx-pod00-su0-h01 (Admin)",
+      "label": "eth16(eth16)@hgx-pod00-su0-h01",
+      "shortName": "eth16@hgx-pod00-su0-h01",
+      "switchId": 590,
+      "switchName": "hgx-pod00-su0-h01",
+      "switchType": "server",
+      "siteID": 8,
+      "siteName": "Datacenter-A",
+      "tenantID": 1,
+      "tenantName": "Admin",
+      "parentPort": 0,
+      "extension": 0,
+      "breakout": "off",
+      "lagMember": null,
+      "slavePortIDs": null,
+      "portReservationCount": 0,
+      "site": {
+        "id": 8,
+        "name": "Datacenter-A"
+      },
+      "tenant": {
+        "id": 1,
+        "name": "Admin"
+      },
+      "switch": {
+        "id": 590,
+        "name": "hgx-pod00-su0-h01",
+        "type": "server"
+      },
+      "inUse": false,
+      "stateInHierarchy": {
+        "lagMember": false,
+        "extended": false,
+        "aggregated": false,
+        "breakout": false,
+        "extensionsParent": false
+      }
+    },
+    {
+      "id": 25620,
+      "port": "eth12",
+      "ifName": null,
+      "name": "eth12(eth12)@hgx-pod00-su0-h02 (Admin)",
+      "label": "eth12(eth12)@hgx-pod00-su0-h02",
+      "shortName": "eth12@hgx-pod00-su0-h02",
+      "switchId": 562,
+      "switchName": "hgx-pod00-su0-h02",
+      "switchType": "server",
+      "siteID": 8,
+      "siteName": "Datacenter-A",
+      "tenantID": 1,
+      "tenantName": "Admin",
+      "parentPort": 0,
+      "extension": 0,
+      "breakout": "off",
+      "lagMember": null,
+      "slavePortIDs": null,
+      "portReservationCount": 0,
+      "site": {
+        "id": 8,
+        "name": "Datacenter-A"
+      },
+      "tenant": {
+        "id": 1,
+        "name": "Admin"
+      },
+      "switch": {
+        "id": 562,
+        "name": "hgx-pod00-su0-h02",
+        "type": "server"
+      },
+      "inUse": false,
+      "stateInHierarchy": {
+        "lagMember": false,
+        "extended": false,
+        "aggregated": false,
+        "breakout": false,
+        "extensionsParent": false
+      }
+    },
+    {
+      "id": 25621,
+      "port": "eth13",
+      "ifName": null,
+      "name": "eth13(eth13)@hgx-pod00-su0-h02 (Admin)",
+      "label": "eth13(eth13)@hgx-pod00-su0-h02",
+      "shortName": "eth13@hgx-pod00-su0-h02",
+      "switchId": 562,
+      "switchName": "hgx-pod00-su0-h02",
+      "switchType": "server",
+      "siteID": 8,
+      "siteName": "Datacenter-A",
+      "tenantID": 1,
+      "tenantName": "Admin",
+      "parentPort": 0,
+      "extension": 0,
+      "breakout": "off",
+      "lagMember": null,
+      "slavePortIDs": null,
+      "portReservationCount": 0,
+      "site": {
+        "id": 8,
+        "name": "Datacenter-A"
+      },
+      "tenant": {
+        "id": 1,
+        "name": "Admin"
+      },
+      "switch": {
+        "id": 562,
+        "name": "hgx-pod00-su0-h02",
+        "type": "server"
+      },
+      "inUse": false,
+      "stateInHierarchy": {
+        "lagMember": false,
+        "extended": false,
+        "aggregated": false,
+        "breakout": false,
+        "extensionsParent": false
+      }
+    },
+    {
+      "id": 25622,
+      "port": "eth14",
+      "ifName": null,
+      "name": "eth14(eth14)@hgx-pod00-su0-h02 (Admin)",
+      "label": "eth14(eth14)@hgx-pod00-su0-h02",
+      "shortName": "eth14@hgx-pod00-su0-h02",
+      "switchId": 562,
+      "switchName": "hgx-pod00-su0-h02",
+      "switchType": "server",
+      "siteID": 8,
+      "siteName": "Datacenter-A",
+      "tenantID": 1,
+      "tenantName": "Admin",
+      "parentPort": 0,
+      "extension": 0,
+      "breakout": "off",
+      "lagMember": null,
+      "slavePortIDs": null,
+      "portReservationCount": 0,
+      "site": {
+        "id": 8,
+        "name": "Datacenter-A"
+      },
+      "tenant": {
+        "id": 1,
+        "name": "Admin"
+      },
+      "switch": {
+        "id": 562,
+        "name": "hgx-pod00-su0-h02",
+        "type": "server"
+      },
+      "inUse": false,
+      "stateInHierarchy": {
+        "lagMember": false,
+        "extended": false,
+        "aggregated": false,
+        "breakout": false,
+        "extensionsParent": false
+      }
+    },
+    {
+      "id": 25623,
+      "port": "eth15",
+      "ifName": null,
+      "name": "eth15(eth15)@hgx-pod00-su0-h02 (Admin)",
+      "label": "eth15(eth15)@hgx-pod00-su0-h02",
+      "shortName": "eth15@hgx-pod00-su0-h02",
+      "switchId": 562,
+      "switchName": "hgx-pod00-su0-h02",
+      "switchType": "server",
+      "siteID": 8,
+      "siteName": "Datacenter-A",
+      "tenantID": 1,
+      "tenantName": "Admin",
+      "parentPort": 0,
+      "extension": 0,
+      "breakout": "off",
+      "lagMember": null,
+      "slavePortIDs": null,
+      "portReservationCount": 0,
+      "site": {
+        "id": 8,
+        "name": "Datacenter-A"
+      },
+      "tenant": {
+        "id": 1,
+        "name": "Admin"
+      },
+      "switch": {
+        "id": 562,
+        "name": "hgx-pod00-su0-h02",
+        "type": "server"
+      },
+      "inUse": false,
+      "stateInHierarchy": {
+        "lagMember": false,
+        "extended": false,
+        "aggregated": false,
+        "breakout": false,
+        "extensionsParent": false
+      }
+    },
+    {
+      "id": 25624,
+      "port": "eth16",
+      "ifName": null,
+      "name": "eth16(eth16)@hgx-pod00-su0-h02 (Admin)",
+      "label": "eth16(eth16)@hgx-pod00-su0-h02",
+      "shortName": "eth16@hgx-pod00-su0-h02",
+      "switchId": 562,
+      "switchName": "hgx-pod00-su0-h02",
+      "switchType": "server",
+      "siteID": 8,
+      "siteName": "Datacenter-A",
+      "tenantID": 1,
+      "tenantName": "Admin",
+      "parentPort": 0,
+      "extension": 0,
+      "breakout": "off",
+      "lagMember": null,
+      "slavePortIDs": null,
+      "portReservationCount": 0,
+      "site": {
+        "id": 8,
+        "name": "Datacenter-A"
+      },
+      "tenant": {
+        "id": 1,
+        "name": "Admin"
+      },
+      "switch": {
+        "id": 562,
+        "name": "hgx-pod00-su0-h02",
+        "type": "server"
+      },
+      "inUse": false,
+      "stateInHierarchy": {
+        "lagMember": false,
+        "extended": false,
+        "aggregated": false,
+        "breakout": false,
+        "extensionsParent": false
+      }
+    },
+    {
+      "id": 25908,
+      "port": "eth12",
+      "ifName": null,
+      "name": "eth12(eth12)@hgx-pod00-su0-h03 (Admin)",
+      "label": "eth12(eth12)@hgx-pod00-su0-h03",
+      "shortName": "eth12@hgx-pod00-su0-h03",
+      "switchId": 580,
+      "switchName": "hgx-pod00-su0-h03",
+      "switchType": "server",
+      "siteID": 8,
+      "siteName": "Datacenter-A",
+      "tenantID": 1,
+      "tenantName": "Admin",
+      "parentPort": 0,
+      "extension": 0,
+      "breakout": "off",
+      "lagMember": null,
+      "slavePortIDs": null,
+      "portReservationCount": 0,
+      "site": {
+        "id": 8,
+        "name": "Datacenter-A"
+      },
+      "tenant": {
+        "id": 1,
+        "name": "Admin"
+      },
+      "switch": {
+        "id": 580,
+        "name": "hgx-pod00-su0-h03",
+        "type": "server"
+      },
+      "inUse": false,
+      "stateInHierarchy": {
+        "lagMember": false,
+        "extended": false,
+        "aggregated": false,
+        "breakout": false,
+        "extensionsParent": false
+      }
+    },
+    {
+      "id": 25909,
+      "port": "eth13",
+      "ifName": null,
+      "name": "eth13(eth13)@hgx-pod00-su0-h03 (Admin)",
+      "label": "eth13(eth13)@hgx-pod00-su0-h03",
+      "shortName": "eth13@hgx-pod00-su0-h03",
+      "switchId": 580,
+      "switchName": "hgx-pod00-su0-h03",
+      "switchType": "server",
+      "siteID": 8,
+      "siteName": "Datacenter-A",
+      "tenantID": 1,
+      "tenantName": "Admin",
+      "parentPort": 0,
+      "extension": 0,
+      "breakout": "off",
+      "lagMember": null,
+      "slavePortIDs": null,
+      "portReservationCount": 0,
+      "site": {
+        "id": 8,
+        "name": "Datacenter-A"
+      },
+      "tenant": {
+        "id": 1,
+        "name": "Admin"
+      },
+      "switch": {
+        "id": 580,
+        "name": "hgx-pod00-su0-h03",
+        "type": "server"
+      },
+      "inUse": false,
+      "stateInHierarchy": {
+        "lagMember": false,
+        "extended": false,
+        "aggregated": false,
+        "breakout": false,
+        "extensionsParent": false
+      }
+    },
+    {
+      "id": 25910,
+      "port": "eth14",
+      "ifName": null,
+      "name": "eth14(eth14)@hgx-pod00-su0-h03 (Admin)",
+      "label": "eth14(eth14)@hgx-pod00-su0-h03",
+      "shortName": "eth14@hgx-pod00-su0-h03",
+      "switchId": 580,
+      "switchName": "hgx-pod00-su0-h03",
+      "switchType": "server",
+      "siteID": 8,
+      "siteName": "Datacenter-A",
+      "tenantID": 1,
+      "tenantName": "Admin",
+      "parentPort": 0,
+      "extension": 0,
+      "breakout": "off",
+      "lagMember": null,
+      "slavePortIDs": null,
+      "portReservationCount": 0,
+      "site": {
+        "id": 8,
+        "name": "Datacenter-A"
+      },
+      "tenant": {
+        "id": 1,
+        "name": "Admin"
+      },
+      "switch": {
+        "id": 580,
+        "name": "hgx-pod00-su0-h03",
+        "type": "server"
+      },
+      "inUse": false,
+      "stateInHierarchy": {
+        "lagMember": false,
+        "extended": false,
+        "aggregated": false,
+        "breakout": false,
+        "extensionsParent": false
+      }
+    },
+    {
+      "id": 25911,
+      "port": "eth15",
+      "ifName": null,
+      "name": "eth15(eth15)@hgx-pod00-su0-h03 (Admin)",
+      "label": "eth15(eth15)@hgx-pod00-su0-h03",
+      "shortName": "eth15@hgx-pod00-su0-h03",
+      "switchId": 580,
+      "switchName": "hgx-pod00-su0-h03",
+      "switchType": "server",
+      "siteID": 8,
+      "siteName": "Datacenter-A",
+      "tenantID": 1,
+      "tenantName": "Admin",
+      "parentPort": 0,
+      "extension": 0,
+      "breakout": "off",
+      "lagMember": null,
+      "slavePortIDs": null,
+      "portReservationCount": 0,
+      "site": {
+        "id": 8,
+        "name": "Datacenter-A"
+      },
+      "tenant": {
+        "id": 1,
+        "name": "Admin"
+      },
+      "switch": {
+        "id": 580,
+        "name": "hgx-pod00-su0-h03",
+        "type": "server"
+      },
+      "inUse": false,
+      "stateInHierarchy": {
+        "lagMember": false,
+        "extended": false,
+        "aggregated": false,
+        "breakout": false,
+        "extensionsParent": false
+      }
+    },
+    {
+      "id": 25912,
+      "port": "eth16",
+      "ifName": null,
+      "name": "eth16(eth16)@hgx-pod00-su0-h03 (Admin)",
+      "label": "eth16(eth16)@hgx-pod00-su0-h03",
+      "shortName": "eth16@hgx-pod00-su0-h03",
+      "switchId": 580,
+      "switchName": "hgx-pod00-su0-h03",
+      "switchType": "server",
+      "siteID": 8,
+      "siteName": "Datacenter-A",
+      "tenantID": 1,
+      "tenantName": "Admin",
+      "parentPort": 0,
+      "extension": 0,
+      "breakout": "off",
+      "lagMember": null,
+      "slavePortIDs": null,
+      "portReservationCount": 0,
+      "site": {
+        "id": 8,
+        "name": "Datacenter-A"
+      },
+      "tenant": {
+        "id": 1,
+        "name": "Admin"
+      },
+      "switch": {
+        "id": 580,
+        "name": "hgx-pod00-su0-h03",
+        "type": "server"
+      },
+      "inUse": false,
+      "stateInHierarchy": {
+        "lagMember": false,
+        "extended": false,
+        "aggregated": false,
+        "breakout": false,
+        "extensionsParent": false
+      }
+    }
+  ],
+  "errors": null,
+  "message": "",
+  "isSuccess": true,
+  "meta": {
+    "apiVersion": "v2",
+    "statusCode": 200
+  }
+}

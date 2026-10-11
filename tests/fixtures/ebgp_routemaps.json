@@ -1,0 +1,13 @@
+{
+  "data": [],
+  "statusCode": 200,
+  "status": 1,
+  "error": 0,
+  "message": "",
+  "errors": null,
+  "isSuccess": true,
+  "meta": {
+    "apiVersion": "v1",
+    "statusCode": 200
+  }
+}

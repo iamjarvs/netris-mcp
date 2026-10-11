@@ -1,0 +1,46 @@
+{
+  "data": [
+    {
+      "id": 1,
+      "tenant_id": 1,
+      "name": "Admin",
+      "description": "",
+      "create_date": 1547545054000,
+      "modified_date": 1594753202000
+    },
+    {
+      "id": 3,
+      "tenant_id": 3,
+      "name": "DemoTenant-Alpha",
+      "description": "",
+      "create_date": 1790011953000,
+      "modified_date": 1790011984000
+    },
+    {
+      "id": 4,
+      "tenant_id": 4,
+      "name": "DemoTenant-Beta",
+      "description": "",
+      "create_date": 1790011991000,
+      "modified_date": 1790011991000
+    },
+    {
+      "id": 2,
+      "tenant_id": 2,
+      "name": "DevOps",
+      "description": "DevOps Resources",
+      "create_date": 1547545054000,
+      "modified_date": 1594753202000
+    }
+  ],
+  "statusCode": 200,
+  "status": 1,
+  "error": 0,
+  "message": "",
+  "errors": null,
+  "isSuccess": true,
+  "meta": {
+    "apiVersion": "v1",
+    "statusCode": 200
+  }
+}

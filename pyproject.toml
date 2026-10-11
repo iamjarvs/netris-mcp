@@ -25,3 +25,10 @@ dev-dependencies = [
     "pytest-asyncio>=0.23.0",
     "respx>=0.21.0",
 ]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+norecursedirs = ["tests/legacy", ".venv", "build", "dist"]
+
+[tool.ruff.lint]
+ignore = ["BLE001", "S110", "F841"]

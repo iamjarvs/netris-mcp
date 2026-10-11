@@ -1,0 +1,29 @@
+{
+  "data": [
+    {
+      "id": 1,
+      "name": "Default",
+      "description": "System generated",
+      "isDefault": true,
+      "domainSearch": "netris.local",
+      "dnsServers": [
+        "1.1.1.1",
+        "8.8.8.8"
+      ],
+      "ntpServers": [
+        "pool.ntp.org"
+      ],
+      "leaseTime": 86400,
+      "additionalOptions": [],
+      "createdDate": 1788289245000,
+      "modifiedDate": 1791384568000
+    }
+  ],
+  "errors": null,
+  "message": "",
+  "isSuccess": true,
+  "meta": {
+    "apiVersion": "v2",
+    "statusCode": 200
+  }
+}

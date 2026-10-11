@@ -1,0 +1,26 @@
+{
+  "data": {
+    "dashboards": [
+      {
+        "tenant_id": 1,
+        "id": 16,
+        "name": "Datacenter-A Demo1",
+        "data": "[{\"mUUID\":\"_irlo5miwj\",\"mTime\":[\"-1d\",\"\"],\"mTitle\":\"North-South \u2014 every spine port, summed\",\"mFunction\":\"sum\",\"mMembers\":[{\"id\":\"24486-p\",\"switch\":\"ns-spine-1\",\"interface\":\"swp3s1\",\"name\":\"swp3s1\",\"vlan_id\":\"\",\"vlanID\":\"\"},{\"id\":\"24485-p\",\"switch\":\"ns-spine-1\",\"interface\":\"swp3s0\",\"name\":\"swp3s0\",\"vlan_id\":\"\",\"vlanID\":\"\"},{\"id\":\"24484-p\",\"switch\":\"ns-spine-1\",\"interface\":\"swp2s3\",\"name\":\"swp2s3\",\"vlan_id\":\"\",\"vlanID\":\"\"},{\"id\":\"24483-p\",\"switch\":\"ns-spine-1\",\"interface\":\"swp2s2\",\"name\":\"swp2s2\",\"vlan_id\":\"\",\"vlanID\":\"\"},{\"id\":\"24482-p\",\"switch\":\"ns-spine-1\",\"interface\":\"swp2s1\",\"name\":\"swp2s1\",\"vlan_id\":\"\",\"vlanID\":\"\"},{\"id\":\"24481-p\",\"switch\":\"ns-spine-1\",\"interface\":\"swp2s0\",\"name\":\"swp2s0\",\"vlan_id\":\"\",\"vlanID\":\"\"},{\"id\":\"24480-p\",\"switch\":\"ns-spine-1\",\"interface\":\"swp1s3\",\"name\":\"swp1s3\",\"vlan_id\":\"\",\"vlanID\":\"\"},{\"id\":\"24479-p\",\"switch\":\"ns-spine-1\",\"interface\":\"swp1s2\",\"name\":\"swp1s2\",\"vlan_id\":\"\",\"vlanID\":\"\"},{\"id\":\"24478-p\",\"switch\":\"ns-spine-1\",\"interface\":\"swp1s1\",\"name\":\"swp1s1\",\"vlan_id\":\"\",\"vlanID\":\"\"},{\"id\":\"24477-p\",\"switch\":\"ns-spine-1\",\"interface\":\"swp1s0\",\"name\":\"swp1s0\",\"vlan_id\":\"\",\"vlanID\":\"\"},{\"id\":\"24806-p\",\"switch\":\"ns-spine-0\",\"interface\":\"swp3s1\",\"name\":\"swp3s1\",\"vlan_id\":\"\",\"vlanID\":\"\"},{\"id\":\"24805-p\",\"switch\":\"ns-spine-0\",\"interface\":\"swp3s0\",\"name\":\"swp3s0\",\"vlan_id\":\"\",\"vlanID\":\"\"},{\"id\":\"24804-p\",\"switch\":\"ns-spine-0\",\"interface\":\"swp2s3\",\"name\":\"swp2s3\",\"vlan_id\":\"\",\"vlanID\":\"\"},{\"id\":\"24803-p\",\"switch\":\"ns-spine-0\",\"interface\":\"swp2s2\",\"name\":\"swp2s2\",\"vlan_id\":\"\",\"vlanID\":\"\"},{\"id\":\"24802-p\",\"switch\":\"ns-spine-0\",\"interface\":\"swp2s1\",\"name\":\"swp2s1\",\"vlan_id\":\"\",\"vlanID\":\"\"},{\"id\":\"24801-p\",\"switch\":\"ns-spine-0\",\"interface\":\"swp2s0\",\"name\":\"swp2s0\",\"vlan_id\":\"\",\"vlanID\":\"\"},{\"id\":\"24800-p\",\"switch\":\"ns-spine-0\",\"interface\":\"swp1s3\",\"name\":\"swp1s3\",\"vlan_id\":\"\",\"vlanID\":\"\"},{\"id\":\"24799-p\",\"switch\":\"ns-spine-0\",\"interface\":\"swp1s2\",\"name\":\"swp1s2\",\"vlan_id\":\"\",\"vlanID\":\"\"},{\"id\":\"24798-p\",\"switch\":\"ns-spine-0\",\"interface\":\"swp1s1\",\"name\":\"swp1s1\",\"vlan_id\":\"\",\"vlanID\":\"\"},{\"id\":\"24797-p\",\"switch\":\"ns-spine-0\",\"interface\":\"swp1s0\",\"name\":\"swp1s0\",\"vlan_id\":\"\",\"vlanID\":\"\"}],\"activegraphtype\":\"throughput\"}]",
+        "public": 0,
+        "grid_size": 2,
+        "tenant_name": "Admin"
+      }
+    ],
+    "activeDashboardID": 17
+  },
+  "statusCode": 200,
+  "status": 1,
+  "error": 0,
+  "message": "",
+  "errors": null,
+  "isSuccess": true,
+  "meta": {
+    "apiVersion": "v1",
+    "statusCode": 200
+  }
+}

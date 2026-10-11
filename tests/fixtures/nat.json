@@ -1,0 +1,54 @@
+{
+  "data": [
+    {
+      "id": 16,
+      "name": "Test",
+      "state": {
+        "label": "Enabled",
+        "value": "enabled",
+        "status": "success"
+      },
+      "action": {
+        "label": "DNAT",
+        "value": "DNAT"
+      },
+      "protocol": {
+        "label": "ALL",
+        "value": "all"
+      },
+      "comment": "",
+      "portGroup": null,
+      "createdDate": 1790179081000,
+      "modifiedDate": 1790179081000,
+      "destinationAddress": "103.67.203.25",
+      "destinationPort": "1-65535",
+      "sourceAddress": "0.0.0.0/0",
+      "dnatToIP": "192.168.0.9/32",
+      "sourcePort": "1-65535",
+      "dnatToPort": 0,
+      "site": {
+        "id": 8,
+        "name": "Datacenter-A"
+      },
+      "vpc": {
+        "id": 85,
+        "name": "ACME"
+      },
+      "creator": {
+        "id": 1,
+        "name": "netris"
+      },
+      "editor": {
+        "id": 1,
+        "name": "netris"
+      }
+    }
+  ],
+  "errors": null,
+  "message": "",
+  "isSuccess": true,
+  "meta": {
+    "apiVersion": "v2",
+    "statusCode": 200
+  }
+}

@@ -1,0 +1,47 @@
+{
+  "data": {
+    "agentHeartbeats": {
+      "ok": 0,
+      "critical": 0
+    },
+    "hardwareHealth": {
+      "critical": 0,
+      "ok": 0,
+      "warning": 0
+    },
+    "hardwareAlarms": {
+      "critical": 0,
+      "ok": 0,
+      "warning": 0
+    },
+    "ebgp": {
+      "ok": 4,
+      "warning": 0,
+      "critical": 0,
+      "unknown": 0
+    },
+    "totalCounts": {
+      "switch": 0,
+      "softgate": 0,
+      "server": 0,
+      "interface": 0,
+      "link": 0,
+      "site": 2,
+      "vpc": 11,
+      "serverCluster": 0,
+      "vnet": 0,
+      "acl": 0
+    },
+    "updatedAt": 1791747697016
+  },
+  "statusCode": 200,
+  "status": 1,
+  "error": 0,
+  "message": "",
+  "errors": null,
+  "isSuccess": true,
+  "meta": {
+    "apiVersion": "v1",
+    "statusCode": 200
+  }
+}

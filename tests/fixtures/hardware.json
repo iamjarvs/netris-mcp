@@ -1,0 +1,1172 @@
+{
+  "data": [
+    {
+      "id": 1431,
+      "name": "gpu-hardwarefree-001",
+      "description": "NVIDIA HGX H100/H200/B200 (Spectrum-X) Node 001 (8 RoCE + 2 NS + 1 OOB)",
+      "mainAddress": "",
+      "mgmtAddress": "",
+      "macAddress": null,
+      "portCount": 11,
+      "type": "server",
+      "status": "ok",
+      "platform": null,
+      "conductorVersion": null,
+      "proxmoxVersion": null,
+      "uptime": "",
+      "timezone": null,
+      "macAddrUbit": 0,
+      "asnID": null,
+      "asn": null,
+      "routes": 0,
+      "macs": 0,
+      "ingressAcls": 0,
+      "rangecut": 0,
+      "swRole": null,
+      "evpnRouteServer": "disabled",
+      "dpus": null,
+      "sgFlavor": null,
+      "sgRole": null,
+      "srvRole": "generic",
+      "createdDate": 1789722762000,
+      "modifiedDate": 1790008525000,
+      "health": {},
+      "hardwareHealth": [],
+      "tenant": {
+        "id": 1,
+        "name": "Admin"
+      },
+      "site": {
+        "id": 19,
+        "name": "HardwareFree"
+      },
+      "nos": {
+        "id": null,
+        "name": null,
+        "tag": null
+      },
+      "profile": {
+        "id": 0,
+        "name": "None"
+      },
+      "asnNumber": {
+        "id": null,
+        "asn": null
+      },
+      "maintenanceMode": false,
+      "enableEvpnRouteServer": false,
+      "tags": [],
+      "links": []
+    },
+    {
+      "id": 1388,
+      "name": "gpu-hardwarefree-002",
+      "description": "NVIDIA HGX H100/H200/B200 (Spectrum-X) Node 002 (8 RoCE + 2 NS + 1 OOB)",
+      "mainAddress": "",
+      "mgmtAddress": "",
+      "macAddress": null,
+      "portCount": 11,
+      "type": "server",
+      "status": "ok",
+      "platform": null,
+      "conductorVersion": null,
+      "proxmoxVersion": null,
+      "uptime": "",
+      "timezone": null,
+      "macAddrUbit": 0,
+      "asnID": null,
+      "asn": null,
+      "routes": 0,
+      "macs": 0,
+      "ingressAcls": 0,
+      "rangecut": 0,
+      "swRole": null,
+      "evpnRouteServer": "disabled",
+      "dpus": null,
+      "sgFlavor": null,
+      "sgRole": null,
+      "srvRole": "generic",
+      "createdDate": 1789722762000,
+      "modifiedDate": 1790008525000,
+      "health": {},
+      "hardwareHealth": [],
+      "tenant": {
+        "id": 1,
+        "name": "Admin"
+      },
+      "site": {
+        "id": 19,
+        "name": "HardwareFree"
+      },
+      "nos": {
+        "id": null,
+        "name": null,
+        "tag": null
+      },
+      "profile": {
+        "id": 0,
+        "name": "None"
+      },
+      "asnNumber": {
+        "id": null,
+        "asn": null
+      },
+      "maintenanceMode": false,
+      "enableEvpnRouteServer": false,
+      "tags": [],
+      "links": []
+    },
+    {
+      "id": 1416,
+      "name": "gpu-hardwarefree-003",
+      "description": "NVIDIA HGX H100/H200/B200 (Spectrum-X) Node 003 (8 RoCE + 2 NS + 1 OOB)",
+      "mainAddress": "",
+      "mgmtAddress": "",
+      "macAddress": null,
+      "portCount": 11,
+      "type": "server",
+      "status": "ok",
+      "platform": null,
+      "conductorVersion": null,
+      "proxmoxVersion": null,
+      "uptime": "",
+      "timezone": null,
+      "macAddrUbit": 0,
+      "asnID": null,
+      "asn": null,
+      "routes": 0,
+      "macs": 0,
+      "ingressAcls": 0,
+      "rangecut": 0,
+      "swRole": null,
+      "evpnRouteServer": "disabled",
+      "dpus": null,
+      "sgFlavor": null,
+      "sgRole": null,
+      "srvRole": "generic",
+      "createdDate": 1789722762000,
+      "modifiedDate": 1790008525000,
+      "health": {},
+      "hardwareHealth": [],
+      "tenant": {
+        "id": 1,
+        "name": "Admin"
+      },
+      "site": {
+        "id": 19,
+        "name": "HardwareFree"
+      },
+      "nos": {
+        "id": null,
+        "name": null,
+        "tag": null
+      },
+      "profile": {
+        "id": 0,
+        "name": "None"
+      },
+      "asnNumber": {
+        "id": null,
+        "asn": null
+      },
+      "maintenanceMode": false,
+      "enableEvpnRouteServer": false,
+      "tags": [],
+      "links": []
+    },
+    {
+      "id": 1413,
+      "name": "gpu-hardwarefree-004",
+      "description": "NVIDIA HGX H100/H200/B200 (Spectrum-X) Node 004 (8 RoCE + 2 NS + 1 OOB)",
+      "mainAddress": "",
+      "mgmtAddress": "",
+      "macAddress": null,
+      "portCount": 11,
+      "type": "server",
+      "status": "ok",
+      "platform": null,
+      "conductorVersion": null,
+      "proxmoxVersion": null,
+      "uptime": "",
+      "timezone": null,
+      "macAddrUbit": 0,
+      "asnID": null,
+      "asn": null,
+      "routes": 0,
+      "macs": 0,
+      "ingressAcls": 0,
+      "rangecut": 0,
+      "swRole": null,
+      "evpnRouteServer": "disabled",
+      "dpus": null,
+      "sgFlavor": null,
+      "sgRole": null,
+      "srvRole": "generic",
+      "createdDate": 1789722762000,
+      "modifiedDate": 1790008525000,
+      "health": {},
+      "hardwareHealth": [],
+      "tenant": {
+        "id": 1,
+        "name": "Admin"
+      },
+      "site": {
+        "id": 19,
+        "name": "HardwareFree"
+      },
+      "nos": {
+        "id": null,
+        "name": null,
+        "tag": null
+      },
+      "profile": {
+        "id": 0,
+        "name": "None"
+      },
+      "asnNumber": {
+        "id": null,
+        "asn": null
+      },
+      "maintenanceMode": false,
+      "enableEvpnRouteServer": false,
+      "tags": [],
+      "links": []
+    },
+    {
+      "id": 1377,
+      "name": "gpu-hardwarefree-005",
+      "description": "NVIDIA HGX H100/H200/B200 (Spectrum-X) Node 005 (8 RoCE + 2 NS + 1 OOB)",
+      "mainAddress": "",
+      "mgmtAddress": "",
+      "macAddress": null,
+      "portCount": 11,
+      "type": "server",
+      "status": "ok",
+      "platform": null,
+      "conductorVersion": null,
+      "proxmoxVersion": null,
+      "uptime": "",
+      "timezone": null,
+      "macAddrUbit": 0,
+      "asnID": null,
+      "asn": null,
+      "routes": 0,
+      "macs": 0,
+      "ingressAcls": 0,
+      "rangecut": 0,
+      "swRole": null,
+      "evpnRouteServer": "disabled",
+      "dpus": null,
+      "sgFlavor": null,
+      "sgRole": null,
+      "srvRole": "generic",
+      "createdDate": 1789722761000,
+      "modifiedDate": 1790008525000,
+      "health": {},
+      "hardwareHealth": [],
+      "tenant": {
+        "id": 1,
+        "name": "Admin"
+      },
+      "site": {
+        "id": 19,
+        "name": "HardwareFree"
+      },
+      "nos": {
+        "id": null,
+        "name": null,
+        "tag": null
+      },
+      "profile": {
+        "id": 0,
+        "name": "None"
+      },
+      "asnNumber": {
+        "id": null,
+        "asn": null
+      },
+      "maintenanceMode": false,
+      "enableEvpnRouteServer": false,
+      "tags": [],
+      "links": []
+    },
+    {
+      "id": 1419,
+      "name": "gpu-hardwarefree-006",
+      "description": "NVIDIA HGX H100/H200/B200 (Spectrum-X) Node 006 (8 RoCE + 2 NS + 1 OOB)",
+      "mainAddress": "",
+      "mgmtAddress": "",
+      "macAddress": null,
+      "portCount": 11,
+      "type": "server",
+      "status": "ok",
+      "platform": null,
+      "conductorVersion": null,
+      "proxmoxVersion": null,
+      "uptime": "",
+      "timezone": null,
+      "macAddrUbit": 0,
+      "asnID": null,
+      "asn": null,
+      "routes": 0,
+      "macs": 0,
+      "ingressAcls": 0,
+      "rangecut": 0,
+      "swRole": null,
+      "evpnRouteServer": "disabled",
+      "dpus": null,
+      "sgFlavor": null,
+      "sgRole": null,
+      "srvRole": "generic",
+      "createdDate": 1789722762000,
+      "modifiedDate": 1790008525000,
+      "health": {},
+      "hardwareHealth": [],
+      "tenant": {
+        "id": 1,
+        "name": "Admin"
+      },
+      "site": {
+        "id": 19,
+        "name": "HardwareFree"
+      },
+      "nos": {
+        "id": null,
+        "name": null,
+        "tag": null
+      },
+      "profile": {
+        "id": 0,
+        "name": "None"
+      },
+      "asnNumber": {
+        "id": null,
+        "asn": null
+      },
+      "maintenanceMode": false,
+      "enableEvpnRouteServer": false,
+      "tags": [],
+      "links": []
+    },
+    {
+      "id": 1400,
+      "name": "gpu-hardwarefree-007",
+      "description": "NVIDIA HGX H100/H200/B200 (Spectrum-X) Node 007 (8 RoCE + 2 NS + 1 OOB)",
+      "mainAddress": "",
+      "mgmtAddress": "",
+      "macAddress": null,
+      "portCount": 11,
+      "type": "server",
+      "status": "ok",
+      "platform": null,
+      "conductorVersion": null,
+      "proxmoxVersion": null,
+      "uptime": "",
+      "timezone": null,
+      "macAddrUbit": 0,
+      "asnID": null,
+      "asn": null,
+      "routes": 0,
+      "macs": 0,
+      "ingressAcls": 0,
+      "rangecut": 0,
+      "swRole": null,
+      "evpnRouteServer": "disabled",
+      "dpus": null,
+      "sgFlavor": null,
+      "sgRole": null,
+      "srvRole": "generic",
+      "createdDate": 1789722762000,
+      "modifiedDate": 1790008525000,
+      "health": {},
+      "hardwareHealth": [],
+      "tenant": {
+        "id": 1,
+        "name": "Admin"
+      },
+      "site": {
+        "id": 19,
+        "name": "HardwareFree"
+      },
+      "nos": {
+        "id": null,
+        "name": null,
+        "tag": null
+      },
+      "profile": {
+        "id": 0,
+        "name": "None"
+      },
+      "asnNumber": {
+        "id": null,
+        "asn": null
+      },
+      "maintenanceMode": false,
+      "enableEvpnRouteServer": false,
+      "tags": [],
+      "links": []
+    },
+    {
+      "id": 1402,
+      "name": "gpu-hardwarefree-008",
+      "description": "NVIDIA HGX H100/H200/B200 (Spectrum-X) Node 008 (8 RoCE + 2 NS + 1 OOB)",
+      "mainAddress": "",
+      "mgmtAddress": "",
+      "macAddress": null,
+      "portCount": 11,
+      "type": "server",
+      "status": "ok",
+      "platform": null,
+      "conductorVersion": null,
+      "proxmoxVersion": null,
+      "uptime": "",
+      "timezone": null,
+      "macAddrUbit": 0,
+      "asnID": null,
+      "asn": null,
+      "routes": 0,
+      "macs": 0,
+      "ingressAcls": 0,
+      "rangecut": 0,
+      "swRole": null,
+      "evpnRouteServer": "disabled",
+      "dpus": null,
+      "sgFlavor": null,
+      "sgRole": null,
+      "srvRole": "generic",
+      "createdDate": 1789722762000,
+      "modifiedDate": 1790008525000,
+      "health": {},
+      "hardwareHealth": [],
+      "tenant": {
+        "id": 1,
+        "name": "Admin"
+      },
+      "site": {
+        "id": 19,
+        "name": "HardwareFree"
+      },
+      "nos": {
+        "id": null,
+        "name": null,
+        "tag": null
+      },
+      "profile": {
+        "id": 0,
+        "name": "None"
+      },
+      "asnNumber": {
+        "id": null,
+        "asn": null
+      },
+      "maintenanceMode": false,
+      "enableEvpnRouteServer": false,
+      "tags": [],
+      "links": []
+    },
+    {
+      "id": 1406,
+      "name": "gpu-hardwarefree-009",
+      "description": "NVIDIA HGX H100/H200/B200 (Spectrum-X) Node 009 (8 RoCE + 2 NS + 1 OOB)",
+      "mainAddress": "",
+      "mgmtAddress": "",
+      "macAddress": null,
+      "portCount": 11,
+      "type": "server",
+      "status": "ok",
+      "platform": null,
+      "conductorVersion": null,
+      "proxmoxVersion": null,
+      "uptime": "",
+      "timezone": null,
+      "macAddrUbit": 0,
+      "asnID": null,
+      "asn": null,
+      "routes": 0,
+      "macs": 0,
+      "ingressAcls": 0,
+      "rangecut": 0,
+      "swRole": null,
+      "evpnRouteServer": "disabled",
+      "dpus": null,
+      "sgFlavor": null,
+      "sgRole": null,
+      "srvRole": "generic",
+      "createdDate": 1789722762000,
+      "modifiedDate": 1790008525000,
+      "health": {},
+      "hardwareHealth": [],
+      "tenant": {
+        "id": 1,
+        "name": "Admin"
+      },
+      "site": {
+        "id": 19,
+        "name": "HardwareFree"
+      },
+      "nos": {
+        "id": null,
+        "name": null,
+        "tag": null
+      },
+      "profile": {
+        "id": 0,
+        "name": "None"
+      },
+      "asnNumber": {
+        "id": null,
+        "asn": null
+      },
+      "maintenanceMode": false,
+      "enableEvpnRouteServer": false,
+      "tags": [],
+      "links": []
+    },
+    {
+      "id": 1386,
+      "name": "gpu-hardwarefree-010",
+      "description": "NVIDIA HGX H100/H200/B200 (Spectrum-X) Node 010 (8 RoCE + 2 NS + 1 OOB)",
+      "mainAddress": "",
+      "mgmtAddress": "",
+      "macAddress": null,
+      "portCount": 11,
+      "type": "server",
+      "status": "ok",
+      "platform": null,
+      "conductorVersion": null,
+      "proxmoxVersion": null,
+      "uptime": "",
+      "timezone": null,
+      "macAddrUbit": 0,
+      "asnID": null,
+      "asn": null,
+      "routes": 0,
+      "macs": 0,
+      "ingressAcls": 0,
+      "rangecut": 0,
+      "swRole": null,
+      "evpnRouteServer": "disabled",
+      "dpus": null,
+      "sgFlavor": null,
+      "sgRole": null,
+      "srvRole": "generic",
+      "createdDate": 1789722761000,
+      "modifiedDate": 1790008525000,
+      "health": {},
+      "hardwareHealth": [],
+      "tenant": {
+        "id": 1,
+        "name": "Admin"
+      },
+      "site": {
+        "id": 19,
+        "name": "HardwareFree"
+      },
+      "nos": {
+        "id": null,
+        "name": null,
+        "tag": null
+      },
+      "profile": {
+        "id": 0,
+        "name": "None"
+      },
+      "asnNumber": {
+        "id": null,
+        "asn": null
+      },
+      "maintenanceMode": false,
+      "enableEvpnRouteServer": false,
+      "tags": [],
+      "links": []
+    },
+    {
+      "id": 1412,
+      "name": "gpu-hardwarefree-011",
+      "description": "NVIDIA HGX H100/H200/B200 (Spectrum-X) Node 011 (8 RoCE + 2 NS + 1 OOB)",
+      "mainAddress": "",
+      "mgmtAddress": "",
+      "macAddress": null,
+      "portCount": 11,
+      "type": "server",
+      "status": "ok",
+      "platform": null,
+      "conductorVersion": null,
+      "proxmoxVersion": null,
+      "uptime": "",
+      "timezone": null,
+      "macAddrUbit": 0,
+      "asnID": null,
+      "asn": null,
+      "routes": 0,
+      "macs": 0,
+      "ingressAcls": 0,
+      "rangecut": 0,
+      "swRole": null,
+      "evpnRouteServer": "disabled",
+      "dpus": null,
+      "sgFlavor": null,
+      "sgRole": null,
+      "srvRole": "generic",
+      "createdDate": 1789722762000,
+      "modifiedDate": 1790008525000,
+      "health": {},
+      "hardwareHealth": [],
+      "tenant": {
+        "id": 1,
+        "name": "Admin"
+      },
+      "site": {
+        "id": 19,
+        "name": "HardwareFree"
+      },
+      "nos": {
+        "id": null,
+        "name": null,
+        "tag": null
+      },
+      "profile": {
+        "id": 0,
+        "name": "None"
+      },
+      "asnNumber": {
+        "id": null,
+        "asn": null
+      },
+      "maintenanceMode": false,
+      "enableEvpnRouteServer": false,
+      "tags": [],
+      "links": []
+    },
+    {
+      "id": 1385,
+      "name": "gpu-hardwarefree-012",
+      "description": "NVIDIA HGX H100/H200/B200 (Spectrum-X) Node 012 (8 RoCE + 2 NS + 1 OOB)",
+      "mainAddress": "",
+      "mgmtAddress": "",
+      "macAddress": null,
+      "portCount": 11,
+      "type": "server",
+      "status": "ok",
+      "platform": null,
+      "conductorVersion": null,
+      "proxmoxVersion": null,
+      "uptime": "",
+      "timezone": null,
+      "macAddrUbit": 0,
+      "asnID": null,
+      "asn": null,
+      "routes": 0,
+      "macs": 0,
+      "ingressAcls": 0,
+      "rangecut": 0,
+      "swRole": null,
+      "evpnRouteServer": "disabled",
+      "dpus": null,
+      "sgFlavor": null,
+      "sgRole": null,
+      "srvRole": "generic",
+      "createdDate": 1789722761000,
+      "modifiedDate": 1790008525000,
+      "health": {},
+      "hardwareHealth": [],
+      "tenant": {
+        "id": 1,
+        "name": "Admin"
+      },
+      "site": {
+        "id": 19,
+        "name": "HardwareFree"
+      },
+      "nos": {
+        "id": null,
+        "name": null,
+        "tag": null
+      },
+      "profile": {
+        "id": 0,
+        "name": "None"
+      },
+      "asnNumber": {
+        "id": null,
+        "asn": null
+      },
+      "maintenanceMode": false,
+      "enableEvpnRouteServer": false,
+      "tags": [],
+      "links": []
+    },
+    {
+      "id": 1397,
+      "name": "gpu-hardwarefree-013",
+      "description": "NVIDIA HGX H100/H200/B200 (Spectrum-X) Node 013 (8 RoCE + 2 NS + 1 OOB)",
+      "mainAddress": "",
+      "mgmtAddress": "",
+      "macAddress": null,
+      "portCount": 11,
+      "type": "server",
+      "status": "ok",
+      "platform": null,
+      "conductorVersion": null,
+      "proxmoxVersion": null,
+      "uptime": "",
+      "timezone": null,
+      "macAddrUbit": 0,
+      "asnID": null,
+      "asn": null,
+      "routes": 0,
+      "macs": 0,
+      "ingressAcls": 0,
+      "rangecut": 0,
+      "swRole": null,
+      "evpnRouteServer": "disabled",
+      "dpus": null,
+      "sgFlavor": null,
+      "sgRole": null,
+      "srvRole": "generic",
+      "createdDate": 1789722762000,
+      "modifiedDate": 1790008525000,
+      "health": {},
+      "hardwareHealth": [],
+      "tenant": {
+        "id": 1,
+        "name": "Admin"
+      },
+      "site": {
+        "id": 19,
+        "name": "HardwareFree"
+      },
+      "nos": {
+        "id": null,
+        "name": null,
+        "tag": null
+      },
+      "profile": {
+        "id": 0,
+        "name": "None"
+      },
+      "asnNumber": {
+        "id": null,
+        "asn": null
+      },
+      "maintenanceMode": false,
+      "enableEvpnRouteServer": false,
+      "tags": [],
+      "links": []
+    },
+    {
+      "id": 1394,
+      "name": "gpu-hardwarefree-014",
+      "description": "NVIDIA HGX H100/H200/B200 (Spectrum-X) Node 014 (8 RoCE + 2 NS + 1 OOB)",
+      "mainAddress": "",
+      "mgmtAddress": "",
+      "macAddress": null,
+      "portCount": 11,
+      "type": "server",
+      "status": "ok",
+      "platform": null,
+      "conductorVersion": null,
+      "proxmoxVersion": null,
+      "uptime": "",
+      "timezone": null,
+      "macAddrUbit": 0,
+      "asnID": null,
+      "asn": null,
+      "routes": 0,
+      "macs": 0,
+      "ingressAcls": 0,
+      "rangecut": 0,
+      "swRole": null,
+      "evpnRouteServer": "disabled",
+      "dpus": null,
+      "sgFlavor": null,
+      "sgRole": null,
+      "srvRole": "generic",
+      "createdDate": 1789722762000,
+      "modifiedDate": 1790008525000,
+      "health": {},
+      "hardwareHealth": [],
+      "tenant": {
+        "id": 1,
+        "name": "Admin"
+      },
+      "site": {
+        "id": 19,
+        "name": "HardwareFree"
+      },
+      "nos": {
+        "id": null,
+        "name": null,
+        "tag": null
+      },
+      "profile": {
+        "id": 0,
+        "name": "None"
+      },
+      "asnNumber": {
+        "id": null,
+        "asn": null
+      },
+      "maintenanceMode": false,
+      "enableEvpnRouteServer": false,
+      "tags": [],
+      "links": []
+    },
+    {
+      "id": 1387,
+      "name": "gpu-hardwarefree-015",
+      "description": "NVIDIA HGX H100/H200/B200 (Spectrum-X) Node 015 (8 RoCE + 2 NS + 1 OOB)",
+      "mainAddress": "",
+      "mgmtAddress": "",
+      "macAddress": null,
+      "portCount": 11,
+      "type": "server",
+      "status": "ok",
+      "platform": null,
+      "conductorVersion": null,
+      "proxmoxVersion": null,
+      "uptime": "",
+      "timezone": null,
+      "macAddrUbit": 0,
+      "asnID": null,
+      "asn": null,
+      "routes": 0,
+      "macs": 0,
+      "ingressAcls": 0,
+      "rangecut": 0,
+      "swRole": null,
+      "evpnRouteServer": "disabled",
+      "dpus": null,
+      "sgFlavor": null,
+      "sgRole": null,
+      "srvRole": "generic",
+      "createdDate": 1789722761000,
+      "modifiedDate": 1790008525000,
+      "health": {},
+      "hardwareHealth": [],
+      "tenant": {
+        "id": 1,
+        "name": "Admin"
+      },
+      "site": {
+        "id": 19,
+        "name": "HardwareFree"
+      },
+      "nos": {
+        "id": null,
+        "name": null,
+        "tag": null
+      },
+      "profile": {
+        "id": 0,
+        "name": "None"
+      },
+      "asnNumber": {
+        "id": null,
+        "asn": null
+      },
+      "maintenanceMode": false,
+      "enableEvpnRouteServer": false,
+      "tags": [],
+      "links": []
+    },
+    {
+      "id": 1423,
+      "name": "gpu-hardwarefree-016",
+      "description": "NVIDIA HGX H100/H200/B200 (Spectrum-X) Node 016 (8 RoCE + 2 NS + 1 OOB)",
+      "mainAddress": "",
+      "mgmtAddress": "",
+      "macAddress": null,
+      "portCount": 11,
+      "type": "server",
+      "status": "ok",
+      "platform": null,
+      "conductorVersion": null,
+      "proxmoxVersion": null,
+      "uptime": "",
+      "timezone": null,
+      "macAddrUbit": 0,
+      "asnID": null,
+      "asn": null,
+      "routes": 0,
+      "macs": 0,
+      "ingressAcls": 0,
+      "rangecut": 0,
+      "swRole": null,
+      "evpnRouteServer": "disabled",
+      "dpus": null,
+      "sgFlavor": null,
+      "sgRole": null,
+      "srvRole": "generic",
+      "createdDate": 1789722762000,
+      "modifiedDate": 1790008525000,
+      "health": {},
+      "hardwareHealth": [],
+      "tenant": {
+        "id": 1,
+        "name": "Admin"
+      },
+      "site": {
+        "id": 19,
+        "name": "HardwareFree"
+      },
+      "nos": {
+        "id": null,
+        "name": null,
+        "tag": null
+      },
+      "profile": {
+        "id": 0,
+        "name": "None"
+      },
+      "asnNumber": {
+        "id": null,
+        "asn": null
+      },
+      "maintenanceMode": false,
+      "enableEvpnRouteServer": false,
+      "tags": [],
+      "links": []
+    },
+    {
+      "id": 1405,
+      "name": "gpu-hardwarefree-017",
+      "description": "NVIDIA HGX H100/H200/B200 (Spectrum-X) Node 017 (8 RoCE + 2 NS + 1 OOB)",
+      "mainAddress": "",
+      "mgmtAddress": "",
+      "macAddress": null,
+      "portCount": 11,
+      "type": "server",
+      "status": "ok",
+      "platform": null,
+      "conductorVersion": null,
+      "proxmoxVersion": null,
+      "uptime": "",
+      "timezone": null,
+      "macAddrUbit": 0,
+      "asnID": null,
+      "asn": null,
+      "routes": 0,
+      "macs": 0,
+      "ingressAcls": 0,
+      "rangecut": 0,
+      "swRole": null,
+      "evpnRouteServer": "disabled",
+      "dpus": null,
+      "sgFlavor": null,
+      "sgRole": null,
+      "srvRole": "generic",
+      "createdDate": 1789722762000,
+      "modifiedDate": 1790008525000,
+      "health": {},
+      "hardwareHealth": [],
+      "tenant": {
+        "id": 1,
+        "name": "Admin"
+      },
+      "site": {
+        "id": 19,
+        "name": "HardwareFree"
+      },
+      "nos": {
+        "id": null,
+        "name": null,
+        "tag": null
+      },
+      "profile": {
+        "id": 0,
+        "name": "None"
+      },
+      "asnNumber": {
+        "id": null,
+        "asn": null
+      },
+      "maintenanceMode": false,
+      "enableEvpnRouteServer": false,
+      "tags": [],
+      "links": []
+    },
+    {
+      "id": 1439,
+      "name": "gpu-hardwarefree-018",
+      "description": "NVIDIA HGX H100/H200/B200 (Spectrum-X) Node 018 (8 RoCE + 2 NS + 1 OOB)",
+      "mainAddress": "",
+      "mgmtAddress": "",
+      "macAddress": null,
+      "portCount": 11,
+      "type": "server",
+      "status": "ok",
+      "platform": null,
+      "conductorVersion": null,
+      "proxmoxVersion": null,
+      "uptime": "",
+      "timezone": null,
+      "macAddrUbit": 0,
+      "asnID": null,
+      "asn": null,
+      "routes": 0,
+      "macs": 0,
+      "ingressAcls": 0,
+      "rangecut": 0,
+      "swRole": null,
+      "evpnRouteServer": "disabled",
+      "dpus": null,
+      "sgFlavor": null,
+      "sgRole": null,
+      "srvRole": "generic",
+      "createdDate": 1789722762000,
+      "modifiedDate": 1790008525000,
+      "health": {},
+      "hardwareHealth": [],
+      "tenant": {
+        "id": 1,
+        "name": "Admin"
+      },
+      "site": {
+        "id": 19,
+        "name": "HardwareFree"
+      },
+      "nos": {
+        "id": null,
+        "name": null,
+        "tag": null
+      },
+      "profile": {
+        "id": 0,
+        "name": "None"
+      },
+      "asnNumber": {
+        "id": null,
+        "asn": null
+      },
+      "maintenanceMode": false,
+      "enableEvpnRouteServer": false,
+      "tags": [],
+      "links": []
+    },
+    {
+      "id": 1391,
+      "name": "gpu-hardwarefree-019",
+      "description": "NVIDIA HGX H100/H200/B200 (Spectrum-X) Node 019 (8 RoCE + 2 NS + 1 OOB)",
+      "mainAddress": "",
+      "mgmtAddress": "",
+      "macAddress": null,
+      "portCount": 11,
+      "type": "server",
+      "status": "ok",
+      "platform": null,
+      "conductorVersion": null,
+      "proxmoxVersion": null,
+      "uptime": "",
+      "timezone": null,
+      "macAddrUbit": 0,
+      "asnID": null,
+      "asn": null,
+      "routes": 0,
+      "macs": 0,
+      "ingressAcls": 0,
+      "rangecut": 0,
+      "swRole": null,
+      "evpnRouteServer": "disabled",
+      "dpus": null,
+      "sgFlavor": null,
+      "sgRole": null,
+      "srvRole": "generic",
+      "createdDate": 1789722762000,
+      "modifiedDate": 1790008525000,
+      "health": {},
+      "hardwareHealth": [],
+      "tenant": {
+        "id": 1,
+        "name": "Admin"
+      },
+      "site": {
+        "id": 19,
+        "name": "HardwareFree"
+      },
+      "nos": {
+        "id": null,
+        "name": null,
+        "tag": null
+      },
+      "profile": {
+        "id": 0,
+        "name": "None"
+      },
+      "asnNumber": {
+        "id": null,
+        "asn": null
+      },
+      "maintenanceMode": false,
+      "enableEvpnRouteServer": false,
+      "tags": [],
+      "links": []
+    },
+    {
+      "id": 1430,
+      "name": "gpu-hardwarefree-020",
+      "description": "NVIDIA HGX H100/H200/B200 (Spectrum-X) Node 020 (8 RoCE + 2 NS + 1 OOB)",
+      "mainAddress": "",
+      "mgmtAddress": "",
+      "macAddress": null,
+      "portCount": 11,
+      "type": "server",
+      "status": "ok",
+      "platform": null,
+      "conductorVersion": null,
+      "proxmoxVersion": null,
+      "uptime": "",
+      "timezone": null,
+      "macAddrUbit": 0,
+      "asnID": null,
+      "asn": null,
+      "routes": 0,
+      "macs": 0,
+      "ingressAcls": 0,
+      "rangecut": 0,
+      "swRole": null,
+      "evpnRouteServer": "disabled",
+      "dpus": null,
+      "sgFlavor": null,
+      "sgRole": null,
+      "srvRole": "generic",
+      "createdDate": 1789722762000,
+      "modifiedDate": 1790008525000,
+      "health": {},
+      "hardwareHealth": [],
+      "tenant": {
+        "id": 1,
+        "name": "Admin"
+      },
+      "site": {
+        "id": 19,
+        "name": "HardwareFree"
+      },
+      "nos": {
+        "id": null,
+        "name": null,
+        "tag": null
+      },
+      "profile": {
+        "id": 0,
+        "name": "None"
+      },
+      "asnNumber": {
+        "id": null,
+        "asn": null
+      },
+      "maintenanceMode": false,
+      "enableEvpnRouteServer": false,
+      "tags": [],
+      "links": []
+    }
+  ],
+  "errors": null,
+  "message": "",
+  "isSuccess": true,
+  "meta": {
+    "apiVersion": "v2",
+    "statusCode": 200,
+    "totalDocs": 211
+  }
+}

@@ -1,0 +1,13 @@
+{
+  "data": {
+    "key": "----BEGIN NETRIS LICENSE KEY----\neyJsaWNlbnNlVHlwZSI6IkVudGVycHJpc2UiLCJjbGllbnROYW1lIjoiTmV0cmlzIiwiY2xpZW50QWRkcmVzcyI6IjQ3MDEgUGF0cmljayBIZW5yeSBEcml2ZSwgQmxkZy4gMjUsIFNhbnRhIENsYXJhICBDYWxpZm9ybmlhLCA5NTA1NCwgVVNBIiwibWF4U2VydmVyIjoxMDI0LCJtYXhTb2Z0Z2F0ZSI6OCwibWF4U3dpdGNoIjoyMDAsInN0YXJ0RGF0ZSI6IjIwMjUtMDktMTEiLCJlbmREYXRlIjoiMjAyNi0xMS0xMSIsImN1c3RvbSI6Ik5vbi1wcm9kdWN0aW9uIHRyaWFsIGxpY2Vuc2UifQ==.nNWwWZQZVBZa5-gEkYefMd1VHw4Rt52RP6bszSDd2qHQWONfgsQAkMsvJUFwoTkbpvzA1ZJPMYpNEfrzlzZhyCKOgUMb8BKXkVRyAOYPBFcC_ZKzhXWig_i2kBRnIFSjjzdNy_uIEcf9sHW1uwQhIlJNwdjfR-0QQ22FgEYQwgjqWkxOTsxhyA9IFfuFCQcfm-NNvL2ecn1ZunKkZAhMItM-8eDcsLqhW_MrdyxlcCnOBD6sncCkVcGExE2XlAIUfzY_GmirCJHkRehmiuWMbSEO5O4jHwReZugLYhDGx327YoRiChC62T-LQW7eca2KnfJh4tNg9iHTQwoQryoxaA==\n----END NETRIS LICENSE KEY---\n"
+  },
+  "errors": null,
+  "message": "Your license key expires in 30 days.",
+  "isSuccess": true,
+  "meta": {
+    "apiVersion": "v1",
+    "statusCode": 200,
+    "expiredIn": 30
+  }
+}

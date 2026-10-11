@@ -1,0 +1,47 @@
+{
+  "data": [
+    {
+      "id": 8,
+      "name": "Datacenter-A",
+      "publicAsn": 655001,
+      "rohAsn": 0,
+      "vmAsn": 0,
+      "rohProfile": {
+        "id": null,
+        "name": null,
+        "value": null
+      },
+      "aclPolicy": "permit",
+      "switchFabric": "netris",
+      "vlanRange": "1-4094",
+      "vlanRangeAutoAssign": "2-3999",
+      "vlanRangeSysReserved": "3600-4094",
+      "switchFabricProviders": {}
+    },
+    {
+      "id": 19,
+      "name": "HardwareFree",
+      "publicAsn": 65501,
+      "rohAsn": 0,
+      "vmAsn": 0,
+      "rohProfile": {
+        "id": null,
+        "name": null,
+        "value": null
+      },
+      "aclPolicy": "deny",
+      "switchFabric": "netris",
+      "vlanRange": "1-4094",
+      "vlanRangeAutoAssign": "2-3999",
+      "vlanRangeSysReserved": "3600-4094",
+      "switchFabricProviders": {}
+    }
+  ],
+  "errors": null,
+  "message": "",
+  "isSuccess": true,
+  "meta": {
+    "apiVersion": "v2",
+    "statusCode": 200
+  }
+}
