@@ -1,5 +1,4 @@
 import logging
-from typing import Optional
 
 from mcp.server.mcpserver import Context
 
@@ -43,7 +42,7 @@ async def create_site(
     roh_asn: int | None = None,
     vm_asn: int | None = None,
     site_mesh: str | None = None,
-    location: Optional[str] = None,
+    location: str | None = None,
 ) -> str:
     """Create a new site in Netris.
 

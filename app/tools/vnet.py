@@ -1,6 +1,5 @@
 import copy
 import logging
-from typing import Optional
 
 from mcp.server.mcpserver import Context
 
@@ -41,7 +40,7 @@ async def create_vnet(
     name: str,
     sites: list[str],
     tenant: str,
-    vlan: Optional[int] = None,
+    vlan: int | None = None,
 ) -> str:
     """Create a new VNet (virtual network) in Netris.
 

@@ -6,7 +6,6 @@ Netris automatically programs the network fabric to distribute traffic.
 """
 
 import logging
-from typing import Optional
 
 from mcp.server.mcpserver import Context
 
@@ -51,7 +50,7 @@ async def create_l4lb(
     frontend_port: int,
     protocol: str,
     backends: list[dict],
-    health_check: Optional[str] = None,
+    health_check: str | None = None,
 ) -> str:
     """Create a new L4 load balancer in Netris.
 

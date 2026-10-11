@@ -1,5 +1,6 @@
 from ..server import mcp
 
+
 @mcp.prompt()
 def setup_bgp_peering(peer_name: str, neighbor_as: int, neighbor_address: str, local_address: str, site: str) -> str:
     """Guide for configuring a BGP peering session in Netris."""

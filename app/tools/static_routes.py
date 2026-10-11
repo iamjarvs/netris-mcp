@@ -1,5 +1,4 @@
 import logging
-from typing import Optional
 
 from mcp.server.mcpserver import Context
 
@@ -43,7 +42,7 @@ async def create_static_route(
     next_hop: str,
     vpc: str,
     site: str,
-    description: Optional[str] = None,
+    description: str | None = None,
 ) -> str:
     """Create a new static route in Netris.
 

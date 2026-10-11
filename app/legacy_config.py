@@ -6,8 +6,8 @@ Call get_config() once at startup; the result is a plain dataclass so it
 can be passed around freely without coupling to this module.
 """
 
-import os
 import logging
+import os
 from dataclasses import dataclass
 
 from dotenv import load_dotenv

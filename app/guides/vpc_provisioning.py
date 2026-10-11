@@ -1,5 +1,6 @@
 from ..server import mcp
 
+
 @mcp.prompt()
 def provision_vpc(vpc_name: str, tenant: str, subnet_prefix: str = "", site: str = "") -> str:
     """Guide for provisioning a VPC with subnets and a VNet in Netris."""

@@ -1,5 +1,6 @@
 from ..server import mcp
 
+
 @mcp.prompt()
 def onboard_new_site(site_name: str, asn: int, location: str = "") -> str:
     """Guide for onboarding a new network site in Netris."""

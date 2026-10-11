@@ -1,5 +1,6 @@
 from ..server import mcp
 
+
 @mcp.prompt()
 def setup_load_balancer(lb_name: str, site: str, tenant: str, frontend_ip: str, frontend_port: int, protocol: str = "tcp") -> str:
     """Guide for setting up an L4 load balancer in Netris."""

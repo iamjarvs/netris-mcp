@@ -1,5 +1,4 @@
 import logging
-from typing import Optional
 
 from mcp.server.mcpserver import Context
 
@@ -40,7 +39,7 @@ async def create_subnet(
     prefix: str,
     tenant: str,
     purpose: str = "common",
-    site: Optional[str] = None,
+    site: str | None = None,
 ) -> str:
     """Create a new subnet in the Netris IPAM.
 

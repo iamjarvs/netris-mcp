@@ -1,5 +1,4 @@
 import logging
-from typing import Optional
 
 from mcp.server.mcpserver import Context
 
@@ -42,7 +41,7 @@ async def create_snat_rule(
     site: str,
     source_prefix: str,
     snat_to_ip: str,
-    destination_address: Optional[str] = None,
+    destination_address: str | None = None,
 ) -> str:
     """Create a new SNAT (Source NAT) rule in Netris.
 
@@ -82,7 +81,7 @@ async def create_dnat_rule(
     destination_address: str,
     translated_address: str,
     protocol: str = "tcp",
-    port: Optional[int] = None,
+    port: int | None = None,
 ) -> str:
     """Create a new DNAT (Destination NAT) rule in Netris.
 

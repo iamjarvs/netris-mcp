@@ -1,5 +1,4 @@
 import logging
-from typing import Optional
 
 from mcp.server.mcpserver import Context
 
@@ -43,9 +42,9 @@ async def create_acl(
     src_prefix: str,
     dst_prefix: str,
     site: str,
-    protocol: Optional[str] = None,
-    src_port: Optional[str] = None,
-    dst_port: Optional[str] = None,
+    protocol: str | None = None,
+    src_port: str | None = None,
+    dst_port: str | None = None,
 ) -> str:
     """Create a new ACL rule in Netris.
 

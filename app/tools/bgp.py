@@ -1,5 +1,4 @@
 import logging
-from typing import Optional
 
 from mcp.server.mcpserver import Context
 
@@ -42,10 +41,10 @@ async def create_bgp_session(
     neighbor_as: int,
     neighbor_address: str,
     local_address: str,
-    vnet: Optional[str] = None,
-    bgp_password: Optional[str] = None,
-    multihop: Optional[int] = None,
-    bfd: Optional[bool] = None,
+    vnet: str | None = None,
+    bgp_password: str | None = None,
+    multihop: int | None = None,
+    bfd: bool | None = None,
 ) -> str:
     """Create a new eBGP peer session in Netris.
 
