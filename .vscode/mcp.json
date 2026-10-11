@@ -1,0 +1,22 @@
+{
+  "mcpServers": {
+    "netris-mcp": {
+      "command": "/Users/adam/Documents/Antigravity/Netris MCP/netris-mcp/.venv/bin/python",
+      "args": [
+        "-m",
+        "app.server"
+      ],
+      "env": {
+        "PYTHONPATH": "/Users/adam/Documents/Antigravity/Netris MCP/netris-mcp:/Users/adam/Documents/Antigravity/Netris MCP/netris-mcp/app",
+        "NETRIS_URL": "https://adam-ctl.netris.io",
+        "NETRIS_USERNAME": "netris",
+        "NETRIS_PASSWORD": "913QGAi6oQTSGgZm20eU",
+        "NETRIS_VERIFY_SSL": "false",
+        "NETRIS_MCP_MODE": "read-only",
+        "SSH_JUMP_HOST": "adam-ctl.netris.io",
+        "SSH_JUMP_USER": "ubuntu",
+        "SSH_SWITCH_USER": "cumulus"
+      }
+    }
+  }
+}

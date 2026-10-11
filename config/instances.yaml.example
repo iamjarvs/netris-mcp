@@ -1,0 +1,25 @@
+# Multi-instance Controller Registry for Netris MCP
+# Select active instance using environment variable: NETRIS_ACTIVE_INSTANCE=lab
+# Or let tools target a specific instance by passing instance_id.
+
+instances:
+  - id: "lab"
+    name: "Adam Lab Controller"
+    url: "https://adam-ctl.netris.io"
+    username: "netris"
+    password: "your-controller-password"
+    verify_ssl: false
+    mode: "read-only"
+    ssh_jump:
+      host: "adam-ctl.netris.io"
+      port: 22
+      user: "ubuntu"
+      switch_user: "cumulus"
+
+  - id: "prod"
+    name: "Production Datacenter Fabric"
+    url: "https://netris.corp.example.com"
+    username: "netris-operator"
+    password: "your-production-password"
+    verify_ssl: true
+    mode: "read-only"

@@ -1,0 +1,17 @@
+{
+  "mcpServers": {
+    "netris": {
+      "command": "/Users/adam/Documents/Antigravity/Netris MCP/netris-mcp/.venv/bin/python",
+      "args": [
+        "-m",
+        "app.server"
+      ],
+      "env": {
+        "PYTHONPATH": "/Users/adam/Documents/Antigravity/Netris MCP/netris-mcp:/Users/adam/Documents/Antigravity/Netris MCP/netris-mcp/app",
+        "NETRIS_URL": "https://adam-ctl.netris.io",
+        "NETRIS_USERNAME": "netris",
+        "NETRIS_PASSWORD": "913QGAi6oQTSGgZm20eU"
+      }
+    }
+  }
+}
