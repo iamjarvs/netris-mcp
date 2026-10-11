@@ -1,34 +1,41 @@
 [project]
 name = "netris-mcp"
-version = "0.1.0"
-description = "MCP server for Netris network automation platform"
+version = "0.2.0"
+description = "Model Context Protocol (MCP) server for Netris network automation platform"
+readme = "README.md"
 requires-python = ">=3.10"
 dependencies = [
-    "mcp[cli]>=1.0.0",
-    "httpx>=0.27.0",
+    "fastmcp>=3.2.0",
+    "httpx>=0.28.1",
+    "starlette>=0.45.0",
+    "uvicorn>=0.34.0",
     "python-dotenv>=1.0.0",
+    "pydantic>=2.10.0",
+    "pyyaml>=6.0.2",
+]
+
+[project.optional-dependencies]
+dev = [
+    "pytest>=8.0.0",
+    "pytest-asyncio>=0.23.0",
+    "respx>=0.21.0",
+    "ruff>=0.8.0",
 ]
 
 [project.scripts]
-netris-mcp = "netris_mcp.server:main"
+netris-mcp = "app.server:main"
+netris-mcp-setup = "setup_cli:main"
 
 [build-system]
 requires = ["hatchling"]
 build-backend = "hatchling.build"
 
 [tool.hatch.build.targets.wheel]
-packages = ["src/netris_mcp"]
-
-[tool.uv]
-dev-dependencies = [
-    "pytest>=8.0.0",
-    "pytest-asyncio>=0.23.0",
-    "respx>=0.21.0",
-]
+packages = ["app"]
 
 [tool.pytest.ini_options]
 testpaths = ["tests"]
-norecursedirs = ["tests/legacy", ".venv", "build", "dist"]
+asyncio_mode = "auto"
 
 [tool.ruff.lint]
 ignore = ["BLE001", "S110", "F841"]

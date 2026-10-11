@@ -13,11 +13,12 @@ from __future__ import annotations
 import asyncio
 import re
 from typing import Annotated, Literal
-from pydantic import Field
-from fastmcp import FastMCP
 
+from fastmcp import FastMCP
+from pydantic import Field
+
+from app.architecture_hints import NOS_ARCHITECTURES, get_architecture_hint
 from app.config import get_config
-from app.architecture_hints import get_architecture_hint, NOS_ARCHITECTURES
 
 ALLOWED_PREFIXES = (
     "nv show",
@@ -111,8 +112,7 @@ def register_switch_exec(mcp: FastMCP):
                 return f"Switch execution returned error code {proc.returncode}:\n{err_msg or output}"
 
             banner = "Welcome to NVIDIA Cumulus (R) Linux (R)\n"
-            if output.startswith(banner):
-                output = output[len(banner):]
+            output = output.removeprefix(banner)
 
             if len(output) > 4000:
                 output = output[:4000] + "\n... [TRUNCATED FOR TOKEN SAFETY]"
