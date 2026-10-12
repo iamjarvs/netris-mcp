@@ -1,0 +1,868 @@
+[
+  {
+    "step": 1,
+    "name": "Discover High-Level Fabric Inventory",
+    "tool": "fabric_inventory",
+    "arguments": {
+      "domain": "summary"
+    },
+    "duration_ms": 636.05,
+    "status": "SUCCESS",
+    "output": {
+      "sites_count": 2,
+      "sites": [
+        "Datacenter-A",
+        "HardwareFree"
+      ],
+      "vpcs_count": 11,
+      "tenants_count": 4,
+      "tenants": [
+        "Admin",
+        "DemoTenant-Alpha",
+        "DemoTenant-Beta",
+        "DevOps"
+      ],
+      "hardware_total": 211,
+      "switches": 68,
+      "softgates": 8,
+      "servers": 135,
+      "controllers": 0
+    }
+  },
+  {
+    "step": 2,
+    "name": "Inspect Switch Fleet",
+    "tool": "fabric_inventory",
+    "arguments": {
+      "domain": "switches",
+      "limit": 10
+    },
+    "duration_ms": 147.46,
+    "status": "SUCCESS",
+    "output": {
+      "total_records": 68,
+      "displayed_records": 10,
+      "truncated": true,
+      "items": [
+        {
+          "id": 517,
+          "name": "leaf-pod00-su0-r0",
+          "type": "switch",
+          "mainAddress": "10.253.128.1",
+          "health": "{'ok': 204, 'warning': 1, 'critical': 0, 'unknown': 0}",
+          "site": "Datacenter-A",
+          "tenant": "Admin"
+        },
+        {
+          "id": 520,
+          "name": "leaf-pod00-su0-r1",
+          "type": "switch",
+          "mainAddress": "10.253.128.2",
+          "health": "{'ok': 204, 'warning': 1, 'critical': 0, 'unknown': 0}",
+          "site": "Datacenter-A",
+          "tenant": "Admin"
+        },
+        {
+          "id": 514,
+          "name": "leaf-pod00-su0-r2",
+          "type": "switch",
+          "mainAddress": "10.253.128.3",
+          "health": "{'ok': 204, 'warning': 1, 'critical': 0, 'unknown': 0}",
+          "site": "Datacenter-A",
+          "tenant": "Admin"
+        },
+        {
+          "id": 515,
+          "name": "leaf-pod00-su0-r3",
+          "type": "switch",
+          "mainAddress": "10.253.128.4",
+          "health": "{'ok': 204, 'warning': 1, 'critical': 0, 'unknown': 0}",
+          "site": "Datacenter-A",
+          "tenant": "Admin"
+        },
+        {
+          "id": 513,
+          "name": "leaf-pod00-su1-r0",
+          "type": "switch",
+          "mainAddress": "10.253.128.5",
+          "health": "{'ok': 204, 'warning': 1, 'critical': 0, 'unknown': 0}",
+          "site": "Datacenter-A",
+          "tenant": "Admin"
+        },
+        {
+          "id": 518,
+          "name": "leaf-pod00-su1-r1",
+          "type": "switch",
+          "mainAddress": "10.253.128.6",
+          "health": "{'ok': 202, 'warning': 1, 'critical': 2, 'unknown': 0}",
+          "site": "Datacenter-A",
+          "tenant": "Admin"
+        },
+        {
+          "id": 516,
+          "name": "leaf-pod00-su1-r2",
+          "type": "switch",
+          "mainAddress": "10.253.128.7",
+          "health": "{'ok': 204, 'warning': 1, 'critical': 0, 'unknown': 0}",
+          "site": "Datacenter-A",
+          "tenant": "Admin"
+        },
+        {
+          "id": 519,
+          "name": "leaf-pod00-su1-r3",
+          "type": "switch",
+          "mainAddress": "10.253.128.8",
+          "health": "{'ok': 204, 'warning': 1, 'critical': 0, 'unknown': 0}",
+          "site": "Datacenter-A",
+          "tenant": "Admin"
+        },
+        {
+          "id": 525,
+          "name": "ns-leaf-0",
+          "type": "switch",
+          "mainAddress": "10.2.0.1",
+          "health": "{'ok': 104, 'warning': 1, 'critical': 0, 'unknown': 0}",
+          "site": "Datacenter-A",
+          "tenant": "Admin"
+        },
+        {
+          "id": 526,
+          "name": "ns-leaf-1",
+          "type": "switch",
+          "mainAddress": "10.2.0.2",
+          "health": "{'ok': 100, 'warning': 1, 'critical': 0, 'unknown': 0}",
+          "site": "Datacenter-A",
+          "tenant": "Admin"
+        }
+      ]
+    }
+  },
+  {
+    "step": 3,
+    "name": "Inspect AI GPU Compute Nodes",
+    "tool": "fabric_inventory",
+    "arguments": {
+      "domain": "servers",
+      "limit": 10
+    },
+    "duration_ms": 74.95,
+    "status": "SUCCESS",
+    "output": {
+      "total_records": 135,
+      "displayed_records": 10,
+      "truncated": true,
+      "items": [
+        {
+          "id": 1431,
+          "name": "gpu-hardwarefree-001",
+          "type": "server",
+          "mainAddress": "",
+          "health": "{}",
+          "site": "HardwareFree",
+          "tenant": "Admin"
+        },
+        {
+          "id": 1388,
+          "name": "gpu-hardwarefree-002",
+          "type": "server",
+          "mainAddress": "",
+          "health": "{}",
+          "site": "HardwareFree",
+          "tenant": "Admin"
+        },
+        {
+          "id": 1416,
+          "name": "gpu-hardwarefree-003",
+          "type": "server",
+          "mainAddress": "",
+          "health": "{}",
+          "site": "HardwareFree",
+          "tenant": "Admin"
+        },
+        {
+          "id": 1413,
+          "name": "gpu-hardwarefree-004",
+          "type": "server",
+          "mainAddress": "",
+          "health": "{}",
+          "site": "HardwareFree",
+          "tenant": "Admin"
+        },
+        {
+          "id": 1377,
+          "name": "gpu-hardwarefree-005",
+          "type": "server",
+          "mainAddress": "",
+          "health": "{}",
+          "site": "HardwareFree",
+          "tenant": "Admin"
+        },
+        {
+          "id": 1419,
+          "name": "gpu-hardwarefree-006",
+          "type": "server",
+          "mainAddress": "",
+          "health": "{}",
+          "site": "HardwareFree",
+          "tenant": "Admin"
+        },
+        {
+          "id": 1400,
+          "name": "gpu-hardwarefree-007",
+          "type": "server",
+          "mainAddress": "",
+          "health": "{}",
+          "site": "HardwareFree",
+          "tenant": "Admin"
+        },
+        {
+          "id": 1402,
+          "name": "gpu-hardwarefree-008",
+          "type": "server",
+          "mainAddress": "",
+          "health": "{}",
+          "site": "HardwareFree",
+          "tenant": "Admin"
+        },
+        {
+          "id": 1406,
+          "name": "gpu-hardwarefree-009",
+          "type": "server",
+          "mainAddress": "",
+          "health": "{}",
+          "site": "HardwareFree",
+          "tenant": "Admin"
+        },
+        {
+          "id": 1386,
+          "name": "gpu-hardwarefree-010",
+          "type": "server",
+          "mainAddress": "",
+          "health": "{}",
+          "site": "HardwareFree",
+          "tenant": "Admin"
+        }
+      ]
+    }
+  },
+  {
+    "step": 4,
+    "name": "Consult AI Fabric Dual-Plane Design",
+    "tool": "architecture_reference",
+    "arguments": {
+      "platform": "ai_fabric"
+    },
+    "duration_ms": 0.14,
+    "status": "SUCCESS",
+    "output": {
+      "domain": "AI Cloud Data Centre Fabric Architecture",
+      "overview": "Modern AI clusters operate two distinct network planes: Front-End (North-South/Management/Storage) and Back-End (East-West/Scale-Out Compute), complemented by Scale-Up rack domains (NVLink NVL72) and on-host networking.",
+      "frontend_network": {
+        "purpose": "Client ingress, Kubernetes control plane, cluster management, Out-of-Band (OOB), and high-throughput storage (NFS/Ceph/WEKA/VAST).",
+        "technology": "Ethernet leaf-spine topology orchestrated natively by Netris using EVPN-VXLAN, VPC multi-tenancy, V-Net overlays (L2VPN/L3VPN), hardware NAT, and SoftGate L4 load balancers.",
+        "addressing": "Dual-plane addressing: Out-of-Band management IPs (mgmtAddress) for control plane/SSH jump host access, and in-band underlay/routing loopbacks (mainAddress)."
+      },
+      "backend_network": {
+        "purpose": "Non-blocking, ultra-low-latency East-West accelerator interconnect for GPU-to-GPU collective operations (AllReduce, All-to-All).",
+        "infiniband_path": "Quantum-2 switches managed via the NVIDIA UFM (Unified Fabric Manager) integration plugin in Netris. Netris automates GUID discovery and PKey partition isolation declaratively per Server-Cluster.",
+        "rocev2_ethernet_path": "High-performance Ethernet (e.g., NVIDIA Spectrum-X) configured in rail-optimised planes with PFC (802.1Qbb Priority Flow Control), ECN (Explicit Congestion Notification), ETS, and Adaptive Routing."
+      },
+      "scale_up_fabric": {
+        "name": "NVIDIA NVLink NVL72 / Multi-Node NVLink",
+        "technology": "Rack-scale GB200/GB300 NVL72 architectures interconnecting 72 GPUs across 9 NVLink switch trays in a full mesh.",
+        "netris_role": "Netris links into NVIDIA NMX Controller (NMX-C) via gRPC with mTLS, declaratively enforcing NVLink partitions based on Server-Cluster tenant boundaries to prevent cross-tenant GPU leakage."
+      },
+      "on_host_networking": {
+        "technology": "Routing On the Host (ROH) running BGP/EVPN directly on host OS or NVIDIA BlueField DPUs, advertising host loopbacks into top-of-rack switches.",
+        "acceleration": "Multi-rail NIC striping, SR-IOV, GPUDirect RDMA, and PXN (PCIe Acceleration) offloads."
+      },
+      "key_show_commands": [
+        "nv show router bgp",
+        "sudo vtysh -c 'show bgp summary'",
+        "sudo vtysh -c 'show evpn vni'",
+        "roce_sys -s",
+        "ibstat",
+        "ibdiagnet"
+      ],
+      "troubleshooting_hints": [
+        "In Netris CloudSim / production environments, target switches via out-of-band management IP (mgmtAddress), not underlay loopback (mainAddress).",
+        "Server multi-tenancy across Ethernet, InfiniBand (PKeys), and NVLink (partitions) is consolidated declaratively into the Netris Server-Cluster object.",
+        "Monitor PFC pause frames and buffer occupancy to detect RoCEv2 incast congestion hotspots."
+      ]
+    }
+  },
+  {
+    "step": 5,
+    "name": "Consult NVIDIA UFM Integration Architecture",
+    "tool": "architecture_reference",
+    "arguments": {
+      "platform": "nvidia_ufm"
+    },
+    "duration_ms": 0.07,
+    "status": "SUCCESS",
+    "output": {
+      "vendor": "NVIDIA Networking",
+      "technology": "Unified Fabric Manager (UFM) for InfiniBand fabrics",
+      "netris_integration": "The Netris-UFM plugin automates InfiniBand tenant isolation by mapping Netris Server-Cluster objects to UFM PKeys (Partitions), port GUID memberships, and optional SHARP (Scalable Hierarchical Aggregation and Reduction Protocol) trees.",
+      "configuration_prerequisites": [
+        "UFM gv.cfg must set 'default_membership = limited' under [MngNetwork] to permit programmatic REST API partition enforcement.",
+        "Netris Controller discovers port GUIDs and synchronises tenant PKey boundaries continuously."
+      ],
+      "key_show_commands": [
+        "ibstat",
+        "ibstatus",
+        "sminfo",
+        "perfquery",
+        "ibdiagnet --sc"
+      ],
+      "troubleshooting_hints": [
+        "Verify UFM REST API health and token credentials configured in Netris Settings -> General.",
+        "Ensure compute nodes assigned to a tenant share matching InfiniBand PKeys to allow collective communication.",
+        "Check for fabric-wide SM (Subnet Manager) master election conflicts using 'sminfo'."
+      ]
+    }
+  },
+  {
+    "step": 6,
+    "name": "Consult NVIDIA NVLink NVL72 Architecture",
+    "tool": "architecture_reference",
+    "arguments": {
+      "platform": "nvidia_nvlink_nvl72"
+    },
+    "duration_ms": 0.07,
+    "status": "SUCCESS",
+    "output": {
+      "vendor": "NVIDIA",
+      "technology": "NVLink Multi-Node NVL72 / NMX Controller (NMX-C)",
+      "netris_integration": "Netris integrates with NVIDIA NMX-C over gRPC with mTLS to synchronise NVLink partitions across 72-GPU rack domains (GB200/GB300). Eliminates manual GPU UID ledger tracking by reconciling partitions against declared Server-Cluster assignments every 10 seconds.",
+      "architecture_details": [
+        "18 compute servers (72 GPUs total) interconnected by 9 NVLink switch trays in a full mesh.",
+        "NMX-C runs locally per rack on an NVLink switch tray.",
+        "Netris provides the single declarative source of truth for multi-tenant boundaries across Ethernet, InfiniBand, and NVLink."
+      ],
+      "troubleshooting_hints": [
+        "Verify GPU inventory ledger mapping server hostnames to GPU UIDs.",
+        "Check mTLS client certificates and CA trust chain for NMX-C gRPC communication.",
+        "Confirm that compute nodes in the same Server-Cluster reside in the same NVL partition."
+      ]
+    }
+  },
+  {
+    "step": 7,
+    "name": "Consult On-Host Networking & ROH Patterns",
+    "tool": "architecture_reference",
+    "arguments": {
+      "platform": "on_host_networking"
+    },
+    "duration_ms": 0.06,
+    "status": "SUCCESS",
+    "output": {
+      "technology": "Routing On the Host (ROH) & Host Networking Agents",
+      "overview": "Netris extends cloud networking onto bare-metal hosts and hypervisors via Routing On the Host (ROH) and netris-agent, eliminating layer-2 VLAN sprawl and bridging overhead.",
+      "components": [
+        "ROH: Host runs BGP unnumbered / EVPN to advertise its /32 loopbacks directly to ToR switches.",
+        "DPU Offload: NVIDIA BlueField-2/3 DPUs running ovs-doca or embedded Linux offloading overlay encapsulation.",
+        "Multi-Rail: GPU clusters bind dedicated ConnectX HCAs/NICs per rail for deterministic non-blocking communication."
+      ],
+      "key_show_commands": [
+        "ip -br addr",
+        "ip route show",
+        "systemctl status netris-agent",
+        "rdma link",
+        "ethtool -S <interface>"
+      ],
+      "troubleshooting_hints": [
+        "Ensure netris-agent daemon is active: 'systemctl status netris-agent'.",
+        "Verify BGP peering status between host loopback and leaf switch: 'ip route show proto bgp'.",
+        "For RoCE workloads, verify MTU 9000 (jumbo frames) across all host and switch physical interfaces."
+      ]
+    }
+  },
+  {
+    "step": 8,
+    "name": "Audit Fabric Health & Border BGP",
+    "tool": "fabric_health",
+    "arguments": {
+      "scope": "overview"
+    },
+    "duration_ms": 319.79,
+    "status": "SUCCESS",
+    "output": {
+      "overall_status": "Healthy",
+      "summary": {
+        "total_heartbeat_nodes": 50,
+        "critical_heartbeats_count": 0,
+        "critical_nodes": [],
+        "ebgp_sessions_total": 4,
+        "ebgp_established": 4
+      },
+      "dashboard_widgets": {
+        "agentHeartbeats": {
+          "ok": 0,
+          "critical": 0
+        },
+        "hardwareHealth": {
+          "critical": 0,
+          "ok": 0,
+          "warning": 0
+        },
+        "hardwareAlarms": {
+          "critical": 0,
+          "ok": 0,
+          "warning": 0
+        },
+        "ebgp": {
+          "ok": 4,
+          "warning": 0,
+          "critical": 0,
+          "unknown": 0
+        },
+        "totalCounts": {
+          "switch": 0,
+          "softgate": 0,
+          "server": 0,
+          "interface": 0,
+          "link": 0,
+          "site": 2,
+          "vpc": 11,
+          "serverCluster": 0,
+          "vnet": 0,
+          "acl": 0
+        },
+        "updatedAt": 1791754782559
+      }
+    }
+  },
+  {
+    "step": 9,
+    "name": "Execute Automated Fabric Health Triage",
+    "tool": "triage",
+    "arguments": {
+      "symptom": "fabric_health_check"
+    },
+    "duration_ms": 353.05,
+    "status": "SUCCESS",
+    "output": {
+      "verdict": "OPTIMAL",
+      "total_switches": 68,
+      "active_vnets": 19,
+      "unestablished_bgp": [],
+      "offline_nodes_count": 0,
+      "offline_nodes_sample": []
+    }
+  },
+  {
+    "step": 10,
+    "name": "Run BGP Summary on Leaf Switch by Hostname",
+    "tool": "run_switch_command",
+    "arguments": {
+      "switch_name_or_ip": "leaf-pod00-su1-r1",
+      "command": "sudo vtysh -c \"show bgp summary\""
+    },
+    "duration_ms": 633.82,
+    "status": "SUCCESS",
+    "output": "[Resolved 'leaf-pod00-su1-r1' to management IP 10.253.0.6 (cumulus)]\n\nIPv4 Unicast Summary:\nBGP router identifier 10.253.128.6, local AS number 4200100006 VRF default vrf-id 0\nBGP table version 211\nRIB entries 23, using 2944 bytes of memory\nPeers 64, using 1281 KiB of memory\nPeer groups 4, using 256 bytes of memory\n\nNeighbor                    V         AS   MsgRcvd   MsgSent   TblVer  InQ OutQ  Up/Down State/PfxRcd   PfxSnt Desc\nspine-0-pod00(10.254.0.161) 4 4200200001    792983    793102      211    0    0 02w3d12h            8       12 spine-0-pod00_swp41s\nspine-0-pod00(10.254.0.163) 4 4200200001    792966    793101      211    0    0 02w3d12h            8       12 spine-0-pod00_swp41s\nspine-0-pod00(10.254.0.165) 4 4200200001    792966    793101      211    0    0 02w3d12h            8       12 spine-0-pod00_swp42s\nspine-0-pod00(10.254.0.167) 4 4200200001    792969    793136      211    0    0 02w3d12h            8       12 spine-0-pod00_swp42s\nspine-0-pod00(10.254.0.169) 4 4200200001    792965    793101      211    0    0 02w3d12h            8       12 spine-0-pod00_swp43s\nspine-0-pod00(10.254.0.171) 4 4200200001    792958    793136      211    0    0 02w3d12h            8       12 spine-0-pod00_swp43s\nspine-0-pod00(10.254.0.173) 4 4200200001    792957    793136      211    0    0 02w3d12h            8       12 spine-0-pod00_swp44s\nspine-0-pod00(10.254.0.175) 4 4200200001    792966    793100      211    0    0 02w3d12h            8       12 spine-0-pod00_swp44s\nspine-0-pod00(10.254.0.177) 4 4200200001    792966    793101      211    0    0 02w3d12h            8       12 spine-0-pod00_swp45s\nspine-0-pod00(10.254.0.179) 4 4200200001    792969    793103      211    0    0 02w3d12h            8       12 spine-0-pod00_swp45s\nspine-0-pod00(10.254.0.181) 4 4200200001    792966    793102      211    0    0 02w3d12h            8       12 spine-0-pod00_swp46s\nspine-0-pod00(10.254.0.183) 4 4200200001    792966    793104      211    0    0 02w3d12h            8       12 spine-0-pod00_swp46s\nspine-0-pod00(10.254.0.185) 4 4200200001    792967    793104      211    0    0 02w3d12h            8       12 spine-0-pod00_swp47s\nspine-0-pod00(10.254.0.187) 4 4200200001    792967    793103      211    0    0 02w3d12h            8       12 spine-0-pod00_swp47s\nspine-0-pod00(10.254.0.189) 4 4200200001    792968    793103      211    0    0 02w3d12h            8       12 spine-0-pod00_swp48s\nspine-0-pod00(10.254.0.191) 4 4200200001    792969    793103      211    0    0 02w3d12h            8       12 spine-0-pod00_swp48s\nspine-1-pod00(10.254.1.161) 4 4200200001    792966    793134      211    0    0 02w3d12h            8       12 spine-1-pod00_swp41s\nspine-1-pod00(10.254.1.163) 4 4200200001    792968    793135      211    0    0 02w3d12h            8       12 spine-1-pod00_swp41s\nspine-1-pod00(10.254.1.165) 4 4200200001    792969    793137      211    0    0 02w3d12h            8       12 spine-1-pod00_swp42s\nspine-1-pod00(10.254.1.167) 4 4200200001    792968    793135      211    0    0 02w3d12h            8       12 spine-1-pod00_swp42s\nspine-1-pod00(10.254.1.169) 4 4200200001    792969    793135      211    0    0 02w3d12h            8       12 spine-1-pod00_swp43s\nspine-1-pod00(10.254.1.171) 4 4200200001    792967    793135      211    0    0 02w3d12h            8       12 spine-1-pod00_swp43s\nspine-1-pod00(10.254.1.173) 4 4200200001    792969    793135      211    0    0 02w3d12h            8       12 spine-1-pod00_swp44s\nspine-1-pod00(10.254.1.175) 4 4200200001    792968    793135      211    0    0 02w3d12h            8       12 spine-1-pod00_swp44s\nspine-1-pod00(10.254.1.177) 4 4200200001    792969    793136      211    0    0 02w3d12h            8       12 spine-1-pod00_swp45s\nspine-1-pod00(10.254.1.179) 4 4200200001    792968    793136      211    0    0 02w3d12h            8       12 spine-1-pod00_swp45s\nspine-1-pod00(10.254.1.181) 4 4200200001    585799    585930        0    0    0 01w0d04h       Active        0 spine-1-pod00_swp46s\nspine-1-pod00(10.254.1.183) 4 4200200001    792974    793101      211  \n... [TRUNCATED FOR TOKEN SAFETY]"
+  },
+  {
+    "step": 11,
+    "name": "Run NVUE Version on Leaf Switch by Loopback IP",
+    "tool": "run_switch_command",
+    "arguments": {
+      "switch_name_or_ip": "10.253.128.6",
+      "command": "nv show system version"
+    },
+    "duration_ms": 562.38,
+    "status": "SUCCESS",
+    "output": "[Redirected in-band routing address 10.253.128.6 (leaf-pod00-su1-r1) to out-of-band management IP 10.253.0.6 (cumulus)]\n\noperational                 \n---------------  ----------------------------\nonie             N/A                         \nkernel           6.1.0-cl-1-amd64            \nbase-os          Debian GNU/Linux 12.12      \nproduct-release  5.15.1                      \nimage                                        \n  build-id       5.15.1.0007                 \n  build-date     Mon Dec 08 22:59:31 UTC 2025"
+  },
+  {
+    "step": 12,
+    "name": "Run BGP Summary on Spine Switch by Hostname",
+    "tool": "run_switch_command",
+    "arguments": {
+      "switch_name_or_ip": "spine-0-pod00",
+      "command": "sudo vtysh -c \"show bgp summary\""
+    },
+    "duration_ms": 696.66,
+    "status": "SUCCESS",
+    "output": "[Resolved 'spine-0-pod00' to management IP 10.253.32.2 (cumulus)]\n\nIPv4 Unicast Summary:\nBGP router identifier 10.253.128.9, local AS number 4200200001 VRF default vrf-id 0\nBGP table version 48\nRIB entries 17, using 2176 bytes of memory\nPeers 128, using 2562 KiB of memory\nPeer groups 4, using 256 bytes of memory\n\nNeighbor                        V         AS   MsgRcvd   MsgSent   TblVer  InQ OutQ  Up/Down State/PfxRcd   PfxSnt Desc\nleaf-pod00-su0-r0(10.254.0.0)   4 4200100001    793303    792955       48    0    0 02w3d12h            1        9 leaf-pod00-su0-r0_sw\nleaf-pod00-su0-r0(10.254.0.2)   4 4200100001    793305    792961       48    0    0 02w3d12h            1        9 leaf-pod00-su0-r0_sw\nleaf-pod00-su0-r0(10.254.0.4)   4 4200100001    793305    792961       48    0    0 02w3d12h            1        9 leaf-pod00-su0-r0_sw\nleaf-pod00-su0-r0(10.254.0.6)   4 4200100001    793307    792980       48    0    0 02w3d12h            1        9 leaf-pod00-su0-r0_sw\nleaf-pod00-su0-r0(10.254.0.8)   4 4200100001    793307    792980       48    0    0 02w3d12h            1        9 leaf-pod00-su0-r0_sw\nleaf-pod00-su0-r0(10.254.0.10)  4 4200100001    793303    792955       48    0    0 02w3d12h            1        9 leaf-pod00-su0-r0_sw\nleaf-pod00-su0-r0(10.254.0.12)  4 4200100001    793303    792955       48    0    0 02w3d12h            1        9 leaf-pod00-su0-r0_sw\nleaf-pod00-su0-r0(10.254.0.14)  4 4200100001    793303    792955       48    0    0 02w3d12h            1        9 leaf-pod00-su0-r0_sw\nleaf-pod00-su0-r0(10.254.0.16)  4 4200100001    793303    792955       48    0    0 02w3d12h            1        9 leaf-pod00-su0-r0_sw\nleaf-pod00-su0-r0(10.254.0.18)  4 4200100001    793305    792961       48    0    0 02w3d12h            1        9 leaf-pod00-su0-r0_sw\nleaf-pod00-su0-r0(10.254.0.20)  4 4200100001    793305    792961       48    0    0 02w3d12h            1        9 leaf-pod00-su0-r0_sw\nleaf-pod00-su0-r0(10.254.0.22)  4 4200100001    793305    792961       48    0    0 02w3d12h            1        9 leaf-pod00-su0-r0_sw\nleaf-pod00-su0-r0(10.254.0.24)  4 4200100001    793305    792961       48    0    0 02w3d12h            1        9 leaf-pod00-su0-r0_sw\nleaf-pod00-su0-r0(10.254.0.26)  4 4200100001    793305    792961       48    0    0 02w3d12h            1        9 leaf-pod00-su0-r0_sw\nleaf-pod00-su0-r0(10.254.0.28)  4 4200100001    793305    792961       48    0    0 02w3d12h            1        9 leaf-pod00-su0-r0_sw\nleaf-pod00-su0-r0(10.254.0.30)  4 4200100001    793305    792961       48    0    0 02w3d12h            1        9 leaf-pod00-su0-r0_sw\nleaf-pod00-su0-r1(10.254.0.32)  4 4200100002    793285    792963       48    0    0 02w3d12h            1        9 leaf-pod00-su0-r1_sw\nleaf-pod00-su0-r1(10.254.0.34)  4 4200100002    793294    792964       48    0    0 02w3d12h            1        9 leaf-pod00-su0-r1_sw\nleaf-pod00-su0-r1(10.254.0.36)  4 4200100002    793283    792975       48    0    0 02w3d12h            1        9 leaf-pod00-su0-r1_sw\nleaf-pod00-su0-r1(10.254.0.38)  4 4200100002    793321    792956       48    0    0 02w3d12h            1        9 leaf-pod00-su0-r1_sw\nleaf-pod00-su0-r1(10.254.0.40)  4 4200100002    793283    792961       48    0    0 02w3d12h            1        9 leaf-pod00-su0-r1_sw\nleaf-pod00-su0-r1(10.254.0.42)  4 4200100002    793294    792964       48    0    0 02w3d12h            1        9 leaf-pod00-su0-r1_sw\nleaf-pod00-su0-r1(10.254.0.44)  4 4200100002    793285    792962       48    0    0 02w3d12h            1        9 leaf-pod00-su0-r1_sw\nleaf-pod00-su0-r1(10.254.0.46)  4 4200100002    793285    792962       48    0    0 02w3d12h            1        9 leaf-pod00-su0-r1_sw\nleaf-pod00-su0-r1(10.254.0.48)  4 4200100002    793285    792962       48    0    0 02w3d12h            1        9 leaf-pod00-su0-r1_sw\nleaf-pod00-su0-r1(10.254.0.50)  4 4200100002    793285    792962       48    0    0 02w3d12h            1        9 leaf-pod00-su0-r1_sw\nleaf-pod00-su0-r1(10.254.0.52)  4 4200100002    793285    792962       48    0    0 02w3d12h   \n... [TRUNCATED FOR TOKEN SAFETY]"
+  },
+  {
+    "step": 13,
+    "name": "Inspect Interface Link Summary on Leaf",
+    "tool": "run_switch_command",
+    "arguments": {
+      "switch_name_or_ip": "leaf-pod00-su1-r1",
+      "command": "ip -br link"
+    },
+    "duration_ms": 497.01,
+    "status": "SUCCESS",
+    "output": "[Resolved 'leaf-pod00-su1-r1' to management IP 10.253.0.6 (cumulus)]\n\nlo               UNKNOWN        00:00:00:00:00:00 <LOOPBACK,UP,LOWER_UP> \neth0             UP             52:54:09:00:00:46 <BROADCAST,MULTICAST,UP,LOWER_UP> \nswp1s0           UP             52:54:00:1b:68:32 <BROADCAST,MULTICAST,UP,LOWER_UP> \nswp1s1           UP             52:54:00:3c:4d:65 <BROADCAST,MULTICAST,UP,LOWER_UP> \nswp2s0           UP             52:54:00:00:d5:57 <BROADCAST,MULTICAST,UP,LOWER_UP> \nswp2s1           UP             52:54:00:90:a0:a7 <BROADCAST,MULTICAST,UP,LOWER_UP> \nswp3s0           UP             52:54:00:b6:27:ba <BROADCAST,MULTICAST,UP,LOWER_UP> \nswp3s1           UP             52:54:00:31:53:12 <BROADCAST,MULTICAST,UP,LOWER_UP> \nswp4s0           UP             52:54:00:8d:e7:15 <BROADCAST,MULTICAST,UP,LOWER_UP> \nswp4s1           UP             52:54:00:c6:d8:25 <BROADCAST,MULTICAST,UP,LOWER_UP> \nswp5s0           UP             52:54:00:2f:a7:c2 <BROADCAST,MULTICAST,UP,LOWER_UP> \nswp5s1           UP             52:54:00:97:1e:79 <BROADCAST,MULTICAST,UP,LOWER_UP> \nswp6s0           UP             52:54:00:5d:1c:f1 <BROADCAST,MULTICAST,UP,LOWER_UP> \nswp6s1           UP             52:54:00:c6:1b:81 <BROADCAST,MULTICAST,UP,LOWER_UP> \nswp7s0           UP             52:54:00:7f:af:13 <BROADCAST,MULTICAST,UP,LOWER_UP> \nswp7s1           UP             52:54:00:68:4c:7e <BROADCAST,MULTICAST,UP,LOWER_UP> \nswp8s0           UP             52:54:00:67:20:80 <BROADCAST,MULTICAST,UP,LOWER_UP> \nswp8s1           UP             52:54:00:cd:e6:a5 <BROADCAST,MULTICAST,UP,LOWER_UP> \nswp9s0           UP             52:54:00:09:84:49 <BROADCAST,MULTICAST,UP,LOWER_UP> \nswp9s1           UP             52:54:00:35:cd:ab <BROADCAST,MULTICAST,UP,LOWER_UP> \nswp10s0          UP             52:54:00:35:17:06 <BROADCAST,MULTICAST,UP,LOWER_UP> \nswp10s1          UP             52:54:00:67:cb:42 <BROADCAST,MULTICAST,UP,LOWER_UP> \nswp11s0          UP             52:54:00:58:f1:98 <BROADCAST,MULTICAST,UP,LOWER_UP> \nswp11s1          UP             52:54:00:0b:82:c2 <BROADCAST,MULTICAST,UP,LOWER_UP> \nswp12s0          UP             52:54:00:31:22:f1 <BROADCAST,MULTICAST,UP,LOWER_UP> \nswp12s1          UP             52:54:00:d5:38:82 <BROADCAST,MULTICAST,UP,LOWER_UP> \nswp13s0          UP             52:54:00:05:7d:5b <BROADCAST,MULTICAST,UP,LOWER_UP> \nswp13s1          UP             52:54:00:d6:62:58 <BROADCAST,MULTICAST,UP,LOWER_UP> \nswp14s0          UP             52:54:00:5c:9a:75 <BROADCAST,MULTICAST,UP,LOWER_UP> \nswp14s1          UP             52:54:00:f1:aa:4d <BROADCAST,MULTICAST,UP,LOWER_UP> \nswp15s0          UP             52:54:00:89:9c:e6 <BROADCAST,MULTICAST,UP,LOWER_UP> \nswp15s1          UP             52:54:00:02:93:ca <BROADCAST,MULTICAST,UP,LOWER_UP> \nswp16s0          UP             52:54:00:be:12:4e <BROADCAST,MULTICAST,UP,LOWER_UP> \nswp16s1          UP             52:54:00:18:a0:e2 <BROADCAST,MULTICAST,UP,LOWER_UP> \nswp17s0          UP             52:54:00:3e:9e:b2 <BROADCAST,MULTICAST,UP,LOWER_UP> \nswp17s1          UP             52:54:00:b1:14:f0 <BROADCAST,MULTICAST,UP,LOWER_UP> \nswp18s0          UP             52:54:00:8f:e6:86 <BROADCAST,MULTICAST,UP,LOWER_UP> \nswp18s1          UP             52:54:00:8a:00:48 <BROADCAST,MULTICAST,UP,LOWER_UP> \nswp19s0          UP             52:54:00:69:60:14 <BROADCAST,MULTICAST,UP,LOWER_UP> \nswp19s1          UP             52:54:00:76:64:8c <BROADCAST,MULTICAST,UP,LOWER_UP> \nswp20s0          UP             52:54:00:65:16:ee <BROADCAST,MULTICAST,UP,LOWER_UP> \nswp20s1          UP             52:54:00:44:5a:55 <BROADCAST,MULTICAST,UP,LOWER_UP> \nswp21s0          UP             52:54:00:3c:ce:ee <BROADCAST,MULTICAST,UP,LOWER_UP> \nswp21s1          UP             52:54:00:a2:e6:95 <BROADCAST,MULTICAST,UP,LOWER_UP> \nswp22s0          UP             52:54:00:48:50:87 <BROADCAST,MULTICAST,UP,LOWER_UP> \nswp22s1          UP             52:54:00:9c:9c:d6 <BROADCAST,MULTICAST,UP,LOWER_UP> \nswp23s0          UP             52:54:00:e9:51:57 <BROADCAST,MULTICAST,UP,LOWER_UP> \nswp23s1         \n... [TRUNCATED FOR TOKEN SAFETY]"
+  },
+  {
+    "step": 14,
+    "name": "Query Controller REST API Audit Trail",
+    "tool": "fabric_audit",
+    "arguments": {
+      "category": "api_logs",
+      "limit": 5
+    },
+    "duration_ms": 50.89,
+    "status": "SUCCESS",
+    "output": {
+      "total_records": 5,
+      "displayed_records": 5,
+      "truncated": false,
+      "items": [
+        {
+          "id": "6acc0238da8363b3b8e1503e",
+          "createdAt": "2026-10-11T21:40:08.898Z",
+          "method": "GET",
+          "url": "/api/v2/hw",
+          "user": "netris",
+          "ip": "82.5.26.169"
+        },
+        {
+          "id": "6acc0238da8363b3b8e1503b",
+          "createdAt": "2026-10-11T21:40:08.857Z",
+          "method": "GET",
+          "url": "/api/v2/dashboard/agent-heartbeats",
+          "user": "netris",
+          "ip": "82.5.26.169"
+        },
+        {
+          "id": "6acc0238da8363b3b8e15036",
+          "createdAt": "2026-10-11T21:40:08.746Z",
+          "method": "GET",
+          "url": "/api/v2/ebgp",
+          "user": "netris",
+          "ip": "82.5.26.169"
+        },
+        {
+          "id": "6acc0238da8363b3b8e15033",
+          "createdAt": "2026-10-11T21:40:08.692Z",
+          "method": "GET",
+          "url": "/api/v2/vnet",
+          "user": "netris",
+          "ip": "82.5.26.169"
+        },
+        {
+          "id": "6acc0238da8363b3b8e15030",
+          "createdAt": "2026-10-11T21:40:08.544Z",
+          "method": "GET",
+          "url": "/api/v2/hw",
+          "user": "netris",
+          "ip": "82.5.26.169"
+        }
+      ]
+    }
+  },
+  {
+    "step": 15,
+    "name": "Query Event Logs (Testing 500 Graceful Fallback)",
+    "tool": "fabric_audit",
+    "arguments": {
+      "category": "events",
+      "limit": 5
+    },
+    "duration_ms": 1826.63,
+    "status": "SUCCESS",
+    "output": {
+      "notice": "Netris controller event log service (/api/eventlogs) is currently unconfigured or uninitialised in this deployment (HTTP 500). Gracefully returning recent configuration mutation audit events from /api/apilogs instead.",
+      "fallback_category": "api_logs",
+      "recent_mutation_events": {
+        "total_records": 5,
+        "displayed_records": 5,
+        "truncated": false,
+        "items": [
+          {
+            "id": "6acc0237da8363b3b8e1500c",
+            "createdAt": "2026-10-11T21:40:07.491Z",
+            "method": "POST",
+            "url": "/auth",
+            "user": "netris",
+            "ip": "82.5.26.169"
+          },
+          {
+            "id": "6acc021dda8363b3b8e14fb8",
+            "createdAt": "2026-10-11T21:39:41.872Z",
+            "method": "POST",
+            "url": "/auth",
+            "user": "netris",
+            "ip": "82.5.26.169"
+          },
+          {
+            "id": "6acc01deda8363b3b8e14faf",
+            "createdAt": "2026-10-11T21:38:38.025Z",
+            "method": "POST",
+            "url": "/auth",
+            "user": "netris",
+            "ip": "82.5.26.169"
+          },
+          {
+            "id": "6acc01ddda8363b3b8e14fa9",
+            "createdAt": "2026-10-11T21:38:37.527Z",
+            "method": "POST",
+            "url": "/auth",
+            "user": "netris",
+            "ip": "82.5.26.169"
+          },
+          {
+            "id": "6acc01ddda8363b3b8e14fa2",
+            "createdAt": "2026-10-11T21:38:37.250Z",
+            "method": "POST",
+            "url": "/auth",
+            "user": "netris",
+            "ip": "82.5.26.169"
+          }
+        ]
+      }
+    }
+  },
+  {
+    "step": 16,
+    "name": "Inspect Monitoring Check Thresholds",
+    "tool": "fabric_audit",
+    "arguments": {
+      "category": "monitoring_checks",
+      "limit": 5
+    },
+    "duration_ms": 34.26,
+    "status": "SUCCESS",
+    "output": {
+      "total_records": 14,
+      "displayed_records": 5,
+      "truncated": true,
+      "items": [
+        {
+          "id": 2,
+          "name": null,
+          "unit": "%",
+          "critLow": null,
+          "warnLow": null,
+          "warnHigh": null,
+          "critHigh": null
+        },
+        {
+          "id": 3,
+          "name": null,
+          "unit": "%",
+          "critLow": null,
+          "warnLow": null,
+          "warnHigh": null,
+          "critHigh": null
+        },
+        {
+          "id": 4,
+          "name": null,
+          "unit": "dbm",
+          "critLow": null,
+          "warnLow": null,
+          "warnHigh": null,
+          "critHigh": null
+        },
+        {
+          "id": 6,
+          "name": null,
+          "unit": "",
+          "critLow": null,
+          "warnLow": null,
+          "warnHigh": null,
+          "critHigh": null
+        },
+        {
+          "id": 7,
+          "name": null,
+          "unit": "",
+          "critLow": null,
+          "warnLow": null,
+          "warnHigh": null,
+          "critHigh": null
+        }
+      ]
+    }
+  },
+  {
+    "step": 17,
+    "name": "Query Looking Glass BGP Peers",
+    "tool": "looking_glass",
+    "arguments": {
+      "query": "peers_list"
+    },
+    "duration_ms": 32.09,
+    "status": "SUCCESS",
+    "output": {
+      "total_records": 4,
+      "displayed_records": 4,
+      "truncated": false,
+      "items": [
+        {
+          "id": 13,
+          "name": "upstream1",
+          "ip": null,
+          "asNumber": null,
+          "status": "enabled",
+          "uptime": "03w4d03h"
+        },
+        {
+          "id": 14,
+          "name": "upstream4",
+          "ip": null,
+          "asNumber": null,
+          "status": "enabled",
+          "uptime": "03w4d03h"
+        },
+        {
+          "id": 15,
+          "name": "upstream2",
+          "ip": null,
+          "asNumber": null,
+          "status": "enabled",
+          "uptime": "03w4d03h"
+        },
+        {
+          "id": 16,
+          "name": "upstream3",
+          "ip": null,
+          "asNumber": null,
+          "status": "enabled",
+          "uptime": "03w4d03h"
+        }
+      ]
+    }
+  },
+  {
+    "step": 18,
+    "name": "Inspect Fabric Interface Bandwidth Utilisation",
+    "tool": "fabric_telemetry",
+    "arguments": {
+      "intent": "interface_utilisation",
+      "top_n": 5
+    },
+    "duration_ms": 153.5,
+    "status": "SUCCESS",
+    "output": {
+      "intent": "interface_utilisation",
+      "top_count": 5,
+      "records": [
+        {
+          "link_id": 1143903894,
+          "local_device": "leaf-pod00-su0-r0",
+          "local_port": "swp1s0",
+          "remote_device": "hgx-pod00-su0-h00",
+          "remote_port": "eth1",
+          "speed": "1G",
+          "status": "Link Up",
+          "utilisation_percent": 5.0
+        },
+        {
+          "link_id": 1169395037,
+          "local_device": "leaf-pod00-su0-r0",
+          "local_port": "swp2s0",
+          "remote_device": "hgx-pod00-su0-h01",
+          "remote_port": "eth1",
+          "speed": "1G",
+          "status": "Link Up",
+          "utilisation_percent": 5.0
+        },
+        {
+          "link_id": 1147925264,
+          "local_device": "leaf-pod00-su0-r0",
+          "local_port": "swp3s0",
+          "remote_device": "hgx-pod00-su0-h02",
+          "remote_port": "eth1",
+          "speed": "1G",
+          "status": "Link Up",
+          "utilisation_percent": 5.0
+        },
+        {
+          "link_id": 1161862807,
+          "local_device": "leaf-pod00-su0-r0",
+          "local_port": "swp4s0",
+          "remote_device": "hgx-pod00-su0-h03",
+          "remote_port": "eth1",
+          "speed": "1G",
+          "status": "Link Up",
+          "utilisation_percent": 5.0
+        },
+        {
+          "link_id": 1158875986,
+          "local_device": "leaf-pod00-su0-r0",
+          "local_port": "swp5s0",
+          "remote_device": "hgx-pod00-su0-h04",
+          "remote_port": "eth1",
+          "speed": "1G",
+          "status": "Link Up",
+          "utilisation_percent": 5.0
+        }
+      ]
+    }
+  },
+  {
+    "step": 19,
+    "name": "Render Telemetry Visual Chart",
+    "tool": "generate_telemetry_chart",
+    "arguments": {
+      "chart_type": "bar",
+      "title": "North-South Ingress Bandwidth Distribution",
+      "labels": [
+        "spine-0-pod00",
+        "spine-1-pod00",
+        "spine-2-pod00",
+        "spine-3-pod00"
+      ],
+      "values": [
+        42.5,
+        38.2,
+        41.0,
+        39.7
+      ],
+      "y_axis_label": "Throughput (Gbps)"
+    },
+    "duration_ms": 78.85,
+    "status": "SUCCESS",
+    "output": "![North-South Ingress Bandwidth Distribution](data:image/png;base64,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gZUpU8YFiAowH3nkEY4UAAAAUMCoIaSGsEBpIJgFCxa4QWaSk5Nty5YtbkCY7FJSUqxhw4bub9UCagRRTVPhU1C4bNky22OPPdyoowAAAAAKvoaQgJCAEAAAAEBEA0IGlQEAAKF011132T777GNfffVVlhGvleY/1DVhZz788EM75phj3KBo119/vbv4AoCwICAEAAChM2XKFHv11Vfd9Ei6a+479thj7dlnn3X923/88UfXtWFHxo8fbyeffLIdddRRbvqjyZMnu+cAEBZ0zgIAAKGyYcMGu/DCC+2ZZ56xLl26ZHlNfdP1yK27777bevfubddcc4173qJFC9dPfurUqbb//vsX+LYDQGGjhhAAAISKav/UxPOAAw7I97pUI9itW7fguQZEU0CoGkgACANqCAEAQGh88cUXNnbsWJs+fXq+17V161bLyMiw6tWrZ0mvVq1arvoeAkAiICAsZhoNuq+oNwEFaP6d1/F9AkAh0Vy4aiqqPoJly5bN9/o07ZEe69aty5Ku55orFwDCgCajAAAgFKZNm2aLFy+2q6++OhhFNDMz0/X/u/HGG3dpnXvuuafNnDkzS/9Eza/bsmXLAtxyACg61BACAIBQ6NChg+vzlz2tX79+dsIJJ+RqHY899ph9/PHH9tZbb7nnZ599tj355JPWp08fNxjNyJEjrVy5ctajR4/dsg8AUNgICAEAQChUqFDB1Qpmp0FgNBiMTJo0ya644gpX0yeHH364axb62muvudrAZcuW2a+//hq8V/MOanqKRo0aWdWqVV2/Qi2roBAAwoCAEAAAhNZ3333nAkJf27ZtXR/D7Bo0aOD+v+yyy+zMM88M0kuVKuUCwOXLl9uqVausWbNmLoAEomDjxo3222+/uYGV6tWrt93r6k87e/Zsq1KlSnDTJSdr1qyxn376abt09fXdb7/9Cny7kTf8ogEAgNBq165dlucVK1bMsRbRV6tWLffIrmbNmu4BRMXgwYPtiSeecIHgvHnzXLl54403XE25PPTQQzZo0CB3w2XhwoV20EEHuZsnOQ24pH632fvx/vLLL7b33nu7kYFRtBhUBgAAAEBAgzFpepVFixbZ999/7wZrUg357bff7l7XtC7qm/vuu++6JtXz5893QeOwYcNy/BZVMz9x4sTgMW7cOJeuvrkoegSEAAAAAALJycku4FOTaVGf2fbt29vSpUvdcwV16lfbrVs397xSpUp22mmn2UsvvZSrb/HVV1+1EiVKuPeg6NFkFAAAAMB21H9Q/WfV/2/s2LH25ptvuvTKlSvbypUrbfPmzUHQqGBx7ty5tmXLFktJSdnpaL69e/dmPs9igoAQAAAAwHZU46fmnQr0unfv7moF5fjjj3d9Anv16mUXXnihm6vz9ddfd6/tLCD84Ycf7Ntvv7Xnn3+eb7yYoMkoAAAAgO2oz6Dm9lyyZIlr4nnOOecENYRTpkxxAzD95z//cSONaoAZjTa6sylZHn30URdcapoXFA/UEAIAgBw1GnQf30yIzL/zuqLeBCSI9evXZwnsVOPXpUsXGzlyZJCmQWcefPDB4PkxxxxjJ554YvBctYAaobROnTpBWkZGhr388sv29NNPF8p+IHcICAEAAAAEJk2aZPfff7+dddZZrhZQU0SotvDaa68Nljn11FPtlFNOcXMUapCYn3/+2Z566qng9RNOOME1K+3bt2+Q9uKLL7pA86STTuLbLkYICAEAAAAEDj/8cCtdurQ988wzbsoJ1fLpbwV5vscff9zuuOMO17+wQ4cOrvZwjz32CF4/4IADrG7dulm+VQWNAwcO3OmgMyhcxTogHDBggN1zzz3ubkRsFbXoroXSNPKR5jbR865duxbZtgIAAABhoYnm9YhHzUE1Wmg877zzznZpo0aNKrDtQwQGlfn444/tvffes+bNm2/3mtodq+PqI4884u5aHHrooXbUUUfZggULimRbAaCgbNq0yXXOX7duXdx+Hb///rutWLEiV+tbu3atzZkzxw0NDgAAkBAB4bJly6xPnz5BO+PsVGuo14877jjXoXX48OFutCONWgQAiUiB2zXXXOP6ahx77LFWo0YNu/rqq23btm3BMoMHD3bNcdRkR0N/60bYmjVrclyfgkD10dAdXC2nPh533313Ie4RAABIBMUuIPQ8z84991y78sorbb/99tvudU2Cqbvj3bp1C9KSkpLcc3WABYBEpCG927dvb3///bfNmjXLTQKsOZpeeeUV9/o333xjw4YNsy+++ML9Bi5atMjmz58fN8jT+zU31KpVq1xw+NZbb7l+G19//XUh7xkAACjOil0fQtX2qWmT+g/Gqz0U3T2PpbvmU6dO3WEzLD18/l31zMxM9/ADS82xojvyCkx98dKVptfipfvrjU2X2Dv+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nTrV1QwqGBwxYkSOgd/EiROzpI0ZM8ZV0+6OPowAAAAAEFYFVkOo4G348OF5fi2W2syqZlA1eQr8YqeVOP30091IoorA1Sx0y5Yt1rp1a1uwYIF9+umnLq179+4FtTsAAAAAEHq7vcnojz/+aDVq1MjVsqoOvemmm3J8rWzZskGVqAJANSudPn26CwI1d2HDhg0LdLsBAAAAIOzyHRBq5Juc/hZ1gMzIyLB+/frlal0K+nI72bxqC5l7EAAAAACKMCB86qmn3P+nnXZa8LcvJSXFGjVqZO3atcvvxwAAAAAAiltAeOqpp7r/J0yYYN26dSuIbQIAAAAAFIICG2WUYBAAAAAAIjqoTMmSO16VRg0FAAAAAIQwIHz//fe3G1Bm9uzZbrqJ3A4qAwAAAABIwIDwqKOOyjFdA8rcdtttNmDAgIL6KAAAAABAcepDGM/+++9v33333e7+GAAAAABAcQsIX3vtNatateru/hgAAAAAQFE1GW3Tps12aatWrbLly5fbk08+WVAfAwAAAAAobgFhnz59tkurUqWKde7c2Zo3b15QHwMAAAAAKG4BYd++fQtqVQAAAACARAoIxfM8Gz9+vP3666/ueatWreywww6zpKSkgvwYAAAAAEBxCgjnzp1rJ510kgsG69Wr59IWLVrkgsK3337bGjduXFAfBQAAAAAoTqOMqg9hw4YNbeHChTZv3jz3WLBggTVo0CDH/oUAAAAAgJDUEH7zzTf2xx9/WK1atYK02rVr2+OPP25NmzYtqI8BAAAAABS3GsL69evb5s2bt0vftGmTew0AAAAAENKA8IorrrDzzjvPZs6cGaTp7969e7vXAAAAAAAhbTI6YsQINwl969atrVy5cm7E0Q0bNrjXZs2aZcOHDw+WXbZsWUF9LAAAAACgqAPCe++9t6BWBQAAAABIpICwV69eBbUqAAAAAECiTUwvmZmZlpGRsV165cqVC/qjAAAAAADFYVCZ3377zQ466CArU6aMValSZbsHAAAAACCkNYSafF6B34cffkgACAAAAABRCginT59uCxYssGrVqhXUKgEAAAAAiTIx/caNGwtqdQAAAACARKkhvPrqq61fv3725JNPWmpq6i6vZ926dfbss8/apEmTrGTJkta1a1c7//zzLSUlZbsayccee8zNfdi2bVvr378/TVUBAAAAoLBqCGvVqhU8br/9dvvvf/9rVatWtZo1a2Z5TY/c2LZtm7Vp08YNUHPssce6QWqGDRtmxx13nHvNN3nyZOvUqZMLEk877TT7/PPPrUuXLrZ+/fr87A4AAAAARErJ4jQZfVJSkk2bNi1LP8R27dpZx44dberUqXbAAQe4tJtuusmOPvpoe/jhh91zBYx169a1p59+2tVUAgAAAAB2c0BY0JPRKyDMPijNHnvs4f5fu3at+3/Dhg325ZdfuuDPpyaqhx9+uI0dO5aAEAAAAACKamL6gnbfffe5INGvHVy4cKFlZma6QWxi1atXzyZMmBB3PZs2bXIP35o1a9z/WpcefkBaokQJ1zzV87xg2XjpStNr8dL99camS2zz1+zpyUn/pmd6ZnpaIiZtZ+laU1JMurZqm9KT/nlPkO6ZaStiP89tg/fPe/KbvivbHsZ9Ur6IPd55zWOFmfdiJScnx932RNmn5IjnvTDtk45xIuW9MJUn9xkRznth2ycd90TJe2ErTzpmUc57YdunzGyxQ1Hnvex5sMgCQg0AE0/p0qWtSZMmdsEFF7iBZ7QDuaHBZUaNGmVvvfWWVahQwaVt3rzZ/V+2bNksy5YrVy54LSfqizh06NDt0ufOnRusWzWNtWvXdgPVpKenB8tUr17dPRYvXuwGvfGpb2TlypVt/vz5WT5bwanWqXXHZo7GjRu772n27NlZtqF58+a2detWmzdvnvWoU9Wlbd3m2filq6xa6RTrUL1isOzaLZk28a90q1uutLWpUj5IT9u4xaatyLAmFctas0r/fjeL1m20GavXW6vUclavfJkgfc6aDTYnY4O1r1rRqpf5d8CeGavW2aL1m6xTjVSrkJIcpE9Ly7C0TVuse60qVjKmhExcnm4bMjOD7faNW7LSyiYnW9ea/w4wFMV9Uj5atmxZkF6+fHl3M2PlypWWlpYWpBeHvBf7I9OiRQv3eYsWLQrSS5Uq5cpxouxT7PGLYt4L0z4pTyRS3gtTedKFUpTzXtj2Scc3UfJe2MqTjlmU817Y9mn2/45tccl7fkvKXZXkxYab+TBixAgXdF155ZW27777Bv0BH3nkETcCqAqGavuGDBli11577U7X9+qrr9p5553nmoaee+65Qbp+APQFv//++27gGd9FF11kP//8s3377be5riH0D1SlSpWKzV2wFkNGRubuShT2ad4d/Yvt3cow3oGNTW92838inffCtE+zb+uXUHkvTOWp6S0jI533wrZPs4b2TZi8F7bypOu7KOe9sO3TrKF9i1XeU1yjgT0VZPpxTZHUEL777rv22muv2ZFHHhmknXzyyW6k0DvvvNMmTpxoe++9t91www07DQjHjBljvXv3dlNYxAaDfkSsCFrTTsQGhHq+33777bCWUo/s9MOiR04FObu8pmdfb27Sldli6Wn2tB2lu6yYU3qcsD9zN6bnddvDuE8qrDkd74LKYwWZ93K77YmyT1HPe2HaJz9PJEreC1t5inLeC9s+xR7fRMh7YSpP/jGIat4L2z4lZzvmRZ334uXBQp+Y/qeffrLOnTtvl67pIH788Uf3d7du3WzBggU7XM/rr7/ugsAnnnjCBYU58WsO/SrYjz/+2AWE8ZYHAAAAAOzGgFADv6iGMKemn/7IoWr/uueee8Zdh6o5zz77bFfV+corr9hRRx0VPBT0+W677TbXtlwPTUnRs2dPu+uuu9wk9gAAAACAQm4yqgFb1I9PA8B06NDBtXP97rvv3FQQo0ePdstogJhBgwbFXYcGhlHT05y0bt06S0fNTz75xGbOnOk6ZbZq1cpq1qxZULsCAAAAAJFQYAGhmmsqMHvwwQftgw8+cG1pW7ZsaZMnT7b999/fLfPoo4/ucB0pKSmuNjC39Hl6AAAAAACKeB5CBX4vvPBCQa4SAAAAAFDc+xACAAAAABJLoUxML5pcFAAAAAAQwoBQE8XH0gSKs2fPtuHDh1u/fv0K6mMAAAAAAMUtIIw3GEy7du3cNBEDBgwoqI8CAAAAACRCH0INNKPpJwAAAAAAEQsINVl91apVd/fHAAAAAACKqslomzZttktbtWqVmzj+ySefLKiPAQAAAAAUt4CwT58+26VVqVLFOnfubM2bNy+ojwEAAAAAFLeAsG/fvgW1KgAAAABAovYhXLp0qS1ZsmR3rBoAAAAAUNwCwszMTBs2bJhrJlqnTh2rW7eu+1tpeg0AAAAAENImo0OHDrXHHnvMhgwZYgceeKAlJSXZN998Y3fddZdt2LDBzUUIAAAAAAhhQPj000/bmDFjrFu3bkHaAQccYPvss4/16tWLgBAAAAAAwtpk9O+//7b27dtvl640vQYAAAAACGlAuNdee9lzzz23Xfro0aOtZcuWBfUxAAAAAIDi1mT0jjvusJNOOsneffdd69ixo0ubMmWKffHFF/b2228X1McAAAAAAIpbDeHxxx9v06dPt3r16tm4ceNs/PjxVr9+fZd23HHHFdTHAAAAAACKWw3hyJEj3eT0zz77bEGtEgAAAACQCDWEAwYMsK1btxbU6gAAAAAAiRIQtm3b1qZOnVpQqwMAAAAAJEqTUc01eMYZZ9hNN91krVq1slKlSmV5XZPVAwAAAABCGBD279/f/X/55Zfn+LrneQX1UQAAAACA4hQQZmRkFNSqAAAAAACJFBBWqFChoFYFAAAAAEikgFAWL15s3333na1cuXK7184///xcrWPz5s325ptv2mOPPWa//fab+7tz585Zlrnhhhvsueeey5LWsmVL+/zzz/O5BwAAAAAQHQUWEL7yyit2wQUXWMmSJa1y5cq7HBAOGjTIFixYYJdccomdc845LkDMLj093fbff3978skng7SUlJR87gEAAAAAREuBBYSDBw+2ESNG2DXXXGNJSUm7vB6to0SJErZo0aIdLle6dGmrVavWLn8OAAAAAERdgc1D+Ndff9nFF1+cr2DQbVCJ3G2Smoc2adLE2rdv74LQFStW5OtzAQAAACBqCqyGsF27djZjxgzr2LGj7W41a9a0YcOG2SGHHOL6Ld54443WpUsXmz59upUtWzbH92zatMk9fGvWrHH/Z2ZmuocomFVAum3btizTZMRLV5pei5furzc2XbR8vPTkmHg60zPT0xLZYuwdpWtNsTG5tmqb0pP+eU+Q7plpK2I/z22D98978pu+K9sexn1Svog93nnNY4WZ92IlJyfH3fZE2afkiOe9MO2TjnEi5b0wlSf3GRHOe2HbJx33RMl7YStPOmZRznth26fMbLFDUee97HmwUAPCyZMnB3+fdtppdvbZZ9uQIUOsWbNm29UUFuTE9Lfeemuw/hYtWti7775r9evXt1dffdX1Y8yJAsihQ4dulz537txghNTU1FSrXbu2LV++3PVT9FWvXt09FHyuW7cuSFeTVfWXnD9/fpa+jvXq1XPr1LpjM0fjxo1dH8vZs2dn2YbmzZvb1q1bbd68edajTlWXtnWbZ+OXrrJqpVOsQ/WKwbJrt2TaxL/SrW650tamSvkgPW3jFpu2IsOaVCxrzSr9GxQvWrfRZqxeb61Sy1m98mWC9DlrNticjA3WvmpFq17m3/6XM1ats0XrN1mnGqlWISU5SJ+W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inLeC9s+xR7fRMh7YSpP/jGIat4L2z4lZzvmRZ334uXBhA0IVYuXkZFhq1atcs8V6aqqtVy5cu4hmoOwV69e1rlzZ+vUqZPdc889rlmBpp8AAAAAACToKKNvvfWWtWzZ0rp3727VqlWziy66yD1/+OGHg2VOP/10e+qpp9x8hFpu4cKFroZQ7WwBAAAAAAlaQ3jmmWe6x86cd9557gEAAAAACEkNIQAAAACgcBAQAgAAAEBEERACAAAAQEQREAIAAABARBEQAgAAAEBEERACAAAAQEQREAIAAABARBEQAgAAAEBEERACAAAAQEQREAIAAABARBEQAgAAAEBEERACAAAAQEQREAIAAABARBEQAgAAAEBEERACAAAAQEQREAIAAABARBEQAgAAAEBEERACAAAAQEQREAIAAABARBEQAgAAAEBEERACAAAAQEQREAIAAABARBEQAgAAAEBEERACAAAAQEQREAIAAABARJW0BPTbb7/ZokWLsqRVqFDBDjzwwCLbJgAAAABINAkZEI4cOdLeeusta9u2bZDWuHFjAkIAAAAACHtAKAcddJC9/vrrRb0ZAAAAAJCwErYP4fr1623SpEn2yy+/2ObNm4t6cwAAAAAg4SRsDeGECRMsLS3Nli5dalu3brVHH33UevbsGXf5TZs2uYdvzZo17v/MzEz3kKSkJCtRooRt27bNPM8Llo2XrjS9Fi/dX29sumj5eOnJSf+mZ3pmeloiJm1n6VpTUky6tmqb0pP+eU+Q7plpK2I/z22D98978pu+K9sexn1Svog93nnNY4WZ92IlJyfH3fZE2afkiOe9MO2TjnEi5b0wlSf3GRHOe2HbJx33RMl7YStPOmZRznth26fMbLFDUee97HkwEgHhcccdZ8OGDbMqVaq4L+eWW26xs846y3788Udr0aJFju/R8kOHDt0ufe7cuW5AGklNTbXatWvb8uXLLT09PVimevXq7rF48WJbt25dkF6rVi2rXLmyzZ8/P0stZb169dw6te7YzKF+jiVLlrTZs2dn2YbmzZu7oHbevHnWo05Vl7Z1m2fjl66yaqVTrEP1isGya7dk2sS/0q1uudLWpkr5ID1t4xabtiLDmlQsa80qlQ3SF63baDNWr7dWqeWsXvkyQfqcNRtsTsYGa1+1olUvkxKkz1i1zhat32SdaqRahZTkIH1aWoalbdpi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EfbFF18E6StXrrTSpUtnWfbuu+92J+U33niDbxrIZunSpa42/aGHHnLNreOVpXr16tmAAQNcmduyZQvfI5DNV1995cqHzjXbtm0LypHneVamTJlguauvvtpq165t//nPf/gOgWzWrl1rzz//vN1zzz3266+/xj0n6W8t88orr7ibK0h8BISIa9asWXbJJZdkScvIyHDNQu+44w774YcfXD/Ba6+91r3WunVrmz17dpZ25XXq1LHjjz/eXn75Zb5pRNYTTzyxXRn4+OOPXf/AL7/80p1U1S9j0qRJQVmaMGFCluUvuugiW7FihX366aeFuu1AcbFmzRrXjFr/xzr//POtd+/eNnPmTLviiivsiCOOcH0H99xzT9cyJbYs6XmfPn04JyHSxo8fb7fffnuWNF2/6ZykGj/dYNlnn33smWeeCc5JqgDwb7aI+rg3btzYXn311ULffuwGHhDHqlWrvIoVK3off/xxkHbHHXd4Xbp08bZu3eqeT5kyxStdurT37LPPurS6det6t9xyS5b1PPHEE16jRo34nhFZDz/8sNesWTMvMzPTPd+2bZtXv359V258V1xxhVe7dm1X7t5++20vJSXFmz9/fpb17Lvvvt7w4cMLffuB4qJt27beiBEjgudjx471qlWr5qWnp7vnS5cu9Ro0aOBdddVV7vlxxx3nHXPMMVnW8f3333u6/ElLSyvkrQeKh8mTJ7trtyVLlgRpPXv2DMqNPP300+48NH36dO/PP//0SpQo4b377rtZ1nPJJZd4p556aqFuO3YPaggRV+XKle3SSy+14cOHB2k//vijazfu9wfU32pbftNNN7mmpOrzdO+997q25j7dUapYsSLfNCLrwgsvdLUar7/+unu+atUqW7hwoXXq1ClYRuWmZMmSdt9997laddVuXHfddVnWQ1lC1Okco36A6sPkn5NUq1GpUiX3XP0CNejFo48+6rorDBw40D788EM3am9sOdI5rGzZskW2H0BROuCAA9z5R4Mt+VSWYs9JOm8ddthhrgw1aNDAjQmh6z3Vvvs4J4XIbgo0ERK6e6S7SN9++617fuWVV3pHHHFElmX+/vtvdxfpjTfecLWEhxxyiNeiRQvv008/9T766COvYcOG3oMPPlhEewAUD6pdVw2fbNmyxStTpoz35ptvZllGNR81a9Z0NYkqc2XLlvUuu+wyV6Nx2223uZoQ1YAAUaVzTOPGjV3LExk9erS3xx57BK1WfDoHDRw40P197bXXepUqVfJeffVV75tvvvG6du3qnXfeeUWy/UBxodp1lYvVq1e75wcccIB30003ZVlG13FJSUmutcpff/3lWrb06NHDtQ5TC5fU1FTvyy+/LKI9QEEiIMQO6Yfioosu8k4++WT3/L333vOSk5OzNDOQo446KmhqsGbNGncRq+Zv7dq185555hm+ZUTa5s2bvQULFrgm2J988olLO/bYY4Ny5dNJV/fpZsyY4Z5//fXXXufOnV2QeNJJJ3m//fZbkWw/UFzo/DJy5EivefPm7sbJokWL3Dnpww8/zLLc4MGDvQMPPND9reXuvPNO13WhadOm3q233upt2rSpiPYAKHoqE+qe0L59e++uu+5yaUOGDHFlxO/a4Hdv0A0Xv3vDvHnzvBNOOMGlHXzwwd5nn31WZPuAgsW0E8jRN99845oLrF692jUP0GAyGnGqadOmrimbmhE8/vjjwfIXX3yxG/3w2Wef5RsF/kfNqG+77TZ74IEHrEKFCm5QGM3dpA79GlTm6KOPdvN07rfffm75rVu3WqlSpdzgMgceeCDfI/A/ms7oggsucJNjq7mn5j/TEPiaKFtzDaqbwrfffmtJSUlueZ2fNHrvjBkz+A6BGC+++KJdf/31rouCrvF0blL50flJ13gqN7qm87Vv394NanbVVVfxPYYYfQixHf1A6EJ10KBBblh8BYIaAVFTSOhErP4bTz31lBsZUXRi1siHmrQUQNbRRTU/py5KNZegbph89tlnNm3aNDvyyCPdZPPql6F50kTLqu/u3nvvzdcI/I9aM5188smuz7rON7p4VdnRNBOifu46T/nzdm7evNnefPNNzklANroBefnll9v777/vzkka5Xrjxo3u3FS3bl03l7T6CX7//fdued2AUdk6+OCD+S7DroBrHBECahbapEmTLGkTJkzwSpUq5S1evNg9f+CBB1y/wdatW3uVK1d2IyTGNjMA8E+z0LvvvjvLV3HGGWd4p5xyivtbTXbU7KZ8+fJu9MRatWp548aN46sDYixcuNA1pVZzUd/y5cvdOckvLxoNW+ci9S9UdwX1dVf5AvAvNQs9/fTTs3wl99xzj2tKrX64uo7r06ePa4atLj8qUxolG+FHDWGEqXmA7hS1aNHCjSylO0aiSXxVS6jmbj7V/indH5HqmmuucU14NDGp5iN85JFHrEQJshOiSTXkhx9+uDVp0sTOO++8YJJ5lZm0tLQsy2oE0bfeesvN+aTawM8//9y9XzXvKlNaDxBFqtkbOnSotWnTxtq1a+fOK/4k2GoKGluW9thjD1dj6NcSau7BP//8040uqubYeqh8AVH0+++/u+bUagKqFl8aQXRH5ySNyKtRsHUd9+STT7qaQdW8K/3KK68sor1AYeIKPqIU8GnSUf04PP300645QM+ePe2TTz6xgw46yA0lrMlJfRomXydk9cvQe0XNC/RD07BhwyLcE6BovfDCCy4IVP+mxx57zDWvUR9bDYt/wgkn2PPPP2/p6enB8goW1U9QTbBF5UpDgB966KGuPAJRbRaqmyG6wfjwww+7PuxquqbpWGrUqOH61KpvU+zyurDVZNnfffedS9PUE2qK3bZt2yLcE6Boqbln586d3UMTy6uPoG7qq6m1gj9NOv/TTz9lOSfp3OPfXBF1EzrqqKOsatWqRbQXKGwMKhNRGuhCfZlUO+G75JJLbMqUKe5O0ujRo+3qq6+222+/3QV8OimfdNJJ7k5t7969LTU1tUi3Hygu6tSpY//5z3/szDPPdM91kaqBl+644w43j6cGkdENFs3l9Mcff7hadgWOGkDmxBNPLOrNB4qFd9991w1kofk5dcNERo0a5foFLl682H777Td3s7Jv377uf91oSUlJcTWD3bp148Yk8D+6EamWX7puE51/dNNRfdNVAaAaP5W3u+66y91YufXWW90NSvVl1znLn2ca0VKyqDcAu59GYlMTNd1l1clVF7AaLEYT+Ma64oorXFMBdTRWbYcm7dUPimow9CPRp08fDhcia+XKla5Zpy5MVQOoGyg6mS5fvjxLWapevbob9fCDDz5wTbJV6z5gwADXWb9169auKZsm0gaiauLEia7mQucW3XhUaxWdk6pUqRIEg6LzkEZD1MAXxx13nE2YMCGYaF7N4fR37PJA1JpYq9WWavx0TtF5ply5cq4sxQ4Co2aguoYbPHiwe66adrXwUpPQmjVrunX06NGjCPcExQEBYUitX7/ejWSoE6cuSHWBqqY1ukOkUab2339/d4G6bt06K1++vHuPmhX4d5NENR5+rQcQVQoANQrbKaec4prdqDma7qiqPL388stuygjdbVUthU9lyS9HFStWdP2agChTn3S1SlENus49GsZeNeZqCvree++5c5L6PemhGnZRixTVAvplSU3gVO6AKNNNSNWa6wa/yoeCv1dffdXd+FcrL5UlnZN0MyWnc5ICxJtuusk9gEBRj2qD3UMjr2nkQo0ctXHjxiBdE4oec8wx3oYNG7w999zTO/PMM93fa9eudX/rNQD/0oig1apVcxNd++bMmeOVLVvWe/fdd72PPvrIjbirv+X77793k/b6zwF4boRqjQpas2ZNN7m17+abb/YaNmzobdmyxTvxxBO9jh07uhFENeLh0KFD3YjXOkcB+MewYcPcOemoo44KvpJ169a5671bbrnFla8KFSp4d955p5tYXmVvv/32c68B8RAQhti+++7rdevWLUvat99+6yUlJXl///23N2PGDG+vvfbyypQp4y5uzz33XIbpBrJRmdG9s1dffTVL+oUXXuideuqp7u/777/fK126tFepUiWvRo0a3vPPP8/3CGSjMqNh7GNpKgmVnfHjx3t//fWXd9hhh7kh73VD89BDD/Xmzp3L9wjEWL16tTvXXH/99Vm+l1GjRnmNGjVyf3/44Yde9erVXWCosqTpJnTTBYiHUUYTiEYtVCfgDh06uCYCb7/99g6XV3MCNRtVs1Bfy5YtXb8nTe6r/kwaWlgjUqkjvzrpM0w3omDy5MluomsNU78zan7TvXv37ZqqqSz5E8proAv129B61ZTn3HPP3W3bDhSnZqA6b6gs+dOp7IhGDdWIu7EjHKpJtfozqSypn/v48eNds1E11dZ0LJrKBQg7jfSpptSaSkX9+b755pu4y2pQP/UJ3NE5SSPAL1iwwJ2T1MRU3RxKlqSXGOIjIEwgZ599tjtZ3nnnnW5o7dNPP92effbZ7ZbTyVTU50kdhq+77joXBIqmkmjQoIE1a9bMPddoUhpeuFq1aoW8N0DhU7Cmvn4qSxqqXqODxqNRQNXHyb+5otHZ1D9DNmzYYG+++aabKsKnATFUltSnAwg7lQ+NZqiByI499lhr3ry5G+glpwtZDVSmfu26YNXIuprHVmVItPySJUusa9euwfKaO61evXqFuj9AUdGNSc0FrRssCtx0Y0Rlyy8jsWbNmhXchNSI8Cp/oms89WmPPSdpYEDd+PfHiQB2KG7dIYqVP//80zVbW7p0aZA2cuRI1xRgyZIl7vmXX37p+gDWqVPHtRmXRx991L2vdevWXufOnb169ep5EydOLLL9AIrS5s2bvTFjxrj+SaNHj/bKlSvnpaWlZVlGfTEeeOABr0GDBt6ll14apO+zzz6uaZuatKkcqW+h+t4CUe3HdPHFF7uy5NM5Rn0CfTNnzvQuuOACr2rVqu78JN988407J6l8qUmo+kK98MILRbIPQHGg8Rti+5xnZGS4MjJ79mz3PDMz05231A1o//33d8/loosucst16dLFXeOpn+D8+fOLbD+Q2AgIE4QGqlDBV9txn07ELVq08K677jrX96Jt27beE088kWUQGXXGVyd+nbx1It60aVMR7QFQ/IJDBXa33nprlvR7773XBXtTp07Nkv7KK6+4i9cvvvgiOFEDUTV9+nRXhmIdfvjhrvyIBrPo1KmTd/vtt3srV67Mstwhhxzi+hPq5mR6enqhbjdQ3MQOsiSvvfaau1myfv169/yzzz5zQZ+CRpUr3++//+6VLFnSe/311115jH0NyCsmpk8Qa9eudU3SNKdgz549g3TNE6hmb2pyE8+wYcPckMRqXgDgXyo76pervhaav2lH1JxHk/2qCbbm7ATwLzUJVVM39VtX0+kd+eijj+yMM85w5Y5+68C//Qj79evnxofQfNEa2+H22293XRbiUdcg9SnUvJ5AftCHMEFoDpljjjnGTSAaS30JNZiF35E4J5oce968ee4kDOBfmlxeczOpf+DOqL+tgsH77rvPBYcA/qU+te3atdtpMOgPeNG4cWPm5wRiaIAlDSqja7q5c+e6671BgwbZmjVr4n5PChY1NoT6xwP5QUCYQAYOHGhjx451k8371OxXk4yq83A8ugOrEakmTJhQSFsKJM6NFtX2KcjTIBnTp093oxvGc8EFF1hSUpLNmDGjULcTKO6eeuopN9m8bN682Y0QuiMDBgywzz//vJC2Dij+NPiLagj9WnONsKvrux1RAKlR57OPOArkFU1Gi4E5c+bYiy++aBs3brTevXtnucOqUQ7VLFSjImoUNv1YqGmATr76sdAw3hpJ9JVXXtnhZ6gWZGc/LECi07D3X331lTVs2NAuu+wyK126dHDj5N1337XXX3/dDZOvoM6n2vX69eu7URI1JP6jjz5qxx13XNzPoCwh7NLS0twI1uqKoC4KuuD0rVixwh566CE3WvWFF14YjHyo6ZA0wrVqK0aOHOlqC1XmVLOe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)"
+  },
+  {
+    "step": 20,
+    "name": "Verify V-Net Creation Dry-Run Diff Preview",
+    "tool": "mutate_vnet",
+    "arguments": {
+      "operation": "create",
+      "name": "mcp-qa-ai-train-dataset",
+      "vpc_name": "Default",
+      "gateways": "10.100.55.1/24",
+      "dry_run": true
+    },
+    "duration_ms": 0.35,
+    "status": "SUCCESS",
+    "output": {
+      "dry_run": true,
+      "operation": "create",
+      "target_resource": "vnet",
+      "mode": "read-only",
+      "proposed_configuration": {
+        "name": "mcp-qa-ai-train-dataset",
+        "vpc": "Default",
+        "gateways": "10.100.55.1/24"
+      },
+      "impact": "Would provision new tenant EVPN V-Net on fabric switches.",
+      "notice": "Re-run with dry_run=False and NETRIS_MCP_MODE=read-write to commit change."
+    }
+  },
+  {
+    "step": 21,
+    "name": "Verify Live Mutation Rejection in Read-Only Mode",
+    "tool": "mutate_vnet",
+    "arguments": {
+      "operation": "create",
+      "name": "mcp-qa-illegal-vnet",
+      "vpc_name": "Default",
+      "gateways": "10.100.60.1/24",
+      "dry_run": false
+    },
+    "duration_ms": 0.13,
+    "status": "SUCCESS",
+    "output": "MUTATION REJECTED: Netris MCP is running in 'read-only' mode. Mutations require NETRIS_MCP_MODE=read-write in environment configuration."
+  }
+]

@@ -30,10 +30,12 @@ def register_telemetry(mcp: FastMCP, client: NetrisClient):
             Literal[
                 "interface_utilisation",
                 "interface_errors",
+                "error_drops",
                 "hardware_sensors",
                 "top_talkers",
+                "health_timeline",
             ],
-            Field(description="Telemetry query intent."),
+            Field(description="Telemetry query intent: 'interface_utilisation', 'top_talkers', 'error_drops', 'health_timeline'."),
         ] = "interface_utilisation",
         site_name: Annotated[str | None, Field(description="Filter by site name (e.g. 'Datacenter-A').")] = None,
         node_name: Annotated[str | None, Field(description="Filter by switch hostname.")] = None,
@@ -44,7 +46,7 @@ def register_telemetry(mcp: FastMCP, client: NetrisClient):
             # Pull physical link telemetry from Netris links API
             links = await client.get("/api/v2/link", params={"page": 1, "limit": 100}) or []
             
-            # Format and rank by utilization
+            # Format and rank by utilisation
             records = []
             for lnk in links:
                 local = lnk.get("local", {})
@@ -82,21 +84,22 @@ def register_telemetry(mcp: FastMCP, client: NetrisClient):
                 "records": records[:top_n],
             })
 
-        elif intent == "interface_errors":
+        elif intent in ("error_drops", "interface_errors"):
             # Scan interface telemetry for non-zero error indicators or link flaps
             ports = await client.get("/api/v2/ports", params={"page": 1, "limit": 100}) or []
             error_ports = []
             for p in ports:
                 status = p.get("status", {})
-                label = status.get("label", "")
-                if node_name and node_name.lower() not in str(p.get("hardware", "")).lower():
+                label = status.get("label", "") if isinstance(status, dict) else str(status)
+                hw = str(p.get("hardware") or p.get("switchName") or "")
+                if node_name and node_name.lower() not in hw.lower():
                     continue
                 # Flag degraded or warning ports
-                if "down" in label.lower() or "error" in label.lower() or "critical" in label.lower():
+                if any(k in label.lower() for k in ("down", "error", "critical", "drop")):
                     error_ports.append({
                         "port_id": p.get("id"),
                         "port_name": p.get("port"),
-                        "hardware": p.get("hardware"),
+                        "hardware": hw,
                         "status": label,
                         "speed": p.get("speed"),
                     })
@@ -121,12 +124,77 @@ def register_telemetry(mcp: FastMCP, client: NetrisClient):
 
         elif intent == "top_talkers":
             # Interface bitrates from traffic graphboards
-            boards = await client.get("/api/graphboards") or []
+            raw_boards = await client.get("/api/graphboards") or []
+            if isinstance(raw_boards, dict):
+                boards_list = raw_boards.get("dashboards", [])
+            elif isinstance(raw_boards, list):
+                boards_list = raw_boards
+            else:
+                boards_list = []
+
+            board_names = [
+                b.get("name") for b in boards_list
+                if isinstance(b, dict) and b.get("name")
+            ]
             return to_json_output({
                 "intent": intent,
-                "configured_traffic_boards": len(boards),
-                "summary": [b.get("name") for b in boards],
+                "configured_traffic_boards": len(board_names),
+                "summary": board_names,
                 "note": "Graph Boards aggregate 95th-percentile bitrate across fabric spine/leaf transit ports.",
+            })
+
+        elif intent == "health_timeline":
+            # Collect chronological health events from heartbeats and alarms
+            heartbeats = await client.get("/api/v2/dashboard/agent-heartbeats") or []
+            hw_health = await client.get("/api/v2/dashboard/hardware-health") or []
+
+            timeline = []
+            healthy_count = 0
+            degraded_count = 0
+
+            for h in heartbeats:
+                if not isinstance(h, dict):
+                    continue
+                h_name = h.get("name", "unknown")
+                if node_name and node_name.lower() not in h_name.lower():
+                    continue
+                status = h.get("status", "ok")
+                monitoring = h.get("healthMonitoring") or {}
+                last_time = monitoring.get("last_check_time") if isinstance(monitoring, dict) else None
+                last_time = last_time or h.get("lastHeartbeat") or "recent"
+                is_crit = str(status).lower() in ("critical", "failed", "down")
+                if is_crit:
+                    degraded_count += 1
+                else:
+                    healthy_count += 1
+
+                port_st = monitoring.get("port_status", "ok") if isinstance(monitoring, dict) else "ok"
+                timeline.append({
+                    "timestamp": last_time,
+                    "entity": h_name,
+                    "type": "agent_heartbeat",
+                    "status": "degraded" if is_crit else "healthy",
+                    "details": f"Port status: {port_st}",
+                })
+
+            for hw in hw_health:
+                hw_name = hw.get("name", "unknown")
+                if node_name and node_name.lower() not in hw_name.lower():
+                    continue
+                timeline.append({
+                    "timestamp": hw.get("date") or "recent",
+                    "entity": hw_name,
+                    "type": "hardware_alarm",
+                    "status": hw.get("status", "warning"),
+                    "details": hw.get("description") or hw.get("alarmType", "alarm"),
+                })
+
+            return to_json_output({
+                "intent": intent,
+                "timeline_entries_count": len(timeline),
+                "healthy_nodes_count": healthy_count,
+                "degraded_nodes_count": degraded_count,
+                "records": timeline[:top_n],
             })
 
         return "Unknown intent"

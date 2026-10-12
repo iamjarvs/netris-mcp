@@ -28,7 +28,18 @@ def register_tools(mcp: FastMCP, client: NetrisClient):
     @mcp.tool()
     async def fabric_inventory(
         domain: Annotated[
-            Literal["summary", "sites", "tenants", "vpcs", "hardware", "controllers", "profiles"],
+            Literal[
+                "summary",
+                "sites",
+                "tenants",
+                "vpcs",
+                "hardware",
+                "switches",
+                "softgates",
+                "servers",
+                "controllers",
+                "profiles",
+            ],
             Field(description="Inventory domain to inspect. 'summary' gives quick fabric-wide counts."),
         ] = "summary",
         site_name: Annotated[str | None, Field(description="Filter hardware by site name.")] = None,
@@ -74,8 +85,14 @@ def register_tools(mcp: FastMCP, client: NetrisClient):
             vpcs = await client.get("/api/v2/vpc") or []
             return to_json_output(format_digest(vpcs, ["id", "name", "adminTenant", "vni"], limit=limit))
 
-        elif domain == "hardware":
+        elif domain in ("hardware", "switches", "softgates", "servers"):
             hw = await client.get("/api/v2/hw") or []
+            if domain == "switches":
+                hw = [h for h in hw if h.get("type") == "switch"]
+            elif domain == "softgates":
+                hw = [h for h in hw if h.get("type") == "softgate"]
+            elif domain == "servers":
+                hw = [h for h in hw if h.get("type") == "server"]
             if site_name:
                 hw = [h for h in hw if str(h.get("site", {}).get("name", "")).lower() == site_name.lower()]
             if tenant_name:
@@ -99,7 +116,7 @@ def register_tools(mcp: FastMCP, client: NetrisClient):
     @mcp.tool()
     async def virtual_networks(
         action: Annotated[
-            Literal["list_vnets", "vnet_detail", "ipam_tree", "vpc_peerings"],
+            Literal["list_vnets", "vnets", "vnet_detail", "ipam_tree", "ipam", "vpc_peerings", "peering"],
             Field(description="Overlay inspection action."),
         ] = "list_vnets",
         name: Annotated[str | None, Field(description="Filter by VNet or Peering name.")] = None,
@@ -107,7 +124,7 @@ def register_tools(mcp: FastMCP, client: NetrisClient):
         limit: Annotated[int, Field(description="Max records to return.")] = 50,
     ) -> str:
         """Inspect V-Net overlay networks, IPAM subnets/allocations, and VPC peering connections."""
-        if action == "list_vnets":
+        if action in ("list_vnets", "vnets"):
             vnets = await client.get("/api/v2/vnet") or []
             if vpc_name:
                 vnets = [v for v in vnets if str(v.get("vpc", {}).get("name", "")).lower() == vpc_name.lower()]
@@ -124,11 +141,11 @@ def register_tools(mcp: FastMCP, client: NetrisClient):
                 return f"V-Net '{name}' not found."
             return to_json_output(match)
 
-        elif action == "ipam_tree":
+        elif action in ("ipam_tree", "ipam"):
             ipam = await client.get("/api/v2/ipam") or []
             return to_json_output(format_digest(ipam, ["id", "prefix", "name", "purpose", "type", "vpc", "tenant", "utilization"], limit=limit))
 
-        elif action == "vpc_peerings":
+        elif action in ("vpc_peerings", "peering"):
             peerings = await client.get("/api/v2/vpc-peering") or []
             return to_json_output(format_digest(peerings, ["id", "name", "vpc1", "vpc2", "state"], limit=limit))
 
@@ -140,17 +157,27 @@ def register_tools(mcp: FastMCP, client: NetrisClient):
     @mcp.tool()
     async def routing_and_policy(
         action: Annotated[
-            Literal["ebgp_sessions", "ebgp_routemaps", "acls", "static_routes", "nat_rules", "l4lb_services"],
+            Literal[
+                "ebgp_sessions",
+                "ebgp",
+                "ebgp_routemaps",
+                "route_maps",
+                "acls",
+                "static_routes",
+                "nat_rules",
+                "nat",
+                "l4lb_services",
+            ],
             Field(description="Routing and security policy inspect action."),
         ] = "ebgp_sessions",
         limit: Annotated[int, Field(description="Max records to return.")] = 50,
     ) -> str:
         """Inspect edge and fabric policy: E-BGP peerings, route maps, ACLs, static routes, NAT, and L4LB."""
-        if action == "ebgp_sessions":
+        if action in ("ebgp_sessions", "ebgp"):
             ebgp = await client.get("/api/v2/ebgp") or []
             return to_json_output(format_digest(ebgp, ["id", "name", "neighbor_as", "local_ip", "remote_ip", "status", "vpc"], limit=limit))
 
-        elif action == "ebgp_routemaps":
+        elif action in ("ebgp_routemaps", "route_maps"):
             maps = await client.get("/api/v2/ebgp/routemaps") or []
             return to_json_output(format_digest(maps, ["id", "name", "description"], limit=limit))
 
@@ -164,7 +191,7 @@ def register_tools(mcp: FastMCP, client: NetrisClient):
             routes = await client.get("/api/routes") or []
             return to_json_output(format_digest(routes, ["id", "prefix", "nextHop", "site", "state", "description"], limit=limit))
 
-        elif action == "nat_rules":
+        elif action in ("nat_rules", "nat"):
             nat = await client.get("/api/v2/nat") or []
             return to_json_output(format_digest(nat, ["id", "name", "action", "protocol", "srcAddress", "dstAddress", "status"], limit=limit))
 
@@ -180,14 +207,14 @@ def register_tools(mcp: FastMCP, client: NetrisClient):
     @mcp.tool()
     async def fabric_links(
         query: Annotated[
-            Literal["links_summary", "links_list", "interfaces_list"],
+            Literal["links_summary", "summary", "links_list", "links", "interfaces_list", "interfaces"],
             Field(description="Topology link and port query."),
         ] = "links_summary",
         node_name: Annotated[str | None, Field(description="Filter by switch/server node name.")] = None,
         limit: Annotated[int, Field(description="Max records to return.")] = 50,
     ) -> str:
         """Inspect physical cabling, link states, optical connectivity, and interface configurations."""
-        if query == "links_summary":
+        if query in ("links_summary", "summary"):
             links = await client.get("/api/v2/link", params={"page": 1, "limit": 10}) or []
             ports = await client.get("/api/v2/ports", params={"page": 1, "limit": 10}) or []
             return to_json_output({
@@ -195,7 +222,7 @@ def register_tools(mcp: FastMCP, client: NetrisClient):
                 "sample_links": links[:3],
             })
 
-        elif query == "links_list":
+        elif query in ("links_list", "links"):
             params = {"page": 1, "limit": limit}
             if node_name:
                 params["filterHardwareName"] = node_name
@@ -220,7 +247,7 @@ def register_tools(mcp: FastMCP, client: NetrisClient):
                 "links": formatted,
             })
 
-        elif query == "interfaces_list":
+        elif query in ("interfaces_list", "interfaces"):
             params = {"page": 1, "limit": limit}
             if node_name:
                 params["filterHardwareName"] = node_name

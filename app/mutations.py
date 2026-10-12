@@ -47,25 +47,48 @@ def register_mutations(mcp: FastMCP, client: NetrisClient):
         dry_run: Annotated[bool, Field(description="If True, only validates and returns preview diff.")] = True,
     ) -> str:
         """Create or delete a V-Net overlay network. Mutations require NETRIS_MCP_MODE=read-write."""
+        # Parameter validation
+        if operation not in ("create", "delete"):
+            return f"VALIDATION ERROR: Unsupported operation '{operation}'. Must be 'create' or 'delete'."
+
+        if not name or not name.strip():
+            return "VALIDATION ERROR: V-Net name must not be empty."
+
+        # Protection safeguards
+        protected_vnets = {"default", "mgmt", "management", "system", "underlay"}
+        if operation == "delete" and name.strip().lower() in protected_vnets:
+            return f"PROTECTION SAFEGUARD: Deletion of critical system V-Net '{name}' is forbidden."
+
+        if operation == "create" and "/" not in gateways:
+            return f"VALIDATION ERROR: Invalid gateway CIDR '{gateways}'. Expected format e.g. '192.168.100.1/24'."
+
+        # Safe dry-run preview: permitted in read-only mode to evaluate configuration safely
+        if dry_run:
+            impact_desc = (
+                "Would provision new tenant EVPN V-Net on fabric switches."
+                if operation == "create"
+                else f"Would teardown tenant EVPN V-Net '{name}' and withdraw EVPN routes."
+            )
+            return json.dumps({
+                "dry_run": True,
+                "operation": operation,
+                "target_resource": "vnet",
+                "mode": cfg.mode,
+                "proposed_configuration": {
+                    "name": name,
+                    "vpc": vpc_name,
+                    "gateways": gateways if operation == "create" else None,
+                },
+                "impact": impact_desc,
+                "notice": "Re-run with dry_run=False and NETRIS_MCP_MODE=read-write to commit change.",
+            }, indent=2)
+
+        # Protection safeguard: reject live mutations if not running in read-write mode
         if cfg.mode != "read-write":
             return (
                 f"MUTATION REJECTED: Netris MCP is running in '{cfg.mode}' mode. "
                 "Mutations require NETRIS_MCP_MODE=read-write in environment configuration."
             )
-
-        if dry_run:
-            return json.dumps({
-                "dry_run": True,
-                "operation": operation,
-                "target_resource": "vnet",
-                "proposed_configuration": {
-                    "name": name,
-                    "vpc": vpc_name,
-                    "gateways": gateways,
-                },
-                "impact": "Would create new tenant EVPN V-Net on fabric switches.",
-                "notice": "Re-run with dry_run=False to commit change.",
-            }, indent=2)
 
         if operation == "create":
             payload = {
@@ -81,5 +104,19 @@ def register_mutations(mcp: FastMCP, client: NetrisClient):
             except Exception as e:
                 _record_audit("create", "vnet", payload, f"FAILED: {e}")
                 return f"Failed to create V-Net: {e}"
+
+        elif operation == "delete":
+            try:
+                vnets = await client.get("/api/v2/vnet") or []
+                match = next((v for v in vnets if str(v.get("name", "")).lower() == name.lower()), None)
+                if not match:
+                    return f"Failed to delete V-Net: V-Net '{name}' not found."
+                vnet_id = match.get("id")
+                res = await client.delete(f"/api/v2/vnet/{vnet_id}")
+                _record_audit("delete", "vnet", {"name": name, "id": vnet_id}, "SUCCESS")
+                return json.dumps({"status": "SUCCESS", "message": f"Deleted V-Net {name}", "data": res}, indent=2)
+            except Exception as e:
+                _record_audit("delete", "vnet", {"name": name}, f"FAILED: {e}")
+                return f"Failed to delete V-Net: {e}"
 
         return "Unsupported operation"

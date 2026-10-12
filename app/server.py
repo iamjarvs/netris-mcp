@@ -29,8 +29,10 @@ mcp = FastMCP(
     name="Netris MCP Server",
     instructions="""
 You are an AI assistant managing Netris cloud networking and AI fabric infrastructure.
+Netris provides unified intent-based orchestration across both Front-End (Ethernet EVPN/VXLAN, VPCs, V-Nets, eBGP, NAT, L4LB SoftGate) and Back-End (NVIDIA UFM for InfiniBand, NVIDIA NVLink NVL72 via NMX-C, and RoCEv2 Spectrum-X) AI network fabrics, as well as on-host networking (ROH).
 Always query fabric inventory and network topology before attempting configuration changes.
 Use compact umbrella tools (fabric_inventory, virtual_networks, routing_and_policy, fabric_links, fabric_health, fabric_telemetry, triage) to inspect state efficiently without token bloat.
+Use run_switch_command to execute read-only show commands on switches via the jump host; target hostnames (e.g. 'leaf-pod00-su1-r1') and routing loopbacks are automatically resolved to out-of-band management IPs (mgmtAddress).
     """,
 )
 
@@ -45,7 +47,7 @@ client = NetrisClient(
 # Register Stage 2, 3, 4, 5 & Telemetry tool dispatchers
 register_tools(mcp, client)
 register_diagnostics(mcp, client)
-register_switch_exec(mcp)
+register_switch_exec(mcp, client)
 register_mutations(mcp, client)
 register_telemetry(mcp, client)
 register_charting(mcp)
